@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="慢">
 <meta property="og:description" content="C++一些基本语法问题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-27T23:18:06.697Z">
+<meta property="og:updated_time" content="2019-03-28T15:20:36.682Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++ 语法">
 <meta name="twitter:description" content="C++一些基本语法问题">
@@ -366,7 +366,7 @@
                 
               
 
-              <time title="创建时间：2019-03-28 06:15:18 / 修改时间：07:18:06" itemprop="dateCreated datePublished" datetime="2019-03-28T06:15:18+08:00">2019-03-28</time>
+              <time title="创建时间：2019-03-28 06:15:18 / 修改时间：23:20:36" itemprop="dateCreated datePublished" datetime="2019-03-28T06:15:18+08:00">2019-03-28</time>
             
 
             
@@ -424,7 +424,7 @@
 <h2 id="模板友元"><a href="#模板友元" class="headerlink" title="模板友元"></a>模板友元</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>;</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>&#123;</span></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">void</span> foo&lt;T&gt;();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="enable-if"><a href="#enable-if" class="headerlink" title="enable_if"></a>enable_if</h2><p><a href="https://zh.cppreference.com/w/cpp/types/enable_if" target="_blank" rel="noopener">std::enable_if - cppreference.com</a><br><a href="https://blog.csdn.net/kiritow/article/details/50932012" target="_blank" rel="noopener">enable_if - Kiritow的学园 - CSDN博客</a></p>
 <h2 id="typename-的第二作用"><a href="#typename-的第二作用" class="headerlink" title="typename 的第二作用"></a>typename 的第二作用</h2><p>为了消除歧义，显式地告诉编译器，T::bar是一个类型名。</p>
-<h2 id="类的缺省函数"><a href="#类的缺省函数" class="headerlink" title="类的缺省函数"></a>类的缺省函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Class</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//缺省构造函数 </span></span><br><span class="line">    Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//拷贝构造函数</span></span><br><span class="line">    Class(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动构造函数(C++11)</span></span><br><span class="line">    Class(Class&amp;&amp; h)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动赋值函数(C++11)</span></span><br><span class="line">    Class&amp; <span class="keyword">operator</span>=(Class&amp;&amp; h)&#123;&#125;</span><br><span class="line">    <span class="comment">//析构函数</span></span><br><span class="line">    ~Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//赋值运算符</span></span><br><span class="line">    Class&amp;<span class="keyword">operator</span>=(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 </span></span><br><span class="line">    Class*<span class="keyword">operator</span>&amp;()&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 const</span></span><br><span class="line">    <span class="keyword">const</span> Class*<span class="keyword">operator</span>&amp;()<span class="keyword">const</span>&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="类的缺省函数"><a href="#类的缺省函数" class="headerlink" title="类的缺省函数"></a>类的缺省函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Class</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//缺省构造函数 </span></span><br><span class="line">    Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//拷贝构造函数</span></span><br><span class="line">    Class(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动构造函数(C++11)</span></span><br><span class="line">    Class(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动赋值函数(C++11)</span></span><br><span class="line">    Class&amp; <span class="keyword">operator</span>=(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//析构函数</span></span><br><span class="line">    ~Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//赋值运算符</span></span><br><span class="line">    Class&amp;<span class="keyword">operator</span>=(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 </span></span><br><span class="line">    Class*<span class="keyword">operator</span>&amp;()&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 const</span></span><br><span class="line">    <span class="keyword">const</span> Class*<span class="keyword">operator</span>&amp;()<span class="keyword">const</span>&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -462,8 +462,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/C++ Regex 代码片段/" rel="next" title="C++ Regex 代码片段">
-                <i class="fa fa-chevron-left"></i> C++ Regex 代码片段
+              <a href="/post/C++ 资源大全/" rel="next" title="C++ 资源大全">
+                <i class="fa fa-chevron-left"></i> C++ 资源大全
               </a>
             
           </div>
@@ -472,8 +472,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/C++ 资源大全/" rel="prev" title="C++ 资源大全">
-                C++ 资源大全 <i class="fa fa-chevron-right"></i>
+              <a href="/post/test/" rel="prev" title="test">
+                test <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -539,7 +539,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
