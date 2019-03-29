@@ -323,7 +323,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/C-填坑之路/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/c-填坑之路/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="楚栋浩">
@@ -343,7 +343,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/post/C-填坑之路/" class="post-title-link" itemprop="url">C++填坑之路</a>
+                <a href="/post/c-填坑之路/" class="post-title-link" itemprop="url">C++填坑之路</a>
               
             
           </h1>
@@ -368,12 +368,24 @@
                 
               
 
-              <time title="创建时间：2019-03-28 22:43:25 / 修改时间：23:53:51" itemprop="dateCreated datePublished" datetime="2019-03-28T22:43:25+08:00">2019-03-28</time>
+              <time title="创建时间：2019-03-28 22:43:25" itemprop="dateCreated datePublished" datetime="2019-03-28T22:43:25+08:00">2019-03-28</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 08:09:21" itemprop="dateModified" datetime="2019-03-29T08:09:21+08:00">2019-03-29</time>
               
             
           </span>
@@ -424,11 +436,19 @@
       
         
           
-            <h2 id="数组变量加减操作"><a href="#数组变量加减操作" class="headerlink" title="数组变量加减操作"></a>数组变量加减操作</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *(a+<span class="number">1</span>) &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//NOTE a可视为成员指针</span></span><br><span class="line">  <span class="comment">//cout &lt;&lt; *++a &lt;&lt; endl;//编译错误</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h2 id="数组变量加减操作"><a href="#数组变量加减操作" class="headerlink" title="数组变量加减操作"></a>数组变量加减操作</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *(a+<span class="number">1</span>) &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//NOTE a可视为元素指针</span></span><br><span class="line">  <span class="comment">//cout &lt;&lt; *++a &lt;&lt; endl;//编译错误</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure>
 <h2 id="标准库迭代器"><a href="#标准库迭代器" class="headerlink" title="标准库迭代器"></a>标准库迭代器</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;list&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> i = v.begin();</span><br><span class="line">  v.erase(i);</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *i &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  <span class="built_in">list</span>&lt;<span class="keyword">int</span>&gt; l = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> j = l.begin();</span><br><span class="line">  l.erase(j);</span><br><span class="line">  <span class="comment">//NOTE 这里的j已经失效,虽然输出了1</span></span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *j &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">1 #这个输出看似正确,但没有意义</span><br></pre></td></tr></table></figure>
-<p>==迭代器是否失效请看<a href="https://zh.cppreference.com/w/cpp/container#迭代器非法化" target="_blank" rel="noopener">这里</a><br>使用时可以考虑erase函数的返回值 其为指向被删除元素的下一个元素的迭代器==</p>
+<p>迭代器是否失效请看<a href="https://zh.cppreference.com/w/cpp/container#迭代器非法化" target="_blank" rel="noopener">这里</a><br>使用时可以考虑erase函数的返回值 其为指向被删除元素的下一个元素的迭代器</p>
+<h2 id="虚函数与成员函数调用行为与成员指针"><a href="#虚函数与成员函数调用行为与成员指针" class="headerlink" title="虚函数与成员函数调用行为与成员指针"></a>虚函数与成员函数调用行为与成员指针</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="keyword">int</span> i;</span><br><span class="line">  A() &#123; foo(); &#125;</span><br><span class="line">  ~A() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::func()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> :</span> <span class="keyword">public</span> A &#123;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  B() &#123; foo(); &#125;</span><br><span class="line">  ~B() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  B b;</span><br><span class="line">  B *bp = &amp;b;</span><br><span class="line">  A *ap = &amp;b;</span><br><span class="line">  ap-&gt;foo();</span><br><span class="line">  ap-&gt;A::foo();</span><br><span class="line">  <span class="keyword">void</span> (A::*Afoop)() = &amp;A::foo;</span><br><span class="line">  (ap-&gt;*Afoop)();</span><br><span class="line">  <span class="comment">//void (A::*Afuncp)() = &amp;A::func;</span></span><br><span class="line">  <span class="comment">//(bp-&gt;*Afuncp)();</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::f);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::func);</span><br><span class="line">  <span class="comment">//cout &lt;&lt; &amp;B::func &lt;&lt; endl;</span></span><br><span class="line">  ap-&gt;foooo();</span><br><span class="line">  ap-&gt;A::foooo();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">00000001</span><br><span class="line">00402010</span><br><span class="line">B::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">A::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br></pre></td></tr></table></figure>
+<p>总结</p>
+<ul>
+<li>构造函数与析构函数一个重要的职能或特点是类型确定，即进入函数时，先修改虚表指针，所以在其中对虚函数的调用不是运行时确定的（编译器的实现是直接调用，即不通过虚表）</li>
+<li>成员函数指针形式的调用是动态的（TODO 成员函数指针的实现）</li>
+<li>带域的调用形式是编译期确定的</li>
+</ul>
 
           
         
@@ -485,7 +505,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/OpenGL3-0教程/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/opengl3-0教程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="楚栋浩">
@@ -505,7 +525,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/post/OpenGL3-0教程/" class="post-title-link" itemprop="url">OpenGL3.0教程</a>
+                <a href="/post/opengl3-0教程/" class="post-title-link" itemprop="url">OpenGL3.0教程</a>
               
             
           </h1>
@@ -643,7 +663,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/OpenGL中的坐标系/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/opengl中的坐标系/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="楚栋浩">
@@ -663,7 +683,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/post/OpenGL中的坐标系/" class="post-title-link" itemprop="url">OpenGL中的坐标系</a>
+                <a href="/post/opengl中的坐标系/" class="post-title-link" itemprop="url">OpenGL中的坐标系</a>
               
             
           </h1>
@@ -747,7 +767,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/post/OpenGL中的坐标系/" rel="contents">
+              <a class="btn" href="/post/opengl中的坐标系/" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1130,7 +1150,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/Linux目录与文件的常用约定/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/linux目录与文件的常用约定/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="楚栋浩">
@@ -1150,7 +1170,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/post/Linux目录与文件的常用约定/" class="post-title-link" itemprop="url">Linux目录与文件的常用约定</a>
+                <a href="/post/linux目录与文件的常用约定/" class="post-title-link" itemprop="url">Linux目录与文件的常用约定</a>
               
             
           </h1>
@@ -1767,7 +1787,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/C++资源大全/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/c-语法/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="楚栋浩">
@@ -1787,7 +1807,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/post/C++资源大全/" class="post-title-link" itemprop="url">C++资源大全</a>
+                <a href="/post/c-语法/" class="post-title-link" itemprop="url">C++语法</a>
               
             
           </h1>
@@ -1812,12 +1832,24 @@
                 
               
 
-              <time title="创建时间：2019-03-28 06:15:18 / 修改时间：23:56:46" itemprop="dateCreated datePublished" datetime="2019-03-28T06:15:18+08:00">2019-03-28</time>
+              <time title="创建时间：2019-03-28 06:15:18" itemprop="dateCreated datePublished" datetime="2019-03-28T06:15:18+08:00">2019-03-28</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-29 07:07:31" itemprop="dateModified" datetime="2019-03-29T07:07:31+08:00">2019-03-29</time>
               
             
           </span>
@@ -1867,13 +1899,19 @@
 
       
         
+          <p>C++一些基本语法问题<br>
+          <!--noindex-->
           
-            <p>C++ 资源大全<br><a href="https://github.com/jobbole/awesome-cpp-cn" target="_blank" rel="noopener">jobbole/awesome-cpp-cn: C++ 资源大全中文版，标准库、Web应用框架、人工智能、数据库、图片处理、机器学习、日志、代码分析等</a> </p>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/post/c-语法/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
-    </div>
+    </p></div>
 
     
 
