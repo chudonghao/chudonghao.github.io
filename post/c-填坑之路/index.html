@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="慢">
 <meta property="og:description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-31T05:33:49.622Z">
+<meta property="og:updated_time" content="2019-03-31T05:50:39.161Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++填坑之路">
 <meta name="twitter:description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
@@ -383,7 +383,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-31 13:33:49" itemprop="dateModified" datetime="2019-03-31T13:33:49+08:00">2019-03-31</time>
+                <time title="修改时间：2019-03-31 13:50:39" itemprop="dateModified" datetime="2019-03-31T13:50:39+08:00">2019-03-31</time>
               
             
           </span>
@@ -447,7 +447,7 @@
 <li>带域的调用形式是编译期确定的</li>
 </ul>
 <h2 id="非法delete问题"><a href="#非法delete问题" class="headerlink" title="非法delete问题"></a>非法delete问题</h2><h3 id="delete-2问题"><a href="#delete-2问题" class="headerlink" title="delete*2问题"></a>delete*2问题</h3><p>书（《Ｃ+Ｐ》）上说“自由存储区可能会被破坏”</p>
-<h3 id="delete问题"><a href="#delete问题" class="headerlink" title="delete问题"></a>delete<a href="new[]+1"></a>问题</h3><p>cplusplus.com上说：</p>
+<h3 id="delete-new-1-问题"><a href="#delete-new-1-问题" class="headerlink" title="delete[](new[]+1)问题"></a>delete[](new[]+1)问题</h3><p>cplusplus.com上说：</p>
 <ul>
 <li>delete[]的参数ptr，应该是new[]返回的ptr</li>
 <li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上两种行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。</li>
@@ -697,7 +697,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量加减操作"><span class="nav-number">1.</span> <span class="nav-text">数组变量加减操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准库迭代器"><span class="nav-number">2.</span> <span class="nav-text">标准库迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚函数与成员函数调用行为与成员指针"><span class="nav-number">3.</span> <span class="nav-text">虚函数与成员函数调用行为与成员指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非法delete问题"><span class="nav-number">4.</span> <span class="nav-text">非法delete问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#delete-2问题"><span class="nav-number">4.1.</span> <span class="nav-text">delete*2问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete问题"><span class="nav-number">4.2.</span> <span class="nav-text">delete问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new-delete-顺序问题"><span class="nav-number">5.</span> <span class="nav-text">new[] delete[] 顺序问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对合法但无效的栈内存进行访问"><span class="nav-number">6.</span> <span class="nav-text">对合法但无效的栈内存进行访问</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量加减操作"><span class="nav-number">1.</span> <span class="nav-text">数组变量加减操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准库迭代器"><span class="nav-number">2.</span> <span class="nav-text">标准库迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚函数与成员函数调用行为与成员指针"><span class="nav-number">3.</span> <span class="nav-text">虚函数与成员函数调用行为与成员指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非法delete问题"><span class="nav-number">4.</span> <span class="nav-text">非法delete问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#delete-2问题"><span class="nav-number">4.1.</span> <span class="nav-text">delete*2问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete-new-1-问题"><span class="nav-number">4.2.</span> <span class="nav-text">delete[](new[]+1)问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new-delete-顺序问题"><span class="nav-number">5.</span> <span class="nav-text">new[] delete[] 顺序问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对合法但无效的栈内存进行访问"><span class="nav-number">6.</span> <span class="nav-text">对合法但无效的栈内存进行访问</span></a></li></ol></div>
             
 
           </div>
