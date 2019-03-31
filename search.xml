@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2Fpost%2Ftest%2F</url>
+    <content type="text"><![CDATA[测试公式$$ \sum_{i=0}^{n}i^2+i+i^{^{\frac{1}{2}}} $$ 测试图片]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[算法]]></title>
+    <url>%2Fpost%2F%E7%AE%97%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[有多个图片来自维基百科 排序算法 排序的方法 插入、交换、选择、合并等 复杂度（最差、平均、和最好性能），依据列表（list）的大小$n$ 时间复杂度 一般而言，好的性能是 $ O(n\log n)$，坏的性能是 $ O(n^{2})$。对于一个排序理想的性能是 $O(n)$，但平均而言不可能达到。基于比较的排序算法对大多数输入而言至少需要$O(n \log n)$。 空间复杂度（内存等资源的使用量） 交换的次数 比较的次数 稳定性 稳定排序算法会让原本有相等键值的纪录维持相对次序。也就是如果一个排序算法是稳定的，当有两个相等键值的纪录 $R$和 $S$，且在原本的列表中 $R$出现在$S$之前，在排序过的列表中 $R$也将会是在$S$之前。 冒泡排序 选择排序和冒泡排序相比，明显减少了交换的次数 侏儒排序 快速排序设中分组可实现方法之一：挖坑填数 插入排序 可以想想打扑克起牌 希尔排序是插入排序的一种更高效的改进版本 图书馆排序 可以想象图书馆每行书籍后面的空位 归并排序不断将小的有序集合合并为大的有序集合 梳排序 堆排序 计数排序基数排序搜索算法图论动态规划基础]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++填坑之路]]></title>
+    <url>%2Fpost%2Fc-%E5%A1%AB%E5%9D%91%E4%B9%8B%E8%B7%AF%2F</url>
+    <content type="text"><![CDATA[数组变量加减操作1234567#include&lt;iostream&gt;using namespace std;void main()&#123; int a[] = &#123;0,1,2&#125;; cout &lt;&lt; *(a+1) &lt;&lt; endl;//NOTE a可视为元素指针 //cout &lt;&lt; *++a &lt;&lt; endl;//编译错误&#125; 11 标准库迭代器12345678910111213#include&lt;vector&gt;#include&lt;list&gt;void main()&#123; vector&lt;int&gt; v = &#123;1,2,3,4&#125;; auto i = v.begin(); v.erase(i); cout &lt;&lt; *i &lt;&lt; endl; list&lt;int&gt; l = &#123;1,2,3,4&#125;; auto j = l.begin(); l.erase(j); //NOTE 这里的j已经失效,虽然输出了1 cout &lt;&lt; *j &lt;&lt; endl;&#125; 1221 #这个输出看似正确,但没有意义 迭代器是否失效请看这里使用时可以考虑erase函数的返回值 其为指向被删除元素的下一个元素的迭代器 虚函数与成员函数调用行为与成员指针123456789101112131415161718192021222324252627282930313233343536373839404142class A &#123; public: int i; A() &#123; foo(); &#125; ~A() &#123; foo(); &#125; void func() &#123; cout &lt;&lt; "A::func()" &lt;&lt; endl; &#125; virtual void f() &#123; cout &lt;&lt; "A::f()" &lt;&lt; endl; &#125; virtual void foo() &#123; cout &lt;&lt; "A::foo()" &lt;&lt; endl; &#125; virtual void foooo() &#123; cout &lt;&lt; "A::foooo()" &lt;&lt; endl; f(); A::f(); &#125;&#125;;class B : public A &#123; public: B() &#123; foo(); &#125; ~B() &#123; foo(); &#125; void f() &#123; cout &lt;&lt; "B::f()" &lt;&lt; endl; &#125; void foo() &#123; cout &lt;&lt; "B::foo()" &lt;&lt; endl; &#125; void foooo() &#123; cout &lt;&lt; "B::foooo()" &lt;&lt; endl; f(); A::f(); &#125;&#125;;void main() &#123; B b; B *bp = &amp;b; A *ap = &amp;b; ap-&gt;foo(); ap-&gt;A::foo(); void (A::*Afoop)() = &amp;A::foo; (ap-&gt;*Afoop)(); //void (A::*Afuncp)() = &amp;A::func; //(bp-&gt;*Afuncp)(); printf("%08x\n", &amp;B::f); printf("%08x\n", &amp;B::func); //cout &lt;&lt; &amp;B::func &lt;&lt; endl; ap-&gt;foooo(); ap-&gt;A::foooo();&#125; 123456789101112131415A::foo()B::foo()B::foo()A::foo()B::foo()0000000100402010B::foooo()B::f()A::f()A::foooo()B::f()A::f()B::foo()A::foo() 总结 构造函数与析构函数一个重要的职能或特点是类型确定，即进入函数时，先修改虚表指针，所以在其中对虚函数的调用不是运行时确定的（编译器的实现是直接调用，即不通过虚表） 成员函数指针形式的调用是动态的（TODO 成员函数指针的实现） 带域的调用形式是编译期确定的 非法delete问题delete*2问题书（《Ｃ+Ｐ》）上说“自由存储区可能会被破坏” delete[](new[]+1)问题cplusplus.com上说： delete[]的参数ptr，应该是new[]返回的ptr 如果delete的参数ptr无效，将产生未定义的结果总结这应该牵扯到C++堆内存管理问题，以上两种行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。 new[] delete[] 顺序问题先构后析 对合法但无效的栈内存进行访问将会产生未定义的结果]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[OpenGL3.0教程]]></title>
+    <url>%2Fpost%2Fopengl3-0%E6%95%99%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[OpenGL3.0教程 | 泰然网]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>OpenGL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[OpenGL中的坐标系]]></title>
+    <url>%2Fpost%2Fopengl%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB%2F</url>
+    <content type="text"><![CDATA[OpenGl 坐标转换 - 借你一秒 - CSDN博客 ModelWorldView(Eye)Proj.Nor. x[-1,1]y[-1,1]z[-1,1]Viewport x[xMin,xMax],y[yMin,yMax],z[0,1](远离程度)]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>OpenGL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[git]]></title>
+    <url>%2Fpost%2Fgit%2F</url>
+    <content type="text"><![CDATA[configcredential.helper=store 保存登录远端仓库时使用的账号密码http.proxy=”” 设置代理]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[读书]]></title>
+    <url>%2Fpost%2F%E8%AF%BB%E4%B9%A6%2F</url>
+    <content type="text"><![CDATA[文学书籍 诗经 唐诗宋词 平凡的世界 三国演义 红楼梦其他书籍 人月神话]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>读书</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux目录与文件的常用约定]]></title>
+    <url>%2Fpost%2Flinux%E7%9B%AE%E5%BD%95%E4%B8%8E%E6%96%87%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BA%A6%E5%AE%9A%2F</url>
+    <content type="text"><![CDATA[文件系统层次结构文件系统层次结构标准 - 维基百科，自由的百科全书[PDF]Filesystem Hierarchy Standard - Linux Foundation 登录时用到的文件Zsh]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[docker]]></title>
+    <url>%2Fpost%2Fdocker%2F</url>
+    <content type="text"><![CDATA[docker,nginx,php-fpmDocker Compose]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>decker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[常用软件]]></title>
+    <url>%2Fpost%2F%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%2F</url>
+    <content type="text"><![CDATA[编辑MarkdownRemarkable C++IDEClion 壁纸自动切换Variety 视频壁纸xwinwrapkomorebilivewallpapervideo wallpaper (kde) 数据库管理MySQL WorkbenchDataGrip U盘刻录/制作U盘启动器UltraISOdd命令]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>常用软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++语法]]></title>
+    <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++资源大全]]></title>
+    <url>%2Fpost%2Fc-%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8%2F</url>
+    <content type="text"><![CDATA[C++ 资源大全jobbole/awesome-cpp-cn: C++ 资源大全中文版，标准库、Web应用框架、人工智能、数据库、图片处理、机器学习、日志、代码分析等]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++资源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++ Regex代码片段]]></title>
+    <url>%2Fpost%2Fc-regex%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++代码片段</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[GitHub+Hexo+NexT搭建个人博客网站]]></title>
+    <url>%2Fpost%2Fgithub-hexo-next%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%2F</url>
+    <content type="text"><![CDATA[Hexo 文档知乎 - GitHub+Hexo 搭建个人网站详细教程Hexo 使用攻略-添加分类及标签Hexo Next 设置阅读全文 主要文件 ./_config.yml 网站配置文件 ./themes/*/_config.yml 主题配置文件 主要命令123456hexo n "&lt;title&gt;" # new 新建一篇文章hexo n page "&lt;name&gt;" # 新建一个页面(注意在主题中设置主页菜单显示,在index.md中设置type)hexo g -w # generate 生成网站 -w 监测笔记的改变hexo s # server 启动服务预览hexo d # deploy 部署网站hexo clean # 清除缓存，若是网页正常情况下可以忽略这条命令]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Boost库的构建]]></title>
+    <url>%2Fpost%2Fboost%E5%BA%93%E7%9A%84%E6%9E%84%E5%BB%BA%2F</url>
+    <content type="text"><![CDATA[1.\tools\build\bjam--toolset=msvc-14.0 architecture=x86 address-model=64 link=static --build-type=complete --with-?]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>Boost</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[arm交叉编译器gnueabi、none-eabi、arm-eabi、gnueabihf、gnueabi区别]]></title>
+    <url>%2Fpost%2Farm%E4%BA%A4%E5%8F%89%E7%BC%96%E8%AF%91%E5%99%A8gnueabi%E3%80%81none-eabi%E3%80%81arm-eabi%E3%80%81gnueabihf%E3%80%81gnueabi%E5%8C%BA%E5%88%AB%2F</url>
+    <content type="text"><![CDATA[https://blog.csdn.net/cbbbc/article/details/46708437]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++编译器</tag>
+      </tags>
+  </entry>
+</search>
