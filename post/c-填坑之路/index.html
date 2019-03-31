@@ -101,19 +101,7 @@
   
 
 
-<style>
-.pace .pace-progress {
-  background: #FF00FF; /*进度条颜色*/
-  height: 3px;
-}
-.pace .pace-progress-inner {
-  box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
-}
-.pace .pace-activity {
-  border-top-color: #0000FF;    /*上边框颜色*/
-  border-left-color: #770077;    /*左边框颜色*/
-}
-</style>
+
 
 
   <meta name="description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
@@ -124,7 +112,7 @@
 <meta property="og:site_name" content="慢">
 <meta property="og:description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-31T05:50:39.161Z">
+<meta property="og:updated_time" content="2019-03-31T18:40:46.101Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++填坑之路">
 <meta name="twitter:description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
@@ -339,7 +327,6 @@
   
 
 
-
 </div>
     </header>
 
@@ -432,7 +419,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-31 13:50:39" itemprop="dateModified" datetime="2019-03-31T13:50:39+08:00">2019-03-31</time>
+                <time title="修改时间：2019-04-01 02:40:46" itemprop="dateModified" datetime="2019-04-01T02:40:46+08:00">2019-04-01</time>
               
             
           </span>
@@ -499,8 +486,9 @@
 <h3 id="delete-new-1-问题"><a href="#delete-new-1-问题" class="headerlink" title="delete[](new[]+1)问题"></a>delete[](new[]+1)问题</h3><p>cplusplus.com上说：</p>
 <ul>
 <li>delete[]的参数ptr，应该是new[]返回的ptr</li>
-<li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上两种行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。</li>
+<li>如果delete的参数ptr无效，将产生未定义的结果</li>
 </ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这应该牵扯到C++堆内存管理问题，以上两种行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。</p>
 <h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2><p>先构后析</p>
 <h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2><p>将会产生未定义的结果</p>
 
@@ -1303,6 +1291,41 @@
 
   
 
-  <script type="text/javascript" src="js/ext/word.js"></script>
+  <script type="text/javascript">
+function s() {
+    return "rgb(" + ~~ (128 * Math.random() + 127) + "," + ~~ (127 * Math.random()) + "," + ~~ (128 * Math.random() + 127) + ")"
+}
+
+/* 鼠标特效 */
+var a_idx = 0;
+jQuery(document).ready(function($) {
+   $("body").click(function(e) {
+       //var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
+       //var $i = $("<span/>").text(a[a_idx]);
+       var $i = $("<span/>").text("开心");
+       //a_idx = (a_idx + 1) % a.length;
+       var x = e.pageX,
+       y = e.pageY;
+       $i.css({
+           "z-index": 5,
+           "top": y - 25,
+           "left": x - 14,
+           "position": "absolute",
+           "font-weight": "bold",
+           "color": s()
+       });
+       $("body").append($i);
+       $i.animate({
+           "top": y - 180,
+           "opacity": 0
+       },
+       1500,
+       function() {
+           $i.remove();
+       });
+   });
+});
+</script>
+
 </body>
 </html>
