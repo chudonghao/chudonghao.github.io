@@ -109,18 +109,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[C++语法]]></title>
-    <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>C++语法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[C++资源大全]]></title>
     <url>%2Fpost%2Fc-%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8%2F</url>
     <content type="text"><![CDATA[C++ 资源大全jobbole/awesome-cpp-cn: C++ 资源大全中文版，标准库、Web应用框架、人工智能、数据库、图片处理、机器学习、日志、代码分析等]]></content>
@@ -130,6 +118,18 @@
       <tags>
         <tag>C++</tag>
         <tag>C++资源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++语法]]></title>
+    <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++语法</tag>
       </tags>
   </entry>
   <entry>
