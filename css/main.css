@@ -1762,7 +1762,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c2ffff;
+  background: #7cffff;
 }
 .feed-link,
 .chat {
@@ -2791,4 +2791,7 @@ ul.breadcrumb li+li:last-child {
 .pace .pace-activity {
   border-top-color: #00f; /*上边框颜色*/
   border-left-color: #707; /*左边框颜色*/
+}
+.site-meta {
+  background: linear-gradient(to bottom, #000, #000, #000, #fff);
 }

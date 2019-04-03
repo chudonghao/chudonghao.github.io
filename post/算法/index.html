@@ -121,7 +121,7 @@
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Merge-sort-example-300px.gif/220px-Merge-sort-example-300px.gif">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif">
 <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif">
-<meta property="og:updated_time" content="2019-03-31T17:28:39.350Z">
+<meta property="og:updated_time" content="2019-03-31T23:43:08.029Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="算法">
 <meta name="twitter:description" content="有多个图片来自维基百科  排序算法 排序的方法 插入、交换、选择、合并等 复杂度（最差、平均、和最好性能），依据列表（list）的大小$n$ 时间复杂度 一般而言，好的性能是 $ O(n\log n)$，坏的性能是 $ O(n^{2})$。对于一个排序理想的性能是 $O(n)$，但平均而言不可能达到。基于比较的排序算法对大多数输入而言至少需要$O(n \log n)$。 空间复杂度（内存等资源的">
@@ -429,7 +429,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-01 01:28:39" itemprop="dateModified" datetime="2019-04-01T01:28:39+08:00">2019-04-01</time>
+                <time title="修改时间：2019-04-01 07:43:08" itemprop="dateModified" datetime="2019-04-01T07:43:08+08:00">2019-04-01</time>
               
             
           </span>
@@ -506,7 +506,18 @@
 </blockquote>
 <h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><p>不断将小的有序集合合并为大的有序集合<br><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Merge_sort_animation2.gif" alt="归并排序"><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Merge-sort-example-300px.gif/220px-Merge-sort-example-300px.gif" alt="归并排序"> </p>
 <h3 id="梳排序"><a href="#梳排序" class="headerlink" title="梳排序"></a>梳排序</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Comb_sort_demo.gif" alt="梳排序"> </p>
-<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif" alt="堆排序"><br>二叉树<br>满二叉树<br>完全二叉树<br>完全二叉树用链表表示：Parent&lt;=&gt;L[i] Left&lt;=&gt;L[2i+1] Right&lt;=&gt;L[2i+2]<br>大顶堆与小顶堆</p>
+<h3 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h3><p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Sorting_heapsort_anim.gif" alt="堆排序"><br>二叉树<br>满二叉树<br>完全二叉树<br>完全二叉树用链表表示：Parent&lt;=&gt;L[i] Left&lt;=&gt;L[2i+1] Right&lt;=&gt;L[2i+2]<br>大顶堆与小顶堆<br>长度为<code>len</code>的完全二叉树，最靠右的父亲的index为<code>len/2-1</code><br>堆排序的过程：</p>
+<ul>
+<li>建立大（小）顶堆<br>从最靠右的父亲开始调整子叶关系，使整个堆满足大（小）顶堆</li>
+<li>迭代 最大堆调整<ul>
+<li>移动堆顶（最大或最小值）（与最后一个元素交换）</li>
+<li><code>--len</code></li>
+<li>最大堆调整<br>从第一个父亲开始调整子叶关系，使整个堆重新满足大（小）顶堆</li>
+</ul>
+</li>
+</ul>
+<h3 id="内省排序"><a href="#内省排序" class="headerlink" title="内省排序"></a>内省排序</h3><p>考虑到快速排序的不稳定性，内省排序在一定条件下对子序列使用堆排序</p>
+<h3 id="桶排序"><a href="#桶排序" class="headerlink" title="桶排序"></a>桶排序</h3><h3 id="耐心排序"><a href="#耐心排序" class="headerlink" title="耐心排序"></a>耐心排序</h3><p>桶排序的一种</p>
 <h3 id="计数排序"><a href="#计数排序" class="headerlink" title="计数排序"></a>计数排序</h3><h3 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h3><h2 id="搜索算法"><a href="#搜索算法" class="headerlink" title="搜索算法"></a>搜索算法</h2><h2 id="图论"><a href="#图论" class="headerlink" title="图论"></a>图论</h2><h2 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h2><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2>
       
     </div>
@@ -543,8 +554,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/c-填坑之路/" rel="next" title="C++填坑之路">
-                <i class="fa fa-chevron-left"></i> C++填坑之路
+              <a href="/post/opengl3-0教程/" rel="next" title="OpenGL3.0教程">
+                <i class="fa fa-chevron-left"></i> OpenGL3.0教程
               </a>
             
           </div>
@@ -553,8 +564,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
+              <a href="/post/c-填坑之路/" rel="prev" title="C++填坑之路">
+                C++填坑之路 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -620,7 +631,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -748,7 +759,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#排序算法"><span class="nav-number">1.</span> <span class="nav-text">排序算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序"><span class="nav-number">1.1.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择排序"><span class="nav-number">1.2.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#侏儒排序"><span class="nav-number">1.3.</span> <span class="nav-text">侏儒排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序"><span class="nav-number">1.4.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入排序"><span class="nav-number">1.5.</span> <span class="nav-text">插入排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#希尔排序"><span class="nav-number">1.6.</span> <span class="nav-text">希尔排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图书馆排序"><span class="nav-number">1.7.</span> <span class="nav-text">图书馆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#归并排序"><span class="nav-number">1.8.</span> <span class="nav-text">归并排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#梳排序"><span class="nav-number">1.9.</span> <span class="nav-text">梳排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆排序"><span class="nav-number">1.10.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计数排序"><span class="nav-number">1.11.</span> <span class="nav-text">计数排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基数排序"><span class="nav-number">1.12.</span> <span class="nav-text">基数排序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索算法"><span class="nav-number">2.</span> <span class="nav-text">搜索算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图论"><span class="nav-number">3.</span> <span class="nav-text">图论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态规划"><span class="nav-number">4.</span> <span class="nav-text">动态规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基础"><span class="nav-number">5.</span> <span class="nav-text">基础</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#排序算法"><span class="nav-number">1.</span> <span class="nav-text">排序算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序"><span class="nav-number">1.1.</span> <span class="nav-text">冒泡排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择排序"><span class="nav-number">1.2.</span> <span class="nav-text">选择排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#侏儒排序"><span class="nav-number">1.3.</span> <span class="nav-text">侏儒排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序"><span class="nav-number">1.4.</span> <span class="nav-text">快速排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入排序"><span class="nav-number">1.5.</span> <span class="nav-text">插入排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#希尔排序"><span class="nav-number">1.6.</span> <span class="nav-text">希尔排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图书馆排序"><span class="nav-number">1.7.</span> <span class="nav-text">图书馆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#归并排序"><span class="nav-number">1.8.</span> <span class="nav-text">归并排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#梳排序"><span class="nav-number">1.9.</span> <span class="nav-text">梳排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#堆排序"><span class="nav-number">1.10.</span> <span class="nav-text">堆排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#内省排序"><span class="nav-number">1.11.</span> <span class="nav-text">内省排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#桶排序"><span class="nav-number">1.12.</span> <span class="nav-text">桶排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#耐心排序"><span class="nav-number">1.13.</span> <span class="nav-text">耐心排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计数排序"><span class="nav-number">1.14.</span> <span class="nav-text">计数排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#基数排序"><span class="nav-number">1.15.</span> <span class="nav-text">基数排序</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搜索算法"><span class="nav-number">2.</span> <span class="nav-text">搜索算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图论"><span class="nav-number">3.</span> <span class="nav-text">图论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#动态规划"><span class="nav-number">4.</span> <span class="nav-text">动态规划</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#基础"><span class="nav-number">5.</span> <span class="nav-text">基础</span></a></li></ol></div>
             
 
           </div>
@@ -1305,41 +1316,7 @@
 
   
 
-  <script type="text/javascript">
-function s() {
-    return "rgb(" + ~~ (128 * Math.random() + 127) + "," + ~~ (127 * Math.random()) + "," + ~~ (128 * Math.random() + 127) + ")"
-}
-
-/* 鼠标特效 */
-var a_idx = 0;
-jQuery(document).ready(function($) {
-   $("body").click(function(e) {
-       //var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
-       //var $i = $("<span/>").text(a[a_idx]);
-       var $i = $("<span/>").text("开心");
-       //a_idx = (a_idx + 1) % a.length;
-       var x = e.pageX,
-       y = e.pageY;
-       $i.css({
-           "z-index": 5,
-           "top": y - 25,
-           "left": x - 14,
-           "position": "absolute",
-           "font-weight": "bold",
-           "color": s()
-       });
-       $("body").append($i);
-       $i.animate({
-           "top": y - 180,
-           "opacity": 0
-       },
-       1500,
-       function() {
-           $i.remove();
-       });
-   });
-});
-</script>
+  <script type="text/javascript" src="/js/src/word.js"></script>
 
 </body>
 </html>

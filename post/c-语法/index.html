@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="慢">
 <meta property="og:description" content="C++一些基本语法问题">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-28T23:07:31.391Z">
+<meta property="og:updated_time" content="2019-04-03T01:05:47.859Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++语法">
 <meta name="twitter:description" content="C++一些基本语法问题">
@@ -419,7 +419,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-29 07:07:31" itemprop="dateModified" datetime="2019-03-29T07:07:31+08:00">2019-03-29</time>
+                <time title="修改时间：2019-04-03 09:05:47" itemprop="dateModified" datetime="2019-04-03T09:05:47+08:00">2019-04-03</time>
               
             
           </span>
@@ -473,7 +473,31 @@
 <h2 id="enable-if"><a href="#enable-if" class="headerlink" title="enable_if"></a>enable_if</h2><p><a href="https://zh.cppreference.com/w/cpp/types/enable_if" target="_blank" rel="noopener">std::enable_if - cppreference.com</a><br><a href="https://blog.csdn.net/kiritow/article/details/50932012" target="_blank" rel="noopener">enable_if - Kiritow的学园 - CSDN博客</a></p>
 <h2 id="typename-的第二作用"><a href="#typename-的第二作用" class="headerlink" title="typename 的第二作用"></a>typename 的第二作用</h2><p>为了消除歧义，显式地告诉编译器，T::bar是一个类型名。</p>
 <h2 id="类的缺省函数"><a href="#类的缺省函数" class="headerlink" title="类的缺省函数"></a>类的缺省函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Class</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//缺省构造函数 </span></span><br><span class="line">    Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//拷贝构造函数</span></span><br><span class="line">    Class(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动构造函数(C++11)</span></span><br><span class="line">    Class(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动赋值函数(C++11)</span></span><br><span class="line">    Class&amp; <span class="keyword">operator</span>=(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//析构函数</span></span><br><span class="line">    ~Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//赋值运算符</span></span><br><span class="line">    Class&amp;<span class="keyword">operator</span>=(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 </span></span><br><span class="line">    Class*<span class="keyword">operator</span>&amp;()&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 const</span></span><br><span class="line">    <span class="keyword">const</span> Class*<span class="keyword">operator</span>&amp;()<span class="keyword">const</span>&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="new与delete的重载"><a href="#new与delete的重载" class="headerlink" title="new与delete的重载"></a>new与delete的重载</h2>
+<h2 id="new与delete的重载"><a href="#new与delete的重载" class="headerlink" title="new与delete的重载"></a>new与delete的重载</h2><h2 id="C-默认类型与类型转换"><a href="#C-默认类型与类型转换" class="headerlink" title="C++默认类型与类型转换"></a>C++默认类型与类型转换</h2><h3 id="默认类型"><a href="#默认类型" class="headerlink" title="默认类型"></a>默认类型</h3><ul>
+<li>整数默认有符号<ul>
+<li><code>3</code> int</li>
+<li><code>3000000000</code> long</li>
+<li><code>&#39;3&#39;</code> char</li>
+</ul>
+</li>
+<li>浮点数默认double<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><blockquote>
+<p>C++定义了算数类型之间的内置转换以尽可能防止精度损失<br>———《C+P》</p>
+</blockquote>
+<h3 id="隐式类型转换"><a href="#隐式类型转换" class="headerlink" title="隐式类型转换"></a>隐式类型转换</h3><h4 id="何时发生隐式类型转换"><a href="#何时发生隐式类型转换" class="headerlink" title="何时发生隐式类型转换"></a>何时发生隐式类型转换</h4></li>
+<li>混合类型表达式，操作数转换为相同类型</li>
+<li>条件表达式，转换为bool</li>
+<li>赋值语句</li>
+</ul>
+<h4 id="算数转换"><a href="#算数转换" class="headerlink" title="算数转换"></a>算数转换</h4><p>转换原则是尽可能少的减少精度损失<br>TODO 溢出问题<br>TODO double与int等之间的转换</p>
+<h4 id="指针转换"><a href="#指针转换" class="headerlink" title="指针转换"></a>指针转换</h4><p>注意数组变量</p>
+<h4 id="数值或指针-gt-bool"><a href="#数值或指针-gt-bool" class="headerlink" title="数值或指针 -&gt; bool"></a>数值或指针 -&gt; bool</h4><h4 id="bool-gt-数值"><a href="#bool-gt-数值" class="headerlink" title="bool -&gt; 数值"></a>bool -&gt; 数值</h4><h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><p>枚举类型默认继承于int</p>
+<h4 id="隐式类类型转换"><a href="#隐式类类型转换" class="headerlink" title="隐式类类型转换"></a>隐式类类型转换</h4><p>“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换</p>
+<blockquote>
+<p>除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit<br>——《C+P》</p>
+</blockquote>
+<h3 id="显示类型转换"><a href="#显示类型转换" class="headerlink" title="显示类型转换"></a>显示类型转换</h3><p>包含以下操作符（或C风格）的强制类型转换称作显示类型转换：<br><code>static_cast</code>，<code>dynamic_cast</code>，<code>const_cast</code>，<code>reinterpret_cast</code></p>
+<h4 id="何时需要强制类型转换"><a href="#何时需要强制类型转换" class="headerlink" title="何时需要强制类型转换"></a>何时需要强制类型转换</h4><p>隐式类型转换被禁止时等</p>
+
       
     </div>
 
@@ -511,8 +535,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/c-regex代码片段/" rel="next" title="C++ Regex代码片段">
-                <i class="fa fa-chevron-left"></i> C++ Regex代码片段
+              <a href="/post/c-资源大全/" rel="next" title="C++资源大全">
+                <i class="fa fa-chevron-left"></i> C++资源大全
               </a>
             
           </div>
@@ -521,8 +545,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/c-资源大全/" rel="prev" title="C++资源大全">
-                C++资源大全 <i class="fa fa-chevron-right"></i>
+              <a href="/post/常用软件/" rel="prev" title="常用软件">
+                常用软件 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -588,7 +612,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -716,7 +740,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#模板友元"><span class="nav-number">1.</span> <span class="nav-text">模板友元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#enable-if"><span class="nav-number">2.</span> <span class="nav-text">enable_if</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#typename-的第二作用"><span class="nav-number">3.</span> <span class="nav-text">typename 的第二作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类的缺省函数"><span class="nav-number">4.</span> <span class="nav-text">类的缺省函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new与delete的重载"><span class="nav-number">5.</span> <span class="nav-text">new与delete的重载</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#模板友元"><span class="nav-number">1.</span> <span class="nav-text">模板友元</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#enable-if"><span class="nav-number">2.</span> <span class="nav-text">enable_if</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#typename-的第二作用"><span class="nav-number">3.</span> <span class="nav-text">typename 的第二作用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#类的缺省函数"><span class="nav-number">4.</span> <span class="nav-text">类的缺省函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new与delete的重载"><span class="nav-number">5.</span> <span class="nav-text">new与delete的重载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C-默认类型与类型转换"><span class="nav-number">6.</span> <span class="nav-text">C++默认类型与类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#默认类型"><span class="nav-number">6.1.</span> <span class="nav-text">默认类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#类型转换"><span class="nav-number">6.2.</span> <span class="nav-text">类型转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐式类型转换"><span class="nav-number">6.3.</span> <span class="nav-text">隐式类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#何时发生隐式类型转换"><span class="nav-number">6.3.1.</span> <span class="nav-text">何时发生隐式类型转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#算数转换"><span class="nav-number">6.3.2.</span> <span class="nav-text">算数转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#指针转换"><span class="nav-number">6.3.3.</span> <span class="nav-text">指针转换</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数值或指针-gt-bool"><span class="nav-number">6.3.4.</span> <span class="nav-text">数值或指针 -&gt; bool</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bool-gt-数值"><span class="nav-number">6.3.5.</span> <span class="nav-text">bool -&gt; 数值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#枚举类型"><span class="nav-number">6.3.6.</span> <span class="nav-text">枚举类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#隐式类类型转换"><span class="nav-number">6.3.7.</span> <span class="nav-text">隐式类类型转换</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示类型转换"><span class="nav-number">6.4.</span> <span class="nav-text">显示类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#何时需要强制类型转换"><span class="nav-number">6.4.1.</span> <span class="nav-text">何时需要强制类型转换</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1273,41 +1297,7 @@
 
   
 
-  <script type="text/javascript">
-function s() {
-    return "rgb(" + ~~ (128 * Math.random() + 127) + "," + ~~ (127 * Math.random()) + "," + ~~ (128 * Math.random() + 127) + ")"
-}
-
-/* 鼠标特效 */
-var a_idx = 0;
-jQuery(document).ready(function($) {
-   $("body").click(function(e) {
-       //var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
-       //var $i = $("<span/>").text(a[a_idx]);
-       var $i = $("<span/>").text("开心");
-       //a_idx = (a_idx + 1) % a.length;
-       var x = e.pageX,
-       y = e.pageY;
-       $i.css({
-           "z-index": 5,
-           "top": y - 25,
-           "left": x - 14,
-           "position": "absolute",
-           "font-weight": "bold",
-           "color": s()
-       });
-       $("body").append($i);
-       $i.animate({
-           "top": y - 180,
-           "opacity": 0
-       },
-       1500,
-       function() {
-           $i.remove();
-       });
-   });
-});
-</script>
+  <script type="text/javascript" src="/js/src/word.js"></script>
 
 </body>
 </html>

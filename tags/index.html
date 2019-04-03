@@ -453,7 +453,7 @@
             </div>
             <div class="tag-cloud-tags">
               
-                <a href="/tags/Boost/" style="font-size: 12px; color: #ccc">Boost</a> <a href="/tags/C/" style="font-size: 30px; color: #111">C++</a> <a href="/tags/C-代码片段/" style="font-size: 12px; color: #ccc">C++代码片段</a> <a href="/tags/C-编译器/" style="font-size: 12px; color: #ccc">C++编译器</a> <a href="/tags/C-语法/" style="font-size: 21px; color: #6f6f6f">C++语法</a> <a href="/tags/C-资源/" style="font-size: 12px; color: #ccc">C++资源</a> <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a> <a href="/tags/OpenGL/" style="font-size: 21px; color: #6f6f6f">OpenGL</a> <a href="/tags/decker/" style="font-size: 12px; color: #ccc">decker</a> <a href="/tags/git/" style="font-size: 12px; color: #ccc">git</a> <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a> <a href="/tags/常用软件/" style="font-size: 12px; color: #ccc">常用软件</a> <a href="/tags/算法/" style="font-size: 12px; color: #ccc">算法</a> <a href="/tags/读书/" style="font-size: 12px; color: #ccc">读书</a>
+                <a href="/tags/Boost/" style="font-size: 12px; color: #ccc">Boost</a> <a href="/tags/C/" style="font-size: 30px; color: #111">C++</a> <a href="/tags/C-代码片段/" style="font-size: 12px; color: #ccc">C++代码片段</a> <a href="/tags/C-编译器/" style="font-size: 12px; color: #ccc">C++编译器</a> <a href="/tags/C-语法/" style="font-size: 24px; color: #4f4f4f">C++语法</a> <a href="/tags/C-资源/" style="font-size: 12px; color: #ccc">C++资源</a> <a href="/tags/Linux/" style="font-size: 12px; color: #ccc">Linux</a> <a href="/tags/OpenGL/" style="font-size: 18px; color: #8e8e8e">OpenGL</a> <a href="/tags/decker/" style="font-size: 12px; color: #ccc">decker</a> <a href="/tags/git/" style="font-size: 12px; color: #ccc">git</a> <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a> <a href="/tags/常用软件/" style="font-size: 12px; color: #ccc">常用软件</a> <a href="/tags/算法/" style="font-size: 12px; color: #ccc">算法</a> <a href="/tags/读书/" style="font-size: 12px; color: #ccc">读书</a>
               
             </div>
           </div>
@@ -514,7 +514,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">16</span>
+                    <span class="site-state-item-count">17</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1184,41 +1184,7 @@
 
   
 
-  <script type="text/javascript">
-function s() {
-    return "rgb(" + ~~ (128 * Math.random() + 127) + "," + ~~ (127 * Math.random()) + "," + ~~ (128 * Math.random() + 127) + ")"
-}
-
-/* 鼠标特效 */
-var a_idx = 0;
-jQuery(document).ready(function($) {
-   $("body").click(function(e) {
-       //var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
-       //var $i = $("<span/>").text(a[a_idx]);
-       var $i = $("<span/>").text("开心");
-       //a_idx = (a_idx + 1) % a.length;
-       var x = e.pageX,
-       y = e.pageY;
-       $i.css({
-           "z-index": 5,
-           "top": y - 25,
-           "left": x - 14,
-           "position": "absolute",
-           "font-weight": "bold",
-           "color": s()
-       });
-       $("body").append($i);
-       $i.animate({
-           "top": y - 180,
-           "opacity": 0
-       },
-       1500,
-       function() {
-           $i.remove();
-       });
-   });
-});
-</script>
+  <script type="text/javascript" src="/js/src/word.js"></script>
 
 </body>
 </html>
