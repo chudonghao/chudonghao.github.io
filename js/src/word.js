@@ -1,3 +1,7 @@
+/**
+ * 楚栋浩
+ */
+
 function s() {
     return "rgb(" + ~~ (128 * Math.random() + 127) + "," + ~~ (127 * Math.random()) + "," + ~~ (128 * Math.random() + 127) + ")"
 }

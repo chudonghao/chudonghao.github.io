@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>慢</title>
   
-  
+  <subtitle>楚栋浩的个人博客</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-03T01:16:53.656Z</updated>
+  <updated>2019-04-03T02:53:36.400Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>诗</title>
+    <link href="http://yoursite.com/post/%E8%AF%97/"/>
+    <id>http://yoursite.com/post/诗/</id>
+    <published>2019-04-03T02:44:36.000Z</published>
+    <updated>2019-04-03T02:53:36.400Z</updated>
+    
+    <content type="html"><![CDATA[<p>记录一些诗<br><a id="more"></a></p><div style="text-align:center;"><br>上李邕<br>李白<br>大鹏一日同风起，扶摇直上九万里。<br>假令风歇时下来，犹能簸却沧溟水。<br>时人见我恒殊调，闻余大言皆冷笑。<br>宣父犹能畏后生，丈夫未可轻年少。<br><br>励学篇<br>赵恒<br>富家不用买良田，书中自有千钟粟。<br>安居不用架高楼，书中自有黄金屋。<br>出门莫恨无人随，书中车马多如簇。<br>娶妻莫恨无良媒，书中自有颜如玉。<br>男儿欲遂平生志，五经勤向窗前读。<br></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;记录一些诗&lt;br&gt;
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="读书" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>C++模板实参推导</title>
@@ -338,30 +360,6 @@
   </entry>
   
   <entry>
-    <title>C++语法</title>
-    <link href="http://yoursite.com/post/c-%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/post/c-语法/</id>
-    <published>2019-03-27T22:15:18.000Z</published>
-    <updated>2019-04-03T01:05:47.859Z</updated>
-    
-    <content type="html"><![CDATA[<p>C++一些基本语法问题<br><a id="more"></a></p><h2 id="模板友元"><a href="#模板友元" class="headerlink" title="模板友元"></a>模板友元</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>;</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>&#123;</span></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">void</span> foo&lt;T&gt;();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="enable-if"><a href="#enable-if" class="headerlink" title="enable_if"></a>enable_if</h2><p><a href="https://zh.cppreference.com/w/cpp/types/enable_if" target="_blank" rel="noopener">std::enable_if - cppreference.com</a><br><a href="https://blog.csdn.net/kiritow/article/details/50932012" target="_blank" rel="noopener">enable_if - Kiritow的学园 - CSDN博客</a></p><h2 id="typename-的第二作用"><a href="#typename-的第二作用" class="headerlink" title="typename 的第二作用"></a>typename 的第二作用</h2><p>为了消除歧义，显式地告诉编译器，T::bar是一个类型名。</p><h2 id="类的缺省函数"><a href="#类的缺省函数" class="headerlink" title="类的缺省函数"></a>类的缺省函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Class</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//缺省构造函数 </span></span><br><span class="line">    Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//拷贝构造函数</span></span><br><span class="line">    Class(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动构造函数(C++11)</span></span><br><span class="line">    Class(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动赋值函数(C++11)</span></span><br><span class="line">    Class&amp; <span class="keyword">operator</span>=(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//析构函数</span></span><br><span class="line">    ~Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//赋值运算符</span></span><br><span class="line">    Class&amp;<span class="keyword">operator</span>=(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 </span></span><br><span class="line">    Class*<span class="keyword">operator</span>&amp;()&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 const</span></span><br><span class="line">    <span class="keyword">const</span> Class*<span class="keyword">operator</span>&amp;()<span class="keyword">const</span>&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="new与delete的重载"><a href="#new与delete的重载" class="headerlink" title="new与delete的重载"></a>new与delete的重载</h2><h2 id="C-默认类型与类型转换"><a href="#C-默认类型与类型转换" class="headerlink" title="C++默认类型与类型转换"></a>C++默认类型与类型转换</h2><h3 id="默认类型"><a href="#默认类型" class="headerlink" title="默认类型"></a>默认类型</h3><ul><li>整数默认有符号<ul><li><code>3</code> int</li><li><code>3000000000</code> long</li><li><code>&#39;3&#39;</code> char</li></ul></li><li>浮点数默认double<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><blockquote><p>C++定义了算数类型之间的内置转换以尽可能防止精度损失<br>———《C+P》</p></blockquote><h3 id="隐式类型转换"><a href="#隐式类型转换" class="headerlink" title="隐式类型转换"></a>隐式类型转换</h3><h4 id="何时发生隐式类型转换"><a href="#何时发生隐式类型转换" class="headerlink" title="何时发生隐式类型转换"></a>何时发生隐式类型转换</h4></li><li>混合类型表达式，操作数转换为相同类型</li><li>条件表达式，转换为bool</li><li>赋值语句</li></ul><h4 id="算数转换"><a href="#算数转换" class="headerlink" title="算数转换"></a>算数转换</h4><p>转换原则是尽可能少的减少精度损失<br>TODO 溢出问题<br>TODO double与int等之间的转换</p><h4 id="指针转换"><a href="#指针转换" class="headerlink" title="指针转换"></a>指针转换</h4><p>注意数组变量</p><h4 id="数值或指针-gt-bool"><a href="#数值或指针-gt-bool" class="headerlink" title="数值或指针 -&gt; bool"></a>数值或指针 -&gt; bool</h4><h4 id="bool-gt-数值"><a href="#bool-gt-数值" class="headerlink" title="bool -&gt; 数值"></a>bool -&gt; 数值</h4><h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><p>枚举类型默认继承于int</p><h4 id="隐式类类型转换"><a href="#隐式类类型转换" class="headerlink" title="隐式类类型转换"></a>隐式类类型转换</h4><p>“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换</p><blockquote><p>除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit<br>——《C+P》</p></blockquote><h3 id="显示类型转换"><a href="#显示类型转换" class="headerlink" title="显示类型转换"></a>显示类型转换</h3><p>包含以下操作符（或C风格）的强制类型转换称作显示类型转换：<br><code>static_cast</code>，<code>dynamic_cast</code>，<code>const_cast</code>，<code>reinterpret_cast</code></p><h4 id="何时需要强制类型转换"><a href="#何时需要强制类型转换" class="headerlink" title="何时需要强制类型转换"></a>何时需要强制类型转换</h4><p>隐式类型转换被禁止时等</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;C++一些基本语法问题&lt;br&gt;
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C++资源大全</title>
     <link href="http://yoursite.com/post/c-%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8/"/>
     <id>http://yoursite.com/post/c-资源大全/</id>
@@ -385,6 +383,30 @@
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
       <category term="C++资源" scheme="http://yoursite.com/tags/C-%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++语法</title>
+    <link href="http://yoursite.com/post/c-%E8%AF%AD%E6%B3%95/"/>
+    <id>http://yoursite.com/post/c-语法/</id>
+    <published>2019-03-27T22:15:18.000Z</published>
+    <updated>2019-04-03T01:05:47.859Z</updated>
+    
+    <content type="html"><![CDATA[<p>C++一些基本语法问题<br><a id="more"></a></p><h2 id="模板友元"><a href="#模板友元" class="headerlink" title="模板友元"></a>模板友元</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>;</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>&#123;</span></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">void</span> foo&lt;T&gt;();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="enable-if"><a href="#enable-if" class="headerlink" title="enable_if"></a>enable_if</h2><p><a href="https://zh.cppreference.com/w/cpp/types/enable_if" target="_blank" rel="noopener">std::enable_if - cppreference.com</a><br><a href="https://blog.csdn.net/kiritow/article/details/50932012" target="_blank" rel="noopener">enable_if - Kiritow的学园 - CSDN博客</a></p><h2 id="typename-的第二作用"><a href="#typename-的第二作用" class="headerlink" title="typename 的第二作用"></a>typename 的第二作用</h2><p>为了消除歧义，显式地告诉编译器，T::bar是一个类型名。</p><h2 id="类的缺省函数"><a href="#类的缺省函数" class="headerlink" title="类的缺省函数"></a>类的缺省函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Class</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//缺省构造函数 </span></span><br><span class="line">    Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//拷贝构造函数</span></span><br><span class="line">    Class(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动构造函数(C++11)</span></span><br><span class="line">    Class(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动赋值函数(C++11)</span></span><br><span class="line">    Class&amp; <span class="keyword">operator</span>=(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//析构函数</span></span><br><span class="line">    ~Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//赋值运算符</span></span><br><span class="line">    Class&amp;<span class="keyword">operator</span>=(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 </span></span><br><span class="line">    Class*<span class="keyword">operator</span>&amp;()&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 const</span></span><br><span class="line">    <span class="keyword">const</span> Class*<span class="keyword">operator</span>&amp;()<span class="keyword">const</span>&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="new与delete的重载"><a href="#new与delete的重载" class="headerlink" title="new与delete的重载"></a>new与delete的重载</h2><h2 id="C-默认类型与类型转换"><a href="#C-默认类型与类型转换" class="headerlink" title="C++默认类型与类型转换"></a>C++默认类型与类型转换</h2><h3 id="默认类型"><a href="#默认类型" class="headerlink" title="默认类型"></a>默认类型</h3><ul><li>整数默认有符号<ul><li><code>3</code> int</li><li><code>3000000000</code> long</li><li><code>&#39;3&#39;</code> char</li></ul></li><li>浮点数默认double<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><blockquote><p>C++定义了算数类型之间的内置转换以尽可能防止精度损失<br>———《C+P》</p></blockquote><h3 id="隐式类型转换"><a href="#隐式类型转换" class="headerlink" title="隐式类型转换"></a>隐式类型转换</h3><h4 id="何时发生隐式类型转换"><a href="#何时发生隐式类型转换" class="headerlink" title="何时发生隐式类型转换"></a>何时发生隐式类型转换</h4></li><li>混合类型表达式，操作数转换为相同类型</li><li>条件表达式，转换为bool</li><li>赋值语句</li></ul><h4 id="算数转换"><a href="#算数转换" class="headerlink" title="算数转换"></a>算数转换</h4><p>转换原则是尽可能少的减少精度损失<br>TODO 溢出问题<br>TODO double与int等之间的转换</p><h4 id="指针转换"><a href="#指针转换" class="headerlink" title="指针转换"></a>指针转换</h4><p>注意数组变量</p><h4 id="数值或指针-gt-bool"><a href="#数值或指针-gt-bool" class="headerlink" title="数值或指针 -&gt; bool"></a>数值或指针 -&gt; bool</h4><h4 id="bool-gt-数值"><a href="#bool-gt-数值" class="headerlink" title="bool -&gt; 数值"></a>bool -&gt; 数值</h4><h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><p>枚举类型默认继承于int</p><h4 id="隐式类类型转换"><a href="#隐式类类型转换" class="headerlink" title="隐式类类型转换"></a>隐式类类型转换</h4><p>“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换</p><blockquote><p>除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit<br>——《C+P》</p></blockquote><h3 id="显示类型转换"><a href="#显示类型转换" class="headerlink" title="显示类型转换"></a>显示类型转换</h3><p>包含以下操作符（或C风格）的强制类型转换称作显示类型转换：<br><code>static_cast</code>，<code>dynamic_cast</code>，<code>const_cast</code>，<code>reinterpret_cast</code></p><h4 id="何时需要强制类型转换"><a href="#何时需要强制类型转换" class="headerlink" title="何时需要强制类型转换"></a>何时需要强制类型转换</h4><p>隐式类型转换被禁止时等</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;C++一些基本语法问题&lt;br&gt;
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   

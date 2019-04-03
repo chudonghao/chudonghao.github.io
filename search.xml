@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[诗]]></title>
+    <url>%2Fpost%2F%E8%AF%97%2F</url>
+    <content type="text"><![CDATA[记录一些诗 上李邕李白大鹏一日同风起，扶摇直上九万里。假令风歇时下来，犹能簸却沧溟水。时人见我恒殊调，闻余大言皆冷笑。宣父犹能畏后生，丈夫未可轻年少。励学篇赵恒富家不用买良田，书中自有千钟粟。安居不用架高楼，书中自有黄金屋。出门莫恨无人随，书中车马多如簇。娶妻莫恨无良媒，书中自有颜如玉。男儿欲遂平生志，五经勤向窗前读。]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>读书</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[C++模板实参推导]]></title>
     <url>%2Fpost%2Fc-%E6%A8%A1%E6%9D%BF%E5%AE%9E%E5%8F%82%E6%8E%A8%E5%AF%BC%2F</url>
     <content type="text"><![CDATA[模板实参推导 - cppreference.com int &amp; const int &amp; int &amp;&amp; const int &amp;&amp; T / const T (int):T=int (int):T=int (int):T=int (int):T=int T &amp; (int &amp;):T=int (const int &amp;):T=const int (int &amp;):T=int (const P &amp;):T=const P const T &amp; (const int &amp;):T=int (const int &amp;):T=int (const int &amp;):T=int (const int &amp;):T=int T &amp;&amp; (int &amp;):T=int &amp; (const int &amp;):T=const int &amp; (int &amp;):T=int &amp; (const P &amp;):T=const P &amp; 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120class A&#123;&#125;;template&lt;typename T&gt;void fooT(T t) &#123;&#125;template&lt;typename T&gt;void foocT(const T t) &#123;&#125;template&lt;typename T&gt;void fooTR(T &amp;t) &#123;&#125;template&lt;typename T&gt;void foocTR(const T &amp;t) &#123;&#125;template&lt;typename T&gt;void fooTr(T &amp;&amp;t) &#123;&#125;template&lt;typename T&gt;void foocTr(const T &amp;&amp;t) &#123;&#125;void func14() &#123; int i = 0; const int ci = 0; int &amp;&amp;ir = move(i); const int &amp;&amp;cir = move(i); A a; const A ca = A(); A &amp;&amp;ar = move(a); const A &amp;&amp;car = move(a); //&lt;int&gt;(int) fooT(i); //&lt;int&gt;(int) foocT(i); //&lt;int&gt;(int&amp;) fooTR(i); //&lt;int&gt;(int const&amp;) foocTR(i); //&lt;int&amp;&gt;(int&amp;) fooTr(i); // ERROR //foocTr(i); //&lt;int&gt;(int) fooT(ci); //&lt;int&gt;(int) foocT(ci); //&lt;int const&gt;(int const&amp;) fooTR(ci); //&lt;int&gt;(int const&amp;) foocTR(ci); //&lt;int const&amp;&gt;(int const&amp;) fooTr(ci); // ERROR //foocTr(ci); //&lt;int&gt;(int) fooT(ir); //&lt;int&gt;(int) foocT(ir); //&lt;int&gt;(int&amp;) fooTR(ir); //&lt;int&gt;(int const&amp;) foocTR(ir); //&lt;int&amp;&gt;(int&amp;) fooTr(ir); // ERROR //foocTr(ir); //&lt;int&gt;(int) fooT(cir); //&lt;int&gt;(int) foocT(cir); //&lt;int const&gt;(int const&amp;) fooTR(cir); //&lt;int&gt;(int const&amp;) foocTR(cir); //&lt;int const&amp;&gt;(int const&amp;) fooTr(cir); // ERROR //foocTr(cir); //&lt;A&gt;(A) fooT(a); //&lt;A&gt;(A) foocT(a); //&lt;A&gt;(A&amp;) fooTR(a); //&lt;A&gt;(A const&amp;) foocTR(a); //&lt;A&amp;&gt;(A&amp;) fooTr(a); // ERROR //foocTr(a); //&lt;A&gt;(A) fooT(ca); //&lt;A&gt;(A) foocT(ca); //&lt;A const&gt;(A const&amp;) fooTR(ca); //&lt;A&gt;(A const&amp;) foocTR(ca); //&lt;A const&amp;&gt;(A const&amp;) fooTr(ca); // ERROR //foocTr(ca); //&lt;A&gt;(A) fooT(ar); //&lt;A&gt;(A) foocT(ar); //&lt;A&gt;(A&amp;) fooTR(ar); //&lt;A&gt;(A const&amp;) foocTR(ar); //&lt;A&amp;&gt;(A&amp;) fooTr(ar); // ERROR //foocTr(ar); //&lt;A&gt;(A) fooT(car); //&lt;A&gt;(A) foocT(car); //&lt;A const&gt;(A const&amp;) fooTR(car); //&lt;A&gt;(A const&amp;) foocTR(car); //&lt;A const&amp;&gt;(A const&amp;) fooTr(car); // ERROR //foocTr(car);&#125;]]></content>
@@ -121,18 +132,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[C++语法]]></title>
-    <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载C++默认类型与类型转换默认类型 整数默认有符号 3 int 3000000000 long &#39;3&#39; char 浮点数默认double类型转换 C++定义了算数类型之间的内置转换以尽可能防止精度损失———《C+P》 隐式类型转换何时发生隐式类型转换 混合类型表达式，操作数转换为相同类型 条件表达式，转换为bool 赋值语句 算数转换转换原则是尽可能少的减少精度损失TODO 溢出问题TODO double与int等之间的转换 指针转换注意数组变量 数值或指针 -&gt; boolbool -&gt; 数值枚举类型枚举类型默认继承于int 隐式类类型转换“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换 除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit——《C+P》 显示类型转换包含以下操作符（或C风格）的强制类型转换称作显示类型转换：static_cast，dynamic_cast，const_cast，reinterpret_cast 何时需要强制类型转换隐式类型转换被禁止时等]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>C++语法</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[C++资源大全]]></title>
     <url>%2Fpost%2Fc-%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8%2F</url>
     <content type="text"><![CDATA[C++ 资源大全jobbole/awesome-cpp-cn: C++ 资源大全中文版，标准库、Web应用框架、人工智能、数据库、图片处理、机器学习、日志、代码分析等 常用Compiler Explorer：交互式编译器，可以进行汇编输出。官网CompileOnline：Linux上在线编译和执行C++程序。官网]]></content>
@@ -142,6 +141,18 @@
       <tags>
         <tag>C++</tag>
         <tag>C++资源</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++语法]]></title>
+    <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载C++默认类型与类型转换默认类型 整数默认有符号 3 int 3000000000 long &#39;3&#39; char 浮点数默认double类型转换 C++定义了算数类型之间的内置转换以尽可能防止精度损失———《C+P》 隐式类型转换何时发生隐式类型转换 混合类型表达式，操作数转换为相同类型 条件表达式，转换为bool 赋值语句 算数转换转换原则是尽可能少的减少精度损失TODO 溢出问题TODO double与int等之间的转换 指针转换注意数组变量 数值或指针 -&gt; boolbool -&gt; 数值枚举类型枚举类型默认继承于int 隐式类类型转换“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换 除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit——《C+P》 显示类型转换包含以下操作符（或C风格）的强制类型转换称作显示类型转换：static_cast，dynamic_cast，const_cast，reinterpret_cast 何时需要强制类型转换隐式类型转换被禁止时等]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++语法</tag>
       </tags>
   </entry>
   <entry>
