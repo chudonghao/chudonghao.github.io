@@ -14,7 +14,7 @@
   <entry>
     <title><![CDATA[C++模板实参推导]]></title>
     <url>%2Fpost%2Fc-%E6%A8%A1%E6%9D%BF%E5%AE%9E%E5%8F%82%E6%8E%A8%E5%AF%BC%2F</url>
-    <content type="text"><![CDATA[模板实参推导 - cppreference.com int &amp; const int &amp; int &amp;&amp; const int &amp;&amp; T / const T (int):T=int (int):T=int (int):T=int (int):T=int T &amp; (int &amp;):T=int (const int &amp;):T=const int (int &amp;):T=int (const P &amp;):T=const P const T &amp; (const int &amp;):T=int (const int &amp;):T=int (const int &amp;):T=int (const int &amp;):T=int T &amp;&amp; (int &amp;):T=int &amp; (const int &amp;):T=const int &amp; (int &amp;):T=int &amp; (const P &amp;):T=const P &amp; 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102103104105106107108109110111112113114115116117118119120class A&#123;&#125;;template&lt;typename T&gt;void fooT(T t) &#123;&#125;template&lt;typename T&gt;void foocT(const T t) &#123;&#125;template&lt;typename T&gt;void fooTR(T &amp;t) &#123;&#125;template&lt;typename T&gt;void foocTR(const T &amp;t) &#123;&#125;template&lt;typename T&gt;void fooTr(T &amp;&amp;t) &#123;&#125;template&lt;typename T&gt;void foocTr(const T &amp;&amp;t) &#123;&#125;void func14() &#123; int i = 0; const int ci = 0; int &amp;&amp;ir = move(i); const int &amp;&amp;cir = move(i); A a; const A ca = A(); A &amp;&amp;ar = move(a); const A &amp;&amp;car = move(a); //&lt;int&gt;(int) fooT(i); //&lt;int&gt;(int) foocT(i); //&lt;int&gt;(int&amp;) fooTR(i); //&lt;int&gt;(int const&amp;) foocTR(i); //&lt;int&amp;&gt;(int&amp;) fooTr(i); // ERROR //foocTr(i); //&lt;int&gt;(int) fooT(ci); //&lt;int&gt;(int) foocT(ci); //&lt;int const&gt;(int const&amp;) fooTR(ci); //&lt;int&gt;(int const&amp;) foocTR(ci); //&lt;int const&amp;&gt;(int const&amp;) fooTr(ci); // ERROR //foocTr(ci); //&lt;int&gt;(int) fooT(ir); //&lt;int&gt;(int) foocT(ir); //&lt;int&gt;(int&amp;) fooTR(ir); //&lt;int&gt;(int const&amp;) foocTR(ir); //&lt;int&amp;&gt;(int&amp;) fooTr(ir); // ERROR //foocTr(ir); //&lt;int&gt;(int) fooT(cir); //&lt;int&gt;(int) foocT(cir); //&lt;int const&gt;(int const&amp;) fooTR(cir); //&lt;int&gt;(int const&amp;) foocTR(cir); //&lt;int const&amp;&gt;(int const&amp;) fooTr(cir); // ERROR //foocTr(cir); //&lt;A&gt;(A) fooT(a); //&lt;A&gt;(A) foocT(a); //&lt;A&gt;(A&amp;) fooTR(a); //&lt;A&gt;(A const&amp;) foocTR(a); //&lt;A&amp;&gt;(A&amp;) fooTr(a); // ERROR //foocTr(a); //&lt;A&gt;(A) fooT(ca); //&lt;A&gt;(A) foocT(ca); //&lt;A const&gt;(A const&amp;) fooTR(ca); //&lt;A&gt;(A const&amp;) foocTR(ca); //&lt;A const&amp;&gt;(A const&amp;) fooTr(ca); // ERROR //foocTr(ca); //&lt;A&gt;(A) fooT(ar); //&lt;A&gt;(A) foocT(ar); //&lt;A&gt;(A&amp;) fooTR(ar); //&lt;A&gt;(A const&amp;) foocTR(ar); //&lt;A&amp;&gt;(A&amp;) fooTr(ar); // ERROR //foocTr(ar); //&lt;A&gt;(A) fooT(car); //&lt;A&gt;(A) foocT(car); //&lt;A const&gt;(A const&amp;) fooTR(car); //&lt;A&gt;(A const&amp;) foocTR(car); //&lt;A const&amp;&gt;(A const&amp;) fooTr(car); // ERROR //foocTr(car);&#125;]]></content>
+    <content type="text"><![CDATA[模板实参推导 - cppreference.com 引用折叠 T &amp; &amp; T &amp; &amp;&amp; T &amp;&amp; &amp;都被折叠为T &amp; T &amp;&amp; &amp;&amp;折叠为T &amp;&amp; 模板实参推导表 int &amp; const int &amp; int &amp;&amp; const int &amp;&amp; T / const T (int) [T = int] (int) [T = int] (int) [T = int] (int) [T = int] T &amp; (int&amp;) [T = int] (int const&amp;) [T = int const] ERROR (int const&amp;) [T = int const] const T &amp; (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] T &amp;&amp; (int&amp;) [T = int&amp;] (int const&amp;) [T = int const&amp;] (int&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int const] const T &amp;&amp; ERROR ERROR (int const&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int] 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102#include &lt;iostream&gt;using namespace std;class A2&#123;&#125;;template&lt;typename T&gt;void fooT(T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocT(const T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTR(T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTR(const T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTr(T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTr(const T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;void func() &#123; int i = 0; const int ci = 0; A2 a; const A2 ca = A2(); cout &lt;&lt; "int:" &lt;&lt;endl; fooT(i); foocT(i); fooTR(i); foocTR(i); fooTr(i); // ERROR //foocTr(i); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "const int:" &lt;&lt;endl; fooT(ci); foocT(ci); fooTR(ci); foocTR(ci); fooTr(ci); // ERROR //foocTr(ci); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "int &amp;&amp;:" &lt;&lt;endl; fooT(move(i)); foocT(move(i)); // ERROR //fooTR(move(i)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt;endl; foocTR(move(i)); fooTr(move(i)); foocTr(move(i)); cout &lt;&lt; "const int &amp;&amp;:" &lt;&lt;endl; fooT(move(ci)); foocT(move(ci)); fooTR(move(ci)); foocTR(move(ci)); fooTr(move(ci)); foocTr(move(ci)); cout &lt;&lt; "A:" &lt;&lt; endl; fooT(a); foocT(a); fooTR(a); foocTR(a); fooTr(a); // ERROR //foocTr(a); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "const A:" &lt;&lt; endl; fooT(ca); foocT(ca); fooTR(ca); foocTR(ca); fooTr(ca); // ERROR //foocTr(ca); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "A &amp;&amp;:" &lt;&lt; endl; fooT(move(a)); foocT(move(a)); // ERROR //fooTR(move(a)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt; endl; foocTR(move(a)); fooTr(move(a)); foocTr(move(a)); cout &lt;&lt; "const A &amp;&amp;:" &lt;&lt; endl; fooT(move(ca)); foocT(move(ca)); fooTR(move(ca)); foocTR(move(ca)); fooTr(move(ca)); foocTr(move(ca));&#125; 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int &amp;]void foocTr(const T &amp;&amp;) ERRORconst int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int &amp;]void foocTr(const T &amp;&amp;) ERRORint &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int]void foocTr(const T &amp;&amp;) [T = int]const int &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int]void foocTr(const T &amp;&amp;) [T = int]A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2 &amp;]void fooTr(const T &amp;&amp;) ERRORconst A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2 &amp;]void fooTr(const T &amp;&amp;) ERRORA &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2]void foocTr(const T &amp;&amp;) [T = A2]const A &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2]void foocTr(const T &amp;&amp;) [T = A2]]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -32,6 +32,17 @@
       </categories>
   </entry>
   <entry>
+    <title><![CDATA[算法]]></title>
+    <url>%2Fpost%2F%E7%AE%97%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[有多个图片来自维基百科 排序算法 排序的方法 插入、交换、选择、合并等 复杂度（最差、平均、和最好性能），依据列表（list）的大小$n$ 时间复杂度 一般而言，好的性能是 $ O(n\log n)$，坏的性能是 $ O(n^{2})$。对于一个排序理想的性能是 $O(n)$，但平均而言不可能达到。基于比较的排序算法对大多数输入而言至少需要$O(n \log n)$。 空间复杂度（内存等资源的使用量） 交换的次数 比较的次数 稳定性 稳定排序算法会让原本有相等键值的纪录维持相对次序。也就是如果一个排序算法是稳定的，当有两个相等键值的纪录 $R$和 $S$，且在原本的列表中 $R$出现在$S$之前，在排序过的列表中 $R$也将会是在$S$之前。 冒泡排序 选择排序和冒泡排序相比，明显减少了交换的次数 侏儒排序 快速排序设中分组可实现方法之一：挖坑填数 插入排序 可以想想打扑克起牌 希尔排序是插入排序的一种更高效的改进版本 图书馆排序 可以想象图书馆每行书籍后面的空位 归并排序不断将小的有序集合合并为大的有序集合 梳排序 堆排序二叉树满二叉树完全二叉树完全二叉树用链表表示：Parent&lt;=&gt;L[i] Left&lt;=&gt;L[2i+1] Right&lt;=&gt;L[2i+2]大顶堆与小顶堆长度为len的完全二叉树，最靠右的父亲的index为len/2-1堆排序的过程： 建立大（小）顶堆从最靠右的父亲开始调整子叶关系，使整个堆满足大（小）顶堆 迭代 最大堆调整 移动堆顶（最大或最小值）（与最后一个元素交换） --len 最大堆调整从第一个父亲开始调整子叶关系，使整个堆重新满足大（小）顶堆 内省排序考虑到快速排序的不稳定性，内省排序在一定条件下对子序列使用堆排序 桶排序耐心排序桶排序的一种 计数排序基数排序搜索算法图论动态规划基础]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[C++填坑之路]]></title>
     <url>%2Fpost%2Fc-%E5%A1%AB%E5%9D%91%E4%B9%8B%E8%B7%AF%2F</url>
     <content type="text"><![CDATA[数组变量加减操作1234567#include&lt;iostream&gt;using namespace std;void main()&#123; int a[] = &#123;0,1,2&#125;; cout &lt;&lt; *(a+1) &lt;&lt; endl;//NOTE a可视为元素指针 //cout &lt;&lt; *++a &lt;&lt; endl;//编译错误&#125; 11 标准库迭代器12345678910111213#include&lt;vector&gt;#include&lt;list&gt;void main()&#123; vector&lt;int&gt; v = &#123;1,2,3,4&#125;; auto i = v.begin(); v.erase(i); cout &lt;&lt; *i &lt;&lt; endl; list&lt;int&gt; l = &#123;1,2,3,4&#125;; auto j = l.begin(); l.erase(j); //NOTE 这里的j已经失效,虽然输出了1 cout &lt;&lt; *j &lt;&lt; endl;&#125; 1221 #这个输出看似正确,但没有意义 迭代器是否失效请看这里使用时可以考虑erase函数的返回值 其为指向被删除元素的下一个元素的迭代器 虚函数与成员函数调用行为与成员指针123456789101112131415161718192021222324252627282930313233343536373839404142class A &#123; public: int i; A() &#123; foo(); &#125; ~A() &#123; foo(); &#125; void func() &#123; cout &lt;&lt; "A::func()" &lt;&lt; endl; &#125; virtual void f() &#123; cout &lt;&lt; "A::f()" &lt;&lt; endl; &#125; virtual void foo() &#123; cout &lt;&lt; "A::foo()" &lt;&lt; endl; &#125; virtual void foooo() &#123; cout &lt;&lt; "A::foooo()" &lt;&lt; endl; f(); A::f(); &#125;&#125;;class B : public A &#123; public: B() &#123; foo(); &#125; ~B() &#123; foo(); &#125; void f() &#123; cout &lt;&lt; "B::f()" &lt;&lt; endl; &#125; void foo() &#123; cout &lt;&lt; "B::foo()" &lt;&lt; endl; &#125; void foooo() &#123; cout &lt;&lt; "B::foooo()" &lt;&lt; endl; f(); A::f(); &#125;&#125;;void main() &#123; B b; B *bp = &amp;b; A *ap = &amp;b; ap-&gt;foo(); ap-&gt;A::foo(); void (A::*Afoop)() = &amp;A::foo; (ap-&gt;*Afoop)(); //void (A::*Afuncp)() = &amp;A::func; //(bp-&gt;*Afuncp)(); printf("%08x\n", &amp;B::f); printf("%08x\n", &amp;B::func); //cout &lt;&lt; &amp;B::func &lt;&lt; endl; ap-&gt;foooo(); ap-&gt;A::foooo();&#125; 123456789101112131415A::foo()B::foo()B::foo()A::foo()B::foo()0000000100402010B::foooo()B::f()A::f()A::foooo()B::f()A::f()B::foo()A::foo() 总结 构造函数与析构函数一个重要的职能或特点是类型确定，即进入函数时，先修改虚表指针，所以在其中对虚函数的调用不是运行时确定的（编译器的实现是直接调用，即不通过虚表） 成员函数指针形式的调用是动态的（TODO 成员函数指针的实现） 带域的调用形式是编译期确定的 非法delete问题delete*2问题 “自由存储区可能会被破坏”———《C+P》 delete[](new[]+1)问题cplusplus.com上说： delete[]的参数ptr，应该是new[]返回的ptr 如果delete的参数ptr无效，将产生未定义的结果 总结这应该牵扯到C++堆内存管理问题，以上两种行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。 new[] delete[] 顺序问题先构后析 对合法但无效的栈内存进行访问将会产生未定义的结果 操作符的操作数的求值顺序 “除逻辑操作符，“?:”操作符，“,”操作符外，其他操作符并未指定其操作数的求职顺序”———《C+P》 比如expr1*expr2，expr1与expr2的求值顺序无法得知比如表达式if (ia[id++] &lt; ia[id] )的行为没有明确定义特别是在expr1与expr2操作涉及并修改同一对象时，求解顺序相当重要 个人：以上（《C+P》）的内容是我不经意间看见的，以前一直按照结合性方向使用上述类似表达式，比如自左向右结合就先计算左边，也没出现过严重问题，在这里记录以防不测。 数组变量的使用除&amp;与sizeof，对数组变量的使用将使数组变量提升为成员指针例如：1234//10被忽略，即arr的类型被视为int *void foo(int arr[10]);//arr_p被视为指向大小为10的数组的指针void foo(int(*arr_p)[10]);]]></content>
@@ -41,17 +52,6 @@
       <tags>
         <tag>C++</tag>
         <tag>C++语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[算法]]></title>
-    <url>%2Fpost%2F%E7%AE%97%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[有多个图片来自维基百科 排序算法 排序的方法 插入、交换、选择、合并等 复杂度（最差、平均、和最好性能），依据列表（list）的大小$n$ 时间复杂度 一般而言，好的性能是 $ O(n\log n)$，坏的性能是 $ O(n^{2})$。对于一个排序理想的性能是 $O(n)$，但平均而言不可能达到。基于比较的排序算法对大多数输入而言至少需要$O(n \log n)$。 空间复杂度（内存等资源的使用量） 交换的次数 比较的次数 稳定性 稳定排序算法会让原本有相等键值的纪录维持相对次序。也就是如果一个排序算法是稳定的，当有两个相等键值的纪录 $R$和 $S$，且在原本的列表中 $R$出现在$S$之前，在排序过的列表中 $R$也将会是在$S$之前。 冒泡排序 选择排序和冒泡排序相比，明显减少了交换的次数 侏儒排序 快速排序设中分组可实现方法之一：挖坑填数 插入排序 可以想想打扑克起牌 希尔排序是插入排序的一种更高效的改进版本 图书馆排序 可以想象图书馆每行书籍后面的空位 归并排序不断将小的有序集合合并为大的有序集合 梳排序 堆排序二叉树满二叉树完全二叉树完全二叉树用链表表示：Parent&lt;=&gt;L[i] Left&lt;=&gt;L[2i+1] Right&lt;=&gt;L[2i+2]大顶堆与小顶堆长度为len的完全二叉树，最靠右的父亲的index为len/2-1堆排序的过程： 建立大（小）顶堆从最靠右的父亲开始调整子叶关系，使整个堆满足大（小）顶堆 迭代 最大堆调整 移动堆顶（最大或最小值）（与最后一个元素交换） --len 最大堆调整从第一个父亲开始调整子叶关系，使整个堆重新满足大（小）顶堆 内省排序考虑到快速排序的不稳定性，内省排序在一定条件下对子序列使用堆排序 桶排序耐心排序桶排序的一种 计数排序基数排序搜索算法图论动态规划基础]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -132,18 +132,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[C++资源大全]]></title>
-    <url>%2Fpost%2Fc-%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8%2F</url>
-    <content type="text"><![CDATA[C++ 资源大全jobbole/awesome-cpp-cn: C++ 资源大全中文版，标准库、Web应用框架、人工智能、数据库、图片处理、机器学习、日志、代码分析等 常用Compiler Explorer：交互式编译器，可以进行汇编输出。官网CompileOnline：Linux上在线编译和执行C++程序。官网]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>C++资源</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[C++语法]]></title>
     <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
     <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载C++默认类型与类型转换默认类型 整数默认有符号 3 int 3000000000 long &#39;3&#39; char 浮点数默认double类型转换 C++定义了算数类型之间的内置转换以尽可能防止精度损失———《C+P》 隐式类型转换何时发生隐式类型转换 混合类型表达式，操作数转换为相同类型 条件表达式，转换为bool 赋值语句 算数转换转换原则是尽可能少的减少精度损失TODO 溢出问题TODO double与int等之间的转换 指针转换注意数组变量 数值或指针 -&gt; boolbool -&gt; 数值枚举类型枚举类型默认继承于int 隐式类类型转换“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换 除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit——《C+P》 显示类型转换包含以下操作符（或C风格）的强制类型转换称作显示类型转换：static_cast，dynamic_cast，const_cast，reinterpret_cast 何时需要强制类型转换隐式类型转换被禁止时等]]></content>
@@ -153,6 +141,18 @@
       <tags>
         <tag>C++</tag>
         <tag>C++语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++资源大全]]></title>
+    <url>%2Fpost%2Fc-%E8%B5%84%E6%BA%90%E5%A4%A7%E5%85%A8%2F</url>
+    <content type="text"><![CDATA[C++ 资源大全jobbole/awesome-cpp-cn: C++ 资源大全中文版，标准库、Web应用框架、人工智能、数据库、图片处理、机器学习、日志、代码分析等 常用Compiler Explorer：交互式编译器，可以进行汇编输出。官网CompileOnline：Linux上在线编译和执行C++程序。官网]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++资源</tag>
       </tags>
   </entry>
   <entry>
