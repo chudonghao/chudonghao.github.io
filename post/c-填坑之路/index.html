@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="慢">
 <meta property="og:description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-02T21:26:07.308Z">
+<meta property="og:updated_time" content="2019-04-07T11:20:09.628Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++填坑之路">
 <meta name="twitter:description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
@@ -425,7 +425,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-03 05:26:07" itemprop="dateModified" datetime="2019-04-03T05:26:07+08:00">2019-04-03</time>
+                <time title="修改时间：2019-04-07 19:20:09" itemprop="dateModified" datetime="2019-04-07T19:20:09+08:00">2019-04-07</time>
               
             
           </span>
@@ -494,14 +494,11 @@
 <h3 id="delete-new-1-问题"><a href="#delete-new-1-问题" class="headerlink" title="delete[](new[]+1)问题"></a>delete[](new[]+1)问题</h3><p>cplusplus.com上说：</p>
 <ul>
 <li>delete[]的参数ptr，应该是new[]返回的ptr</li>
-<li>如果delete的参数ptr无效，将产生未定义的结果</li>
-</ul>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>这应该牵扯到C++堆内存管理问题，以上两种行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。</p>
-<h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2><p>先构后析</p>
-<h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2><p>将会产生未定义的结果</p>
-<h2 id="操作符的操作数的求值顺序"><a href="#操作符的操作数的求值顺序" class="headerlink" title="操作符的操作数的求值顺序"></a>操作符的操作数的求值顺序</h2><blockquote>
+<li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="A-a-new-B-2-delete-a"><a href="#A-a-new-B-2-delete-a" class="headerlink" title="A *a = new B[2];delete []a;"></a>A *a = new B[2];delete []a;</h3>经过测试，也是未定义的。<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上两种行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。<h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2>先构后析<h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2>将会产生未定义的结果<h2 id="操作符的操作数的求值顺序"><a href="#操作符的操作数的求值顺序" class="headerlink" title="操作符的操作数的求值顺序"></a>操作符的操作数的求值顺序</h2><blockquote>
 <p>“除逻辑操作符，“?:”操作符，“,”操作符外，其他操作符并未指定其操作数的求职顺序”<br>———《C+P》</p>
 </blockquote>
+</li>
+</ul>
 <p>比如<code>expr1*expr2</code>，<code>expr1</code>与<code>expr2</code>的求值顺序无法得知<br>比如表达式<code>if (ia[id++] &lt; ia[id] )</code>的行为没有明确定义<br>特别是在<code>expr1</code>与<code>expr2</code>操作涉及并修改同一对象时，求解顺序相当重要</p>
 <p>个人：以上（《C+P》）的内容是我不经意间看见的，以前一直按照结合性方向使用上述类似表达式，比如自左向右结合就先计算左边，也没出现过严重问题，在这里记录以防不测。</p>
 <h2 id="数组变量的使用"><a href="#数组变量的使用" class="headerlink" title="数组变量的使用"></a>数组变量的使用</h2><p>除<code>&amp;</code>与<code>sizeof</code>，对数组变量的使用将使数组变量提升为成员指针<br>例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//10被忽略，即arr的类型被视为int *</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span> arr[<span class="number">10</span>])</span></span>;</span><br><span class="line"><span class="comment">//arr_p被视为指向大小为10的数组的指针</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span>(*arr_p)[<span class="number">10</span>])</span></span>;</span><br></pre></td></tr></table></figure></p>
@@ -543,8 +540,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/opengl3-0教程/" rel="next" title="OpenGL3.0教程">
-                <i class="fa fa-chevron-left"></i> OpenGL3.0教程
+              <a href="/post/算法/" rel="next" title="算法">
+                <i class="fa fa-chevron-left"></i> 算法
               </a>
             
           </div>
@@ -553,8 +550,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/算法/" rel="prev" title="算法">
-                算法 <i class="fa fa-chevron-right"></i>
+              <a href="/post/c-模板实参推导/" rel="prev" title="C++模板实参推导">
+                C++模板实参推导 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -620,7 +617,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -754,7 +751,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量加减操作"><span class="nav-number">1.</span> <span class="nav-text">数组变量加减操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准库迭代器"><span class="nav-number">2.</span> <span class="nav-text">标准库迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚函数与成员函数调用行为与成员指针"><span class="nav-number">3.</span> <span class="nav-text">虚函数与成员函数调用行为与成员指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非法delete问题"><span class="nav-number">4.</span> <span class="nav-text">非法delete问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#delete-2问题"><span class="nav-number">4.1.</span> <span class="nav-text">delete*2问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete-new-1-问题"><span class="nav-number">4.2.</span> <span class="nav-text">delete[](new[]+1)问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.3.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new-delete-顺序问题"><span class="nav-number">5.</span> <span class="nav-text">new[] delete[] 顺序问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对合法但无效的栈内存进行访问"><span class="nav-number">6.</span> <span class="nav-text">对合法但无效的栈内存进行访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作符的操作数的求值顺序"><span class="nav-number">7.</span> <span class="nav-text">操作符的操作数的求值顺序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量的使用"><span class="nav-number">8.</span> <span class="nav-text">数组变量的使用</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量加减操作"><span class="nav-number">1.</span> <span class="nav-text">数组变量加减操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标准库迭代器"><span class="nav-number">2.</span> <span class="nav-text">标准库迭代器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#虚函数与成员函数调用行为与成员指针"><span class="nav-number">3.</span> <span class="nav-text">虚函数与成员函数调用行为与成员指针</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#非法delete问题"><span class="nav-number">4.</span> <span class="nav-text">非法delete问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#delete-2问题"><span class="nav-number">4.1.</span> <span class="nav-text">delete*2问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#delete-new-1-问题"><span class="nav-number">4.2.</span> <span class="nav-text">delete[](new[]+1)问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#A-a-new-B-2-delete-a"><span class="nav-number">4.3.</span> <span class="nav-text">A *a = new B[2];delete []a;</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.4.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#new-delete-顺序问题"><span class="nav-number">5.</span> <span class="nav-text">new[] delete[] 顺序问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#对合法但无效的栈内存进行访问"><span class="nav-number">6.</span> <span class="nav-text">对合法但无效的栈内存进行访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作符的操作数的求值顺序"><span class="nav-number">7.</span> <span class="nav-text">操作符的操作数的求值顺序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数组变量的使用"><span class="nav-number">8.</span> <span class="nav-text">数组变量的使用</span></a></li></ol></div>
             
 
           </div>
@@ -1292,6 +1289,26 @@
   
 
   
+<script>
+if ($('body').find('pre.mermaid').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      mermaid.initialize({
+        theme: 'forest',
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 }
+      });
+    }
+  });
+}
+</script>
+
 
   
 

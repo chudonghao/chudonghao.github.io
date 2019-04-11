@@ -113,7 +113,7 @@
 <meta property="og:description" content="测试公式$$ \sum_{i=0}^{n}i^2+i+i^{^{\frac{1}{2}}} $$">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://public-media-chudonghao.oss-cn-shanghai.aliyuncs.com/%E6%A5%9A%E6%A0%8B%E6%B5%A9%E7%9A%84%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.png">
-<meta property="og:updated_time" content="2019-03-30T23:06:46.459Z">
+<meta property="og:updated_time" content="2019-04-08T11:05:54.247Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test">
 <meta name="twitter:description" content="测试公式$$ \sum_{i=0}^{n}i^2+i+i^{^{\frac{1}{2}}} $$">
@@ -410,7 +410,7 @@
                 
               
 
-              <time title="创建时间：2019-03-31 07:06:46" itemprop="dateCreated datePublished" datetime="2019-03-31T07:06:46+08:00">2019-03-31</time>
+              <time title="创建时间：2019-04-08 19:05:54" itemprop="dateCreated datePublished" datetime="2019-04-08T19:05:54+08:00">2019-04-08</time>
             
 
             
@@ -465,6 +465,15 @@
       
         <h2 id="测试公式"><a href="#测试公式" class="headerlink" title="测试公式"></a>测试公式</h2><p>$$ \sum_{i=0}^{n}i^2+i+i^{^{\frac{1}{2}}} $$<br><a id="more"></a></p>
 <h2 id="测试图片"><a href="#测试图片" class="headerlink" title="测试图片"></a>测试图片</h2><p><img src="http://public-media-chudonghao.oss-cn-shanghai.aliyuncs.com/%E6%A5%9A%E6%A0%8B%E6%B5%A9%E7%9A%84%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87.png" alt> </p>
+<h2 id="测试mermaid"><a href="#测试mermaid" class="headerlink" title="测试mermaid"></a>测试mermaid</h2><pre><mermaid>
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+</mermaid></pre>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">    A--&gt;B;</span><br><span class="line">    A--&gt;C;</span><br><span class="line">    B--&gt;D;</span><br><span class="line">    C--&gt;D;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -495,8 +504,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/post/算法/" rel="next" title="算法">
-                <i class="fa fa-chevron-left"></i> 算法
+              <a href="/post/诗/" rel="next" title="诗">
+                <i class="fa fa-chevron-left"></i> 诗
               </a>
             
           </div>
@@ -504,10 +513,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/post/c-模板实参推导/" rel="prev" title="C++模板实参推导">
-                C++模板实参推导 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -576,7 +581,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -710,7 +715,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试公式"><span class="nav-number">1.</span> <span class="nav-text">测试公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试图片"><span class="nav-number">2.</span> <span class="nav-text">测试图片</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#测试公式"><span class="nav-number">1.</span> <span class="nav-text">测试公式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试图片"><span class="nav-number">2.</span> <span class="nav-text">测试图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试mermaid"><span class="nav-number">3.</span> <span class="nav-text">测试mermaid</span></a></li></ol></div>
             
 
           </div>
@@ -1250,6 +1255,26 @@
   
 
   
+<script>
+if ($('body').find('pre.mermaid').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      mermaid.initialize({
+        theme: 'forest',
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 }
+      });
+    }
+  });
+}
+</script>
+
 
   
 

@@ -381,7 +381,7 @@
         
           
         
-        嗯..! 目前共计 18 篇日志。 继续努力。
+        嗯..! 目前共计 20 篇日志。 继续努力。
       </span>
       
 
@@ -406,6 +406,41 @@
 
       <h2 class="post-title">
         
+          <a class="post-title-link" href="/post/test/" itemprop="url">
+            
+              <span itemprop="name">test</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-08T19:05:54+08:00" content="2019-04-08">
+          04-08
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
           <a class="post-title-link" href="/post/诗/" itemprop="url">
             
               <span itemprop="name">诗</span>
@@ -416,6 +451,41 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated" datetime="2019-04-03T10:44:36+08:00" content="2019-04-03">
+          04-03
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+      
+
+        
+        
+        
+
+        
+        
+
+        
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h2 class="post-title">
+        
+          <a class="post-title-link" href="/post/c-模板编程/" itemprop="url">
+            
+              <span itemprop="name">C++模板编程</span>
+            
+          </a>
+        
+      </h2>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-03T06:09:05+08:00" content="2019-04-03">
           04-03
         </time>
       </div>
@@ -509,7 +579,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">18</span>
+                    <span class="site-state-item-count">20</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1160,6 +1230,26 @@
   
 
   
+<script>
+if ($('body').find('pre.mermaid').length) {
+  $.ajax({
+    type: 'GET',
+    url: '//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js',
+    dataType: 'script',
+    cache: true,
+    success: function() {
+      mermaid.initialize({
+        theme: 'forest',
+        logLevel: 3,
+        flowchart: { curve: 'linear' },
+        gantt: { axisFormat: '%m/%d/%Y' },
+        sequence: { actorMargin: 50 }
+      });
+    }
+  });
+}
+</script>
+
 
   
 
