@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-28T12:24:57.440Z</updated>
+  <updated>2019-04-28T12:29:33.157Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://yoursite.com/post/%E7%BB%99%E5%90%AF%E6%B1%89/"/>
     <id>http://yoursite.com/post/给启汉/</id>
     <published>2019-04-28T12:00:00.000Z</published>
-    <updated>2019-04-28T12:24:57.440Z</updated>
+    <updated>2019-04-28T12:29:33.157Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>方括号的意思是可选，如<code>[person]</code></p><p>尖括号的意思是必须，如<code>&lt;ip&gt;</code></p><h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><p>作用：用来连接远程服务器</p><p>如何使用：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh [&lt;person&gt;@]&lt;ip&gt;</span><br></pre></td></tr></table></figure><h2 id="tigervncserver"><a href="#tigervncserver" class="headerlink" title="tigervncserver"></a>tigervncserver</h2><p>作用：启动一个桌面环境，等待用户连接</p><p>如何使用：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tigervncserver [-localhost no] :&lt;num&gt;</span><br></pre></td></tr></table></figure><p>其中，<code>-localhost no</code>意思是接受远程连接，在你这里必须</p><h2 id="xtigervncviewer"><a href="#xtigervncviewer" class="headerlink" title="xtigervncviewer"></a>xtigervncviewer</h2><p>作用：连接一个vnc桌面服务</p><p>其中要注意ip、桌面id、，即上面的<code>&lt;num&gt;</code></p><p>如：</p><p>VNC server<code>127.0.0.1:2</code></p>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>方括号的意思是可选，如<code>[person]</code></p><p>尖括号的意思是必须，如<code>&lt;ip&gt;</code></p><h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><p>作用：用来连接远程服务器</p><p>如何使用：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh [&lt;person&gt;@]&lt;ip&gt;</span><br></pre></td></tr></table></figure><h2 id="tigervncserver"><a href="#tigervncserver" class="headerlink" title="tigervncserver"></a>tigervncserver</h2><p>作用：启动一个桌面环境，等待用户连接</p><p>如何使用：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tigervncserver [-localhost no] :&lt;num&gt;</span><br></pre></td></tr></table></figure><p>其中，<code>-localhost no</code>意思是接受远程连接，在你这里必须</p><h2 id="xtigervncviewer"><a href="#xtigervncviewer" class="headerlink" title="xtigervncviewer"></a>xtigervncviewer</h2><p>作用：连接一个vnc桌面服务</p><p>其中要注意ip、桌面id即上面的<code>&lt;num&gt;</code></p><p>如：</p><p>VNC server<code>127.0.0.1:2</code></p>]]></content>
     
     <summary type="html">
     
@@ -84,6 +84,56 @@
   </entry>
   
   <entry>
+    <title>C++的爱与恨</title>
+    <link href="http://yoursite.com/post/c-%E7%9A%84%E7%88%B1%E4%B8%8E%E6%81%A8/"/>
+    <id>http://yoursite.com/post/c-的爱与恨/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-21T11:29:31.906Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul><li>静态，确定类型</li><li>面向对象又底层</li><li>自由度高</li><li>模板编程</li><li>RAII等</li></ul><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul><li>自由度高，就跟西方所谓的自由一样<br><p>没有标准命名规范，没有标准包管理系统，没有标准构建系统<br></p><p>编程人员需要做很多编程工作之外的内容<br></p><p>自由应该是创造自由，思想自由，而不是很多不必要的自由<br></p><p>创造与思想是编程最重要的部分</p></li><li>模板编程<br><p>模板的重要作用有二：一是代码复用，二是反射<br></p><p>其中的反射机制跟坨屎一样</p></li><li>其他<br><p>语法其实包含着思想，语法应该体现思想。这可以参考Rust</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;静态，确定类型&lt;/li&gt;
+&lt;li&gt;面向对象又底层&lt;/li&gt;
+&lt;li&gt;自由度高&lt;/li&gt;
+&lt;li&gt;模板编程&lt;/li&gt;
+&lt;li&gt;RA
+      
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自动控制原理学习笔记</title>
+    <link href="http://yoursite.com/post/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/自动控制原理学习笔记/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-20T05:34:47.089Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="自动控制原理" scheme="http://yoursite.com/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C++模板编程</title>
     <link href="http://yoursite.com/post/c-%E6%A8%A1%E6%9D%BF%E7%BC%96%E7%A8%8B/"/>
     <id>http://yoursite.com/post/c-模板编程/</id>
@@ -107,6 +157,85 @@
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
       <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字信号处理学习笔记</title>
+    <link href="http://yoursite.com/post/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/数字信号处理学习笔记/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-20T05:34:25.269Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数字信号处理" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信号与系统学习笔记</title>
+    <link href="http://yoursite.com/post/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/信号与系统学习笔记/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-20T06:12:29.401Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h2><p><img src alt="图１"><br>图１、几种信号</p><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>第一种定义：随时间变化的物理量</p><ul><li>不一定只随时间变化</li><li>不一定是物理量</li><li>不一定是变量</li></ul><p>第二种定义：一个确定的函数，如图１</p><h3 id="信号的分类"><a href="#信号的分类" class="headerlink" title="信号的分类"></a>信号的分类</h3><p>分类方法１：</p><ul><li>确定性信号，可以用确定的时间函数加以确定</li><li>随机信号，可以统计特征描述</li></ul><p>分类方法２，如图１：</p><ul><li>连续信号</li><li>离散信号</li></ul><p>分类方法３：</p><ul><li>周期信号</li><li>非周期信号</li></ul><p>讨论：周期信号与周期信号的叠加或相乘之后的信号</p><h3 id="信号的表述"><a href="#信号的表述" class="headerlink" title="信号的表述"></a>信号的表述</h3><p>时域法$f(t)$<br>变换域法</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;信号&quot;&gt;&lt;a href=&quot;#信号&quot; class=&quot;headerlink&quot; title=&quot;信号&quot;&gt;&lt;/a&gt;信号&lt;/h2&gt;&lt;p&gt;&lt;img src alt=&quot;图１&quot;&gt;&lt;br&gt;图１、几种信号&lt;/p&gt;
+&lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;hea
+      
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="信号与系统" scheme="http://yoursite.com/tags/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对反射机制的思考</title>
+    <link href="http://yoursite.com/post/%E5%AF%B9%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://yoursite.com/post/对反射机制的思考/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-21T11:13:08.002Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="反射的作用"><a href="#反射的作用" class="headerlink" title="反射的作用"></a>反射的作用</h2><ul><li>类型的属性</li><li>某种函数（过程）调用的合法性</li></ul><h2 id="C-中遇到的问题"><a href="#C-中遇到的问题" class="headerlink" title="C++中遇到的问题"></a>C++中遇到的问题</h2><ul><li>如何判断一个调用是否合法，并确定具体调用了<strong>哪个重载</strong>函数<br><br>虽然可以以某种方式实现，但实现的方法非常有技巧性，不常规</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;反射的作用&quot;&gt;&lt;a href=&quot;#反射的作用&quot; class=&quot;headerlink&quot; title=&quot;反射的作用&quot;&gt;&lt;/a&gt;反射的作用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;类型的属性&lt;/li&gt;
+&lt;li&gt;某种函数（过程）调用的合法性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;C-中
+      
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="反射" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%B0%84/"/>
     
   </entry>
   
@@ -183,135 +312,6 @@
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
       <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信号与系统学习笔记</title>
-    <link href="http://yoursite.com/post/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/post/信号与系统学习笔记/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-20T06:12:29.401Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h2><p><img src alt="图１"><br>图１、几种信号</p><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>第一种定义：随时间变化的物理量</p><ul><li>不一定只随时间变化</li><li>不一定是物理量</li><li>不一定是变量</li></ul><p>第二种定义：一个确定的函数，如图１</p><h3 id="信号的分类"><a href="#信号的分类" class="headerlink" title="信号的分类"></a>信号的分类</h3><p>分类方法１：</p><ul><li>确定性信号，可以用确定的时间函数加以确定</li><li>随机信号，可以统计特征描述</li></ul><p>分类方法２，如图１：</p><ul><li>连续信号</li><li>离散信号</li></ul><p>分类方法３：</p><ul><li>周期信号</li><li>非周期信号</li></ul><p>讨论：周期信号与周期信号的叠加或相乘之后的信号</p><h3 id="信号的表述"><a href="#信号的表述" class="headerlink" title="信号的表述"></a>信号的表述</h3><p>时域法$f(t)$<br>变换域法</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;信号&quot;&gt;&lt;a href=&quot;#信号&quot; class=&quot;headerlink&quot; title=&quot;信号&quot;&gt;&lt;/a&gt;信号&lt;/h2&gt;&lt;p&gt;&lt;img src alt=&quot;图１&quot;&gt;&lt;br&gt;图１、几种信号&lt;/p&gt;
-&lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;hea
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="信号与系统" scheme="http://yoursite.com/tags/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自动控制原理学习笔记</title>
-    <link href="http://yoursite.com/post/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/post/自动控制原理学习笔记/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-20T05:34:47.089Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="自动控制原理" scheme="http://yoursite.com/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>对反射机制的思考</title>
-    <link href="http://yoursite.com/post/%E5%AF%B9%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://yoursite.com/post/对反射机制的思考/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-21T11:13:08.002Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="反射的作用"><a href="#反射的作用" class="headerlink" title="反射的作用"></a>反射的作用</h2><ul><li>类型的属性</li><li>某种函数（过程）调用的合法性</li></ul><h2 id="C-中遇到的问题"><a href="#C-中遇到的问题" class="headerlink" title="C++中遇到的问题"></a>C++中遇到的问题</h2><ul><li>如何判断一个调用是否合法，并确定具体调用了<strong>哪个重载</strong>函数<br><br>虽然可以以某种方式实现，但实现的方法非常有技巧性，不常规</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;反射的作用&quot;&gt;&lt;a href=&quot;#反射的作用&quot; class=&quot;headerlink&quot; title=&quot;反射的作用&quot;&gt;&lt;/a&gt;反射的作用&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;类型的属性&lt;/li&gt;
-&lt;li&gt;某种函数（过程）调用的合法性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;C-中
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="反射" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%B0%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++的爱与恨</title>
-    <link href="http://yoursite.com/post/c-%E7%9A%84%E7%88%B1%E4%B8%8E%E6%81%A8/"/>
-    <id>http://yoursite.com/post/c-的爱与恨/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-21T11:29:31.906Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul><li>静态，确定类型</li><li>面向对象又底层</li><li>自由度高</li><li>模板编程</li><li>RAII等</li></ul><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul><li>自由度高，就跟西方所谓的自由一样<br><p>没有标准命名规范，没有标准包管理系统，没有标准构建系统<br></p><p>编程人员需要做很多编程工作之外的内容<br></p><p>自由应该是创造自由，思想自由，而不是很多不必要的自由<br></p><p>创造与思想是编程最重要的部分</p></li><li>模板编程<br><p>模板的重要作用有二：一是代码复用，二是反射<br></p><p>其中的反射机制跟坨屎一样</p></li><li>其他<br><p>语法其实包含着思想，语法应该体现思想。这可以参考Rust</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;静态，确定类型&lt;/li&gt;
-&lt;li&gt;面向对象又底层&lt;/li&gt;
-&lt;li&gt;自由度高&lt;/li&gt;
-&lt;li&gt;模板编程&lt;/li&gt;
-&lt;li&gt;RA
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数字信号处理学习笔记</title>
-    <link href="http://yoursite.com/post/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/post/数字信号处理学习笔记/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-20T05:34:25.269Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数字信号处理" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
     
   </entry>
   
@@ -553,17 +553,19 @@
   </entry>
   
   <entry>
-    <title>C++语法</title>
-    <link href="http://yoursite.com/post/c-%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/post/c-语法/</id>
+    <title>C++ inline vs static vs static inline</title>
+    <link href="http://yoursite.com/post/c-inline-vs-static-vs-static-inline/"/>
+    <id>http://yoursite.com/post/c-inline-vs-static-vs-static-inline/</id>
     <published>2019-03-27T22:15:18.000Z</published>
-    <updated>2019-04-21T18:40:21.283Z</updated>
+    <updated>2019-04-10T04:30:48.949Z</updated>
     
-    <content type="html"><![CDATA[<p>C++一些基本语法问题<br><a id="more"></a></p><h2 id="模板友元"><a href="#模板友元" class="headerlink" title="模板友元"></a>模板友元</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>;</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>&#123;</span></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">void</span> foo&lt;T&gt;();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="enable-if"><a href="#enable-if" class="headerlink" title="enable_if"></a>enable_if</h2><p><a href="https://zh.cppreference.com/w/cpp/types/enable_if" target="_blank" rel="noopener">std::enable_if - cppreference.com</a><br><a href="https://blog.csdn.net/kiritow/article/details/50932012" target="_blank" rel="noopener">enable_if - Kiritow的学园 - CSDN博客</a></p><h2 id="typename-的第二作用"><a href="#typename-的第二作用" class="headerlink" title="typename 的第二作用"></a>typename 的第二作用</h2><p>为了消除歧义，显式地告诉编译器，T::bar是一个类型名。</p><h2 id="类的缺省函数"><a href="#类的缺省函数" class="headerlink" title="类的缺省函数"></a>类的缺省函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Class</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//缺省构造函数 </span></span><br><span class="line">    Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//拷贝构造函数</span></span><br><span class="line">    Class(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动构造函数(C++11)</span></span><br><span class="line">    Class(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动赋值函数(C++11)</span></span><br><span class="line">    Class&amp; <span class="keyword">operator</span>=(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//析构函数</span></span><br><span class="line">    ~Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//赋值运算符</span></span><br><span class="line">    Class&amp;<span class="keyword">operator</span>=(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 </span></span><br><span class="line">    Class*<span class="keyword">operator</span>&amp;()&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 const</span></span><br><span class="line">    <span class="keyword">const</span> Class*<span class="keyword">operator</span>&amp;()<span class="keyword">const</span>&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="new与delete的重载"><a href="#new与delete的重载" class="headerlink" title="new与delete的重载"></a>new与delete的重载</h2><h2 id="C-默认类型与类型转换"><a href="#C-默认类型与类型转换" class="headerlink" title="C++默认类型与类型转换"></a>C++默认类型与类型转换</h2><h3 id="默认类型"><a href="#默认类型" class="headerlink" title="默认类型"></a>默认类型</h3><ul><li>整数默认有符号<ul><li><code>3</code> int</li><li><code>3000000000</code> long</li><li><code>&#39;3&#39;</code> char</li></ul></li><li>浮点数默认double<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><blockquote><p>C++定义了算数类型之间的内置转换以尽可能防止精度损失<br>———《C+P》</p></blockquote><h3 id="隐式类型转换"><a href="#隐式类型转换" class="headerlink" title="隐式类型转换"></a>隐式类型转换</h3><h4 id="何时发生隐式类型转换"><a href="#何时发生隐式类型转换" class="headerlink" title="何时发生隐式类型转换"></a>何时发生隐式类型转换</h4></li><li>混合类型表达式，操作数转换为相同类型</li><li>条件表达式，转换为bool</li><li>赋值语句</li></ul><h4 id="算数转换"><a href="#算数转换" class="headerlink" title="算数转换"></a>算数转换</h4><p>转换原则是尽可能少的减少精度损失<br>TODO 溢出问题<br>TODO double与int等之间的转换</p><h4 id="指针转换"><a href="#指针转换" class="headerlink" title="指针转换"></a>指针转换</h4><p>注意数组变量</p><h4 id="数值或指针-gt-bool"><a href="#数值或指针-gt-bool" class="headerlink" title="数值或指针 -&gt; bool"></a>数值或指针 -&gt; bool</h4><h4 id="bool-gt-数值"><a href="#bool-gt-数值" class="headerlink" title="bool -&gt; 数值"></a>bool -&gt; 数值</h4><h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><p>枚举类型默认继承于int</p><h4 id="隐式类类型转换"><a href="#隐式类类型转换" class="headerlink" title="隐式类类型转换"></a>隐式类类型转换</h4><p>“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换</p><blockquote><p>除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit<br>——《C+P》</p></blockquote><h3 id="显示类型转换"><a href="#显示类型转换" class="headerlink" title="显示类型转换"></a>显示类型转换</h3><p>包含以下操作符（或C风格）的强制类型转换称作显示类型转换：<br><code>static_cast</code>，<code>dynamic_cast</code>，<code>const_cast</code>，<code>reinterpret_cast</code></p><h4 id="何时需要强制类型转换"><a href="#何时需要强制类型转换" class="headerlink" title="何时需要强制类型转换"></a>何时需要强制类型转换</h4><p>隐式类型转换被禁止时等</p><h2 id="RVO返回值优化"><a href="#RVO返回值优化" class="headerlink" title="RVO返回值优化"></a>RVO返回值优化</h2><p>想想构造函数→_→</p>]]></content>
+    <content type="html"><![CDATA[<p>##inline<br>链接标记为WEAK，并建议内联</p><p>##static<br>链接标记为LOCAL</p><p>##static inline<br>同static，同时建议内联<br><a id="more"></a><br><a href="https://gist.github.com/htfy96/50308afc11678d2e3766a36aa60d5f75" target="_blank" rel="noopener">static inline vs inline vs static in C++</a> </p>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;C++一些基本语法问题&lt;br&gt;
+      &lt;p&gt;##inline&lt;br&gt;链接标记为WEAK，并建议内联&lt;/p&gt;
+&lt;p&gt;##static&lt;br&gt;链接标记为LOCAL&lt;/p&gt;
+&lt;p&gt;##static inline&lt;br&gt;同static，同时建议内联&lt;br&gt;
     
     </summary>
     

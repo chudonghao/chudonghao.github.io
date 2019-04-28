@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[给启汉]]></title>
     <url>%2Fpost%2F%E7%BB%99%E5%90%AF%E6%B1%89%2F</url>
-    <content type="text"><![CDATA[前提方括号的意思是可选，如[person] 尖括号的意思是必须，如&lt;ip&gt; ssh作用：用来连接远程服务器 如何使用： 1ssh [&lt;person&gt;@]&lt;ip&gt; tigervncserver作用：启动一个桌面环境，等待用户连接 如何使用： 1tigervncserver [-localhost no] :&lt;num&gt; 其中，-localhost no意思是接受远程连接，在你这里必须 xtigervncviewer作用：连接一个vnc桌面服务 其中要注意ip、桌面id、，即上面的&lt;num&gt; 如： VNC server127.0.0.1:2]]></content>
+    <content type="text"><![CDATA[前提方括号的意思是可选，如[person] 尖括号的意思是必须，如&lt;ip&gt; ssh作用：用来连接远程服务器 如何使用： 1ssh [&lt;person&gt;@]&lt;ip&gt; tigervncserver作用：启动一个桌面环境，等待用户连接 如何使用： 1tigervncserver [-localhost no] :&lt;num&gt; 其中，-localhost no意思是接受远程连接，在你这里必须 xtigervncviewer作用：连接一个vnc桌面服务 其中要注意ip、桌面id即上面的&lt;num&gt; 如： VNC server127.0.0.1:2]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -28,39 +28,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[C++模板编程]]></title>
-    <url>%2Fpost%2Fc-%E6%A8%A1%E6%9D%BF%E7%BC%96%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[模板的作用代码复用静态反射机制对C++的静态反射机制，只能用NM来形容我的内心的感受 主要名词重载决议 SFINAE 面向对象 面向过程 enable_if auto decltype 显示实例化 类型别名，别名模版 重载函数的地址 enable_if使用SFINAE可以处理ambiguous 重载决议可以处理TODO 编译过程函数模板名称查找（可能涉及参数依赖查找） -&gt; 模板实参推导 -&gt; 模板实参替换（可能涉及 SFINAE ） -&gt; 重载决议 遇到的特殊要求：精确匹配函数，拒绝隐式转换123456789101112131415161718192021222324252627282930313233343536373839404142434445464748/******************************************************************************* * lib.h */#include &lt;type_traits&gt;template&lt;typename _T, typename _T2&gt;extern void foo(_T, _T2);template&lt;typename _Manager, typename _P&gt;class IsPreciseFuncRequiredDefined &#123; typedef void(*Func)(_Manager &amp;, _P &amp;); static std::true_type _(Func) &#123;&#125; static std::false_type _(...) &#123;&#125; typedef decltype(_(&amp;foo)) type; public: constexpr static bool value = type::value;&#125;;class Manager &#123; public: template&lt;typename _P, typename std::enable_if&lt; IsPreciseFuncRequiredDefined&lt;Manager, _P&gt;::value &gt;::type * = nullptr&gt; void DoSomeThingTo(_P &amp;p) &#123; foo(*this, p); &#125;&#125;;/******************************************************************************* * main.cpp *///#include&lt;lib.h&gt;#include&lt;iostream&gt;class Person &#123;&#125;;class Student : public Person &#123;&#125;;template&lt;typename _Manager&gt;void foo(_Manager &amp;, Person &amp;) &#123; std::cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; std::endl;&#125;// &#123;注释这部分则编译不通过，取消注释这部分则编译通过，满足要求!!!!!!!!!!!!!!!!!!!!!!!!!!template&lt;typename _Manager&gt;void foo(_Manager &amp;, Student &amp;) &#123; std::cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; std::endl;&#125;// &#125;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!int main() &#123; Manager m; Student s; m.DoSomeThingTo(s); return 0;&#125;]]></content>
+    <title><![CDATA[C++的爱与恨]]></title>
+    <url>%2Fpost%2Fc-%E7%9A%84%E7%88%B1%E4%B8%8E%E6%81%A8%2F</url>
+    <content type="text"><![CDATA[优点 静态，确定类型 面向对象又底层 自由度高 模板编程 RAII等 缺点 自由度高，就跟西方所谓的自由一样没有标准命名规范，没有标准包管理系统，没有标准构建系统编程人员需要做很多编程工作之外的内容自由应该是创造自由，思想自由，而不是很多不必要的自由创造与思想是编程最重要的部分 模板编程模板的重要作用有二：一是代码复用，二是反射其中的反射机制跟坨屎一样 其他语法其实包含着思想，语法应该体现思想。这可以参考Rust]]></content>
       <categories>
         <category>未分类</category>
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>C++语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[C++模板实参推导]]></title>
-    <url>%2Fpost%2Fc-%E6%A8%A1%E6%9D%BF%E5%AE%9E%E5%8F%82%E6%8E%A8%E5%AF%BC%2F</url>
-    <content type="text"><![CDATA[模板实参推导 - cppreference.com 引用折叠 T &amp; &amp; T &amp; &amp;&amp; T &amp;&amp; &amp;都被折叠为T &amp; T &amp;&amp; &amp;&amp;折叠为T &amp;&amp; 模板实参推导表 int &amp; const int &amp; int &amp;&amp; const int &amp;&amp; T / const T (int) [T = int] (int) [T = int] (int) [T = int] (int) [T = int] T &amp; (int&amp;) [T = int] (int const&amp;) [T = int const] ERROR (int const&amp;) [T = int const] const T &amp; (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] T &amp;&amp; (int&amp;) [T = int&amp;] (int const&amp;) [T = int const&amp;] (int&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int const] const T &amp;&amp; ERROR ERROR (int const&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int] 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102#include &lt;iostream&gt;using namespace std;class A2&#123;&#125;;template&lt;typename T&gt;void fooT(T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocT(const T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTR(T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTR(const T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTr(T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTr(const T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;void func() &#123; int i = 0; const int ci = 0; A2 a; const A2 ca = A2(); cout &lt;&lt; "int:" &lt;&lt;endl; fooT(i); foocT(i); fooTR(i); foocTR(i); fooTr(i); // ERROR //foocTr(i); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "const int:" &lt;&lt;endl; fooT(ci); foocT(ci); fooTR(ci); foocTR(ci); fooTr(ci); // ERROR //foocTr(ci); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "int &amp;&amp;:" &lt;&lt;endl; fooT(move(i)); foocT(move(i)); // ERROR //fooTR(move(i)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt;endl; foocTR(move(i)); fooTr(move(i)); foocTr(move(i)); cout &lt;&lt; "const int &amp;&amp;:" &lt;&lt;endl; fooT(move(ci)); foocT(move(ci)); fooTR(move(ci)); foocTR(move(ci)); fooTr(move(ci)); foocTr(move(ci)); cout &lt;&lt; "A:" &lt;&lt; endl; fooT(a); foocT(a); fooTR(a); foocTR(a); fooTr(a); // ERROR //foocTr(a); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "const A:" &lt;&lt; endl; fooT(ca); foocT(ca); fooTR(ca); foocTR(ca); fooTr(ca); // ERROR //foocTr(ca); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "A &amp;&amp;:" &lt;&lt; endl; fooT(move(a)); foocT(move(a)); // ERROR //fooTR(move(a)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt; endl; foocTR(move(a)); fooTr(move(a)); foocTr(move(a)); cout &lt;&lt; "const A &amp;&amp;:" &lt;&lt; endl; fooT(move(ca)); foocT(move(ca)); fooTR(move(ca)); foocTR(move(ca)); fooTr(move(ca)); foocTr(move(ca));&#125; 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int &amp;]void foocTr(const T &amp;&amp;) ERRORconst int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int &amp;]void foocTr(const T &amp;&amp;) ERRORint &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int]void foocTr(const T &amp;&amp;) [T = int]const int &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int]void foocTr(const T &amp;&amp;) [T = int]A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2 &amp;]void fooTr(const T &amp;&amp;) ERRORconst A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2 &amp;]void fooTr(const T &amp;&amp;) ERRORA &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2]void foocTr(const T &amp;&amp;) [T = A2]const A &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2]void foocTr(const T &amp;&amp;) [T = A2]]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>C++语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[信号与系统学习笔记]]></title>
-    <url>%2Fpost%2F%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[信号图１、几种信号 定义第一种定义：随时间变化的物理量 不一定只随时间变化 不一定是物理量 不一定是变量 第二种定义：一个确定的函数，如图１ 信号的分类分类方法１： 确定性信号，可以用确定的时间函数加以确定 随机信号，可以统计特征描述 分类方法２，如图１： 连续信号 离散信号 分类方法３： 周期信号 非周期信号 讨论：周期信号与周期信号的叠加或相乘之后的信号 信号的表述时域法$f(t)$变换域法]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>信号与系统</tag>
-        <tag>学习笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -76,26 +51,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[对反射机制的思考]]></title>
-    <url>%2Fpost%2F%E5%AF%B9%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E7%9A%84%E6%80%9D%E8%80%83%2F</url>
-    <content type="text"><![CDATA[反射的作用 类型的属性 某种函数（过程）调用的合法性 C++中遇到的问题 如何判断一个调用是否合法，并确定具体调用了哪个重载函数虽然可以以某种方式实现，但实现的方法非常有技巧性，不常规]]></content>
+    <title><![CDATA[C++模板编程]]></title>
+    <url>%2Fpost%2Fc-%E6%A8%A1%E6%9D%BF%E7%BC%96%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[模板的作用代码复用静态反射机制对C++的静态反射机制，只能用NM来形容我的内心的感受 主要名词重载决议 SFINAE 面向对象 面向过程 enable_if auto decltype 显示实例化 类型别名，别名模版 重载函数的地址 enable_if使用SFINAE可以处理ambiguous 重载决议可以处理TODO 编译过程函数模板名称查找（可能涉及参数依赖查找） -&gt; 模板实参推导 -&gt; 模板实参替换（可能涉及 SFINAE ） -&gt; 重载决议 遇到的特殊要求：精确匹配函数，拒绝隐式转换123456789101112131415161718192021222324252627282930313233343536373839404142434445464748/******************************************************************************* * lib.h */#include &lt;type_traits&gt;template&lt;typename _T, typename _T2&gt;extern void foo(_T, _T2);template&lt;typename _Manager, typename _P&gt;class IsPreciseFuncRequiredDefined &#123; typedef void(*Func)(_Manager &amp;, _P &amp;); static std::true_type _(Func) &#123;&#125; static std::false_type _(...) &#123;&#125; typedef decltype(_(&amp;foo)) type; public: constexpr static bool value = type::value;&#125;;class Manager &#123; public: template&lt;typename _P, typename std::enable_if&lt; IsPreciseFuncRequiredDefined&lt;Manager, _P&gt;::value &gt;::type * = nullptr&gt; void DoSomeThingTo(_P &amp;p) &#123; foo(*this, p); &#125;&#125;;/******************************************************************************* * main.cpp *///#include&lt;lib.h&gt;#include&lt;iostream&gt;class Person &#123;&#125;;class Student : public Person &#123;&#125;;template&lt;typename _Manager&gt;void foo(_Manager &amp;, Person &amp;) &#123; std::cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; std::endl;&#125;// &#123;注释这部分则编译不通过，取消注释这部分则编译通过，满足要求!!!!!!!!!!!!!!!!!!!!!!!!!!template&lt;typename _Manager&gt;void foo(_Manager &amp;, Student &amp;) &#123; std::cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; std::endl;&#125;// &#125;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!int main() &#123; Manager m; Student s; m.DoSomeThingTo(s); return 0;&#125;]]></content>
       <categories>
         <category>未分类</category>
       </categories>
       <tags>
         <tag>C++</tag>
-        <tag>反射</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[C++的爱与恨]]></title>
-    <url>%2Fpost%2Fc-%E7%9A%84%E7%88%B1%E4%B8%8E%E6%81%A8%2F</url>
-    <content type="text"><![CDATA[优点 静态，确定类型 面向对象又底层 自由度高 模板编程 RAII等 缺点 自由度高，就跟西方所谓的自由一样没有标准命名规范，没有标准包管理系统，没有标准构建系统编程人员需要做很多编程工作之外的内容自由应该是创造自由，思想自由，而不是很多不必要的自由创造与思想是编程最重要的部分 模板编程模板的重要作用有二：一是代码复用，二是反射其中的反射机制跟坨屎一样 其他语法其实包含着思想，语法应该体现思想。这可以参考Rust]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
+        <tag>C++语法</tag>
       </tags>
   </entry>
   <entry>
@@ -108,6 +72,42 @@
       <tags>
         <tag>学习笔记</tag>
         <tag>数字信号处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[信号与系统学习笔记]]></title>
+    <url>%2Fpost%2F%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[信号图１、几种信号 定义第一种定义：随时间变化的物理量 不一定只随时间变化 不一定是物理量 不一定是变量 第二种定义：一个确定的函数，如图１ 信号的分类分类方法１： 确定性信号，可以用确定的时间函数加以确定 随机信号，可以统计特征描述 分类方法２，如图１： 连续信号 离散信号 分类方法３： 周期信号 非周期信号 讨论：周期信号与周期信号的叠加或相乘之后的信号 信号的表述时域法$f(t)$变换域法]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>信号与系统</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[对反射机制的思考]]></title>
+    <url>%2Fpost%2F%E5%AF%B9%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E7%9A%84%E6%80%9D%E8%80%83%2F</url>
+    <content type="text"><![CDATA[反射的作用 类型的属性 某种函数（过程）调用的合法性 C++中遇到的问题 如何判断一个调用是否合法，并确定具体调用了哪个重载函数虽然可以以某种方式实现，但实现的方法非常有技巧性，不常规]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>反射</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++模板实参推导]]></title>
+    <url>%2Fpost%2Fc-%E6%A8%A1%E6%9D%BF%E5%AE%9E%E5%8F%82%E6%8E%A8%E5%AF%BC%2F</url>
+    <content type="text"><![CDATA[模板实参推导 - cppreference.com 引用折叠 T &amp; &amp; T &amp; &amp;&amp; T &amp;&amp; &amp;都被折叠为T &amp; T &amp;&amp; &amp;&amp;折叠为T &amp;&amp; 模板实参推导表 int &amp; const int &amp; int &amp;&amp; const int &amp;&amp; T / const T (int) [T = int] (int) [T = int] (int) [T = int] (int) [T = int] T &amp; (int&amp;) [T = int] (int const&amp;) [T = int const] ERROR (int const&amp;) [T = int const] const T &amp; (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] T &amp;&amp; (int&amp;) [T = int&amp;] (int const&amp;) [T = int const&amp;] (int&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int const] const T &amp;&amp; ERROR ERROR (int const&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int] 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102#include &lt;iostream&gt;using namespace std;class A2&#123;&#125;;template&lt;typename T&gt;void fooT(T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocT(const T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTR(T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTR(const T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTr(T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTr(const T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;void func() &#123; int i = 0; const int ci = 0; A2 a; const A2 ca = A2(); cout &lt;&lt; "int:" &lt;&lt;endl; fooT(i); foocT(i); fooTR(i); foocTR(i); fooTr(i); // ERROR //foocTr(i); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "const int:" &lt;&lt;endl; fooT(ci); foocT(ci); fooTR(ci); foocTR(ci); fooTr(ci); // ERROR //foocTr(ci); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "int &amp;&amp;:" &lt;&lt;endl; fooT(move(i)); foocT(move(i)); // ERROR //fooTR(move(i)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt;endl; foocTR(move(i)); fooTr(move(i)); foocTr(move(i)); cout &lt;&lt; "const int &amp;&amp;:" &lt;&lt;endl; fooT(move(ci)); foocT(move(ci)); fooTR(move(ci)); foocTR(move(ci)); fooTr(move(ci)); foocTr(move(ci)); cout &lt;&lt; "A:" &lt;&lt; endl; fooT(a); foocT(a); fooTR(a); foocTR(a); fooTr(a); // ERROR //foocTr(a); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "const A:" &lt;&lt; endl; fooT(ca); foocT(ca); fooTR(ca); foocTR(ca); fooTr(ca); // ERROR //foocTr(ca); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "A &amp;&amp;:" &lt;&lt; endl; fooT(move(a)); foocT(move(a)); // ERROR //fooTR(move(a)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt; endl; foocTR(move(a)); fooTr(move(a)); foocTr(move(a)); cout &lt;&lt; "const A &amp;&amp;:" &lt;&lt; endl; fooT(move(ca)); foocT(move(ca)); fooTR(move(ca)); foocTR(move(ca)); fooTr(move(ca)); foocTr(move(ca));&#125; 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int &amp;]void foocTr(const T &amp;&amp;) ERRORconst int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int &amp;]void foocTr(const T &amp;&amp;) ERRORint &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int]void foocTr(const T &amp;&amp;) [T = int]const int &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int]void foocTr(const T &amp;&amp;) [T = int]A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2 &amp;]void fooTr(const T &amp;&amp;) ERRORconst A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2 &amp;]void fooTr(const T &amp;&amp;) ERRORA &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2]void foocTr(const T &amp;&amp;) [T = A2]const A &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2]void foocTr(const T &amp;&amp;) [T = A2]]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++语法</tag>
       </tags>
   </entry>
   <entry>
@@ -211,9 +211,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[C++语法]]></title>
-    <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载C++默认类型与类型转换默认类型 整数默认有符号 3 int 3000000000 long &#39;3&#39; char 浮点数默认double类型转换 C++定义了算数类型之间的内置转换以尽可能防止精度损失———《C+P》 隐式类型转换何时发生隐式类型转换 混合类型表达式，操作数转换为相同类型 条件表达式，转换为bool 赋值语句 算数转换转换原则是尽可能少的减少精度损失TODO 溢出问题TODO double与int等之间的转换 指针转换注意数组变量 数值或指针 -&gt; boolbool -&gt; 数值枚举类型枚举类型默认继承于int 隐式类类型转换“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换 除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit——《C+P》 显示类型转换包含以下操作符（或C风格）的强制类型转换称作显示类型转换：static_cast，dynamic_cast，const_cast，reinterpret_cast 何时需要强制类型转换隐式类型转换被禁止时等 RVO返回值优化想想构造函数→_→]]></content>
+    <title><![CDATA[C++ inline vs static vs static inline]]></title>
+    <url>%2Fpost%2Fc-inline-vs-static-vs-static-inline%2F</url>
+    <content type="text"><![CDATA[##inline链接标记为WEAK，并建议内联 ##static链接标记为LOCAL ##static inline同static，同时建议内联static inline vs inline vs static in C++]]></content>
       <categories>
         <category>未分类</category>
       </categories>
@@ -235,9 +235,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[C++ inline vs static vs static inline]]></title>
-    <url>%2Fpost%2Fc-inline-vs-static-vs-static-inline%2F</url>
-    <content type="text"><![CDATA[##inline链接标记为WEAK，并建议内联 ##static链接标记为LOCAL ##static inline同static，同时建议内联static inline vs inline vs static in C++]]></content>
+    <title><![CDATA[C++语法]]></title>
+    <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载C++默认类型与类型转换默认类型 整数默认有符号 3 int 3000000000 long &#39;3&#39; char 浮点数默认double类型转换 C++定义了算数类型之间的内置转换以尽可能防止精度损失———《C+P》 隐式类型转换何时发生隐式类型转换 混合类型表达式，操作数转换为相同类型 条件表达式，转换为bool 赋值语句 算数转换转换原则是尽可能少的减少精度损失TODO 溢出问题TODO double与int等之间的转换 指针转换注意数组变量 数值或指针 -&gt; boolbool -&gt; 数值枚举类型枚举类型默认继承于int 隐式类类型转换“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换 除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit——《C+P》 显示类型转换包含以下操作符（或C风格）的强制类型转换称作显示类型转换：static_cast，dynamic_cast，const_cast，reinterpret_cast 何时需要强制类型转换隐式类型转换被禁止时等 RVO返回值优化想想构造函数→_→]]></content>
       <categories>
         <category>未分类</category>
       </categories>
