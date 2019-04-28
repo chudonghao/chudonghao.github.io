@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="慢">
 <meta property="og:description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-07T11:20:09.628Z">
+<meta property="og:updated_time" content="2019-04-21T05:06:40.079Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++填坑之路">
 <meta name="twitter:description" content="数组变量加减操作1234567#include&amp;lt;iostream&amp;gt;using namespace std;void main()&amp;#123;  int a[] = &amp;#123;0,1,2&amp;#125;;  cout &amp;lt;&amp;lt; *(a+1) &amp;lt;&amp;lt; endl;//NOTE a可视为元素指针  //cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错">
@@ -425,7 +425,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-04-07 19:20:09" itemprop="dateModified" datetime="2019-04-07T19:20:09+08:00">2019-04-07</time>
+                <time title="修改时间：2019-04-21 13:06:40" itemprop="dateModified" datetime="2019-04-21T13:06:40+08:00">2019-04-21</time>
               
             
           </span>
@@ -494,7 +494,7 @@
 <h3 id="delete-new-1-问题"><a href="#delete-new-1-问题" class="headerlink" title="delete[](new[]+1)问题"></a>delete[](new[]+1)问题</h3><p>cplusplus.com上说：</p>
 <ul>
 <li>delete[]的参数ptr，应该是new[]返回的ptr</li>
-<li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="A-a-new-B-2-delete-a"><a href="#A-a-new-B-2-delete-a" class="headerlink" title="A *a = new B[2];delete []a;"></a>A *a = new B[2];delete []a;</h3>经过测试，也是未定义的。<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上两种行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。<h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2>先构后析<h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2>将会产生未定义的结果<h2 id="操作符的操作数的求值顺序"><a href="#操作符的操作数的求值顺序" class="headerlink" title="操作符的操作数的求值顺序"></a>操作符的操作数的求值顺序</h2><blockquote>
+<li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="A-a-new-B-2-delete-a"><a href="#A-a-new-B-2-delete-a" class="headerlink" title="A *a = new B[2];delete []a;"></a>A *a = new B[2];delete []a;</h3>经过测试，也是未定义的。<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。<h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2>先构后析<h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2>将会产生未定义的结果<h2 id="操作符的操作数的求值顺序"><a href="#操作符的操作数的求值顺序" class="headerlink" title="操作符的操作数的求值顺序"></a>操作符的操作数的求值顺序</h2><blockquote>
 <p>“除逻辑操作符，“?:”操作符，“,”操作符外，其他操作符并未指定其操作数的求职顺序”<br>———《C+P》</p>
 </blockquote>
 </li>
@@ -550,8 +550,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/post/c-模板实参推导/" rel="prev" title="C++模板实参推导">
-                C++模板实参推导 <i class="fa fa-chevron-right"></i>
+              <a href="/post/数字信号处理学习笔记/" rel="prev" title="数字信号处理学习笔记">
+                数字信号处理学习笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -617,7 +617,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">20</span>
+                    <span class="site-state-item-count">26</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -681,7 +681,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">14</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">19</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
