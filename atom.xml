@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-28T12:31:32.889Z</updated>
+  <updated>2019-05-04T09:54:55.256Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,22 +17,86 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>给启汉</title>
-    <link href="http://yoursite.com/post/%E7%BB%99%E5%90%AF%E6%B1%89/"/>
-    <id>http://yoursite.com/post/给启汉/</id>
-    <published>2019-04-28T12:00:00.000Z</published>
-    <updated>2019-04-28T12:31:32.889Z</updated>
+    <title>经济学知识</title>
+    <link href="http://yoursite.com/post/%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%9F%A5%E8%AF%86/"/>
+    <id>http://yoursite.com/post/经济学知识/</id>
+    <published>2019-05-04T08:25:00.000Z</published>
+    <updated>2019-05-04T09:54:55.256Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>方括号的意思是可选，如<code>[person]</code></p><p>尖括号的意思是必须，如<code>&lt;ip&gt;</code></p><h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><p>作用：用来连接远程服务器</p><p>如何使用：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh [&lt;person&gt;@]&lt;ip&gt;</span><br></pre></td></tr></table></figure><h2 id="tigervncserver"><a href="#tigervncserver" class="headerlink" title="tigervncserver"></a>tigervncserver</h2><p>作用：启动一个桌面环境，等待用户连接</p><p>如何使用：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tigervncserver [-localhost no] :&lt;num&gt;</span><br></pre></td></tr></table></figure><p>其中，<code>-localhost no</code>意思是接受远程连接，在你这里必须</p><h2 id="xtigervncviewer"><a href="#xtigervncviewer" class="headerlink" title="xtigervncviewer"></a>xtigervncviewer</h2><p>作用：连接一个vnc桌面服务</p><p>其中要注意ip、桌面id即上面的<code>&lt;num&gt;</code></p><p>如：</p><p>VNC server<code>127.0.0.1:2</code></p><p>额外：连接桌面之后，按<code>F8</code>可以跳出vncviewer的选项</p>]]></content>
+    <content type="html"><![CDATA[<p>一些经济学名词</p><a id="more"></a><h2 id="蓝海战略"><a href="#蓝海战略" class="headerlink" title="蓝海战略"></a><a href="https://baike.baidu.com/item/蓝海战略/16203328" target="_blank" rel="noopener">蓝海战略</a></h2><p>蓝海战略是“红海战略”的对称。</p><p>目的是摆脱竞争，通过创造和获得新的需求、实施差异化和低成本，获取更高利润率。因把无人竞争的市场比作没有血腥的蓝海，故称。</p><h2 id="流动性"><a href="#流动性" class="headerlink" title="流动性"></a><a href="https://baike.baidu.com/item/流动性" target="_blank" rel="noopener">流动性</a></h2><h2 id="边际效应"><a href="#边际效应" class="headerlink" title="边际效应"></a><a href="https://baike.baidu.com/item/边际效应" target="_blank" rel="noopener">边际效应</a></h2><h2 id="路径依赖"><a href="#路径依赖" class="headerlink" title="路径依赖"></a><a href="https://baike.baidu.com/item/路径依赖" target="_blank" rel="noopener">路径依赖</a></h2><h2 id="价格歧视"><a href="#价格歧视" class="headerlink" title="价格歧视"></a><a href="https://baike.baidu.com/item/价格歧视" target="_blank" rel="noopener">价格歧视</a></h2><p>按人定价，按量定价，按类定价</p><h2 id="巨无霸指数"><a href="#巨无霸指数" class="headerlink" title="巨无霸指数"></a><a href="https://baike.baidu.com/item/巨无霸指数" target="_blank" rel="noopener">巨无霸指数</a></h2><h2 id="破窗效应"><a href="#破窗效应" class="headerlink" title="破窗效应"></a><a href="https://baike.baidu.com/item/破窗理论" target="_blank" rel="noopener">破窗效应</a></h2><p>此理论认为环境中的不良现象如果被放任存在，会诱使人们仿效，甚至变本加厉。</p><h2 id="比较优势"><a href="#比较优势" class="headerlink" title="比较优势"></a><a href="https://baike.baidu.com/item/比较优势" target="_blank" rel="noopener">比较优势</a></h2><p>相对应的一个概念是绝对优势。</p><p>扬长避短。</p><h2 id="帕累托优化"><a href="#帕累托优化" class="headerlink" title="帕累托优化"></a><a href="https://baike.baidu.com/item/帕累托优化" target="_blank" rel="noopener">帕累托优化</a></h2><h2 id="机会成本"><a href="#机会成本" class="headerlink" title="机会成本"></a>机会成本</h2><h2 id="沉没成本"><a href="#沉没成本" class="headerlink" title="沉没成本"></a>沉没成本</h2><h2 id="信息不对称"><a href="#信息不对称" class="headerlink" title="信息不对称"></a><a href="https://baike.baidu.com/item/信息不对称" target="_blank" rel="noopener">信息不对称</a></h2><h2 id="不完全信息博弈"><a href="#不完全信息博弈" class="headerlink" title="不完全信息博弈"></a><a href="https://baike.baidu.com/item/%E4%B8%8D%E5%AE%8C%E5%85%A8%E4%BF%A1%E6%81%AF%E5%8D%9A%E5%BC%88" target="_blank" rel="noopener">不完全信息博弈</a></h2>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一些经济学名词&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="经济学" scheme="http://yoursite.com/tags/%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>高等数学学习笔记</title>
+    <link href="http://yoursite.com/post/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/高等数学学习笔记/</id>
+    <published>2019-04-30T10:00:00.000Z</published>
+    <updated>2019-04-30T11:46:09.465Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="函数、极限、连续"><a href="#函数、极限、连续" class="headerlink" title="函数、极限、连续"></a>函数、极限、连续</h1><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="邻域与去心邻域"><a href="#邻域与去心邻域" class="headerlink" title="邻域与去心邻域"></a>邻域与去心邻域</h4><h4 id="函数的定义"><a href="#函数的定义" class="headerlink" title="函数的定义"></a>函数的定义</h4><h4 id="函数的表示方法"><a href="#函数的表示方法" class="headerlink" title="函数的表示方法"></a>函数的表示方法</h4><h5 id="显函数表示"><a href="#显函数表示" class="headerlink" title="显函数表示"></a>显函数表示</h5><h5 id="隐函数表示"><a href="#隐函数表示" class="headerlink" title="隐函数表示"></a>隐函数表示</h5><h5 id="参数方程表示"><a href="#参数方程表示" class="headerlink" title="参数方程表示"></a>参数方程表示</h5><h4 id="复合函数"><a href="#复合函数" class="headerlink" title="复合函数"></a>复合函数</h4><h4 id="反函数"><a href="#反函数" class="headerlink" title="反函数"></a>反函数</h4><h4 id="基本初等函数"><a href="#基本初等函数" class="headerlink" title="基本初等函数"></a>基本初等函数</h4><h4 id="初等函数"><a href="#初等函数" class="headerlink" title="初等函数"></a>初等函数</h4><h3 id="函数的初等特性"><a href="#函数的初等特性" class="headerlink" title="函数的初等特性"></a>函数的初等特性</h3><h4 id="单调性"><a href="#单调性" class="headerlink" title="单调性"></a>单调性</h4><h4 id="周期性"><a href="#周期性" class="headerlink" title="周期性"></a>周期性</h4><h4 id="有界性"><a href="#有界性" class="headerlink" title="有界性"></a>有界性</h4><h4 id="奇偶性"><a href="#奇偶性" class="headerlink" title="奇偶性"></a>奇偶性</h4><h2 id="极限"><a href="#极限" class="headerlink" title="极限"></a>极限</h2><h3 id="基本概念-1"><a href="#基本概念-1" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h4><h4 id="自变量趋于有限值时函数的极限"><a href="#自变量趋于有限值时函数的极限" class="headerlink" title="自变量趋于有限值时函数的极限"></a>自变量趋于有限值时函数的极限</h4><h4 id="自变量趋于无穷时函数的极限"><a href="#自变量趋于无穷时函数的极限" class="headerlink" title="自变量趋于无穷时函数的极限"></a>自变量趋于无穷时函数的极限</h4><h4 id="无穷小与无穷大"><a href="#无穷小与无穷大" class="headerlink" title="无穷小与无穷大"></a>无穷小与无穷大</h4><h3 id="极限的性质"><a href="#极限的性质" class="headerlink" title="极限的性质"></a>极限的性质</h3><h4 id="基本性质"><a href="#基本性质" class="headerlink" title="基本性质"></a>基本性质</h4><h5 id="唯一性"><a href="#唯一性" class="headerlink" title="唯一性"></a>唯一性</h5><h5 id="有界性-1"><a href="#有界性-1" class="headerlink" title="有界性"></a>有界性</h5><h5 id="保号性"><a href="#保号性" class="headerlink" title="保号性"></a>保号性</h5><h5 id="列与子列极限的关系"><a href="#列与子列极限的关系" class="headerlink" title="列与子列极限的关系"></a>列与子列极限的关系</h5><h4 id="存在性质"><a href="#存在性质" class="headerlink" title="存在性质"></a>存在性质</h4><h5 id="夹逼定理"><a href="#夹逼定理" class="headerlink" title="夹逼定理"></a>夹逼定理</h5><h5 id="单调有界的数列必有极限"><a href="#单调有界的数列必有极限" class="headerlink" title="单调有界的数列必有极限"></a>单调有界的数列必有极限</h5><h4 id="运算性质"><a href="#运算性质" class="headerlink" title="运算性质"></a>运算性质</h4><h5 id="四则运算性质"><a href="#四则运算性质" class="headerlink" title="四则运算性质"></a>四则运算性质</h5><h5 id="复合运算性质"><a href="#复合运算性质" class="headerlink" title="复合运算性质"></a>复合运算性质</h5><h4 id="无穷小的性质"><a href="#无穷小的性质" class="headerlink" title="无穷小的性质"></a>无穷小的性质</h4><h5 id="基本性质-1"><a href="#基本性质-1" class="headerlink" title="基本性质"></a>基本性质</h5><h5 id="等价无穷小"><a href="#等价无穷小" class="headerlink" title="等价无穷小"></a>等价无穷小</h5><h5 id="x-gt-0时常用的等价无穷小"><a href="#x-gt-0时常用的等价无穷小" class="headerlink" title="x-&gt;0时常用的等价无穷小"></a>x-&gt;0时常用的等价无穷小</h5><h3 id="两个重要极限"><a href="#两个重要极限" class="headerlink" title="两个重要极限"></a>两个重要极限</h3><h2 id="函数的连续性"><a href="#函数的连续性" class="headerlink" title="函数的连续性"></a>函数的连续性</h2><h3 id="基本概念-2"><a href="#基本概念-2" class="headerlink" title="基本概念"></a>基本概念</h3><h4 id="连续"><a href="#连续" class="headerlink" title="连续"></a>连续</h4><h4 id="间断点的分类"><a href="#间断点的分类" class="headerlink" title="间断点的分类"></a>间断点的分类</h4><h3 id="闭区间上连续函数的性质"><a href="#闭区间上连续函数的性质" class="headerlink" title="闭区间上连续函数的性质"></a>闭区间上连续函数的性质</h3><h4 id="最值定理"><a href="#最值定理" class="headerlink" title="最值定理"></a>最值定理</h4><h4 id="有界定理"><a href="#有界定理" class="headerlink" title="有界定理"></a>有界定理</h4><h4 id="零点定理"><a href="#零点定理" class="headerlink" title="零点定理"></a>零点定理</h4><h4 id="介值定理"><a href="#介值定理" class="headerlink" title="介值定理"></a>介值定理</h4><h1 id="导数与微分"><a href="#导数与微分" class="headerlink" title="导数与微分"></a>导数与微分</h1><h2 id="基本概念-3"><a href="#基本概念-3" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="导数"><a href="#导数" class="headerlink" title="导数"></a>导数</h3><h3 id="高阶导数"><a href="#高阶导数" class="headerlink" title="高阶导数"></a>高阶导数</h3><h3 id="可微"><a href="#可微" class="headerlink" title="可微"></a>可微</h3><h2 id="导数理论"><a href="#导数理论" class="headerlink" title="导数理论"></a>导数理论</h2><h3 id="基本公式"><a href="#基本公式" class="headerlink" title="基本公式"></a>基本公式</h3><h3 id="四则运算法则"><a href="#四则运算法则" class="headerlink" title="四则运算法则"></a>四则运算法则</h3><h3 id="复合函数求导法则"><a href="#复合函数求导法则" class="headerlink" title="复合函数求导法则"></a>复合函数求导法则</h3><h3 id="函数及其反函数一二阶导数之间关系"><a href="#函数及其反函数一二阶导数之间关系" class="headerlink" title="函数及其反函数一二阶导数之间关系"></a>函数及其反函数一二阶导数之间关系</h3><h3 id="隐函数与参数方程确定的导数"><a href="#隐函数与参数方程确定的导数" class="headerlink" title="隐函数与参数方程确定的导数"></a>隐函数与参数方程确定的导数</h3><h1 id="中值定理"><a href="#中值定理" class="headerlink" title="中值定理"></a>中值定理</h1>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h2 id=&quot;前提&quot;&gt;&lt;a href=&quot;#前提&quot; class=&quot;headerlink&quot; title=&quot;前提&quot;&gt;&lt;/a&gt;前提&lt;/h2&gt;&lt;p&gt;方括号的意思是可选，如&lt;code&gt;[person]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;尖括号的意思是必须，如&lt;
+        &lt;h1 id=&quot;函数、极限、连续&quot;&gt;&lt;a href=&quot;#函数、极限、连续&quot; class=&quot;headerlink&quot; title=&quot;函数、极限、连续&quot;&gt;&lt;/a&gt;函数、极限、连续&lt;/h1&gt;&lt;h2 id=&quot;函数&quot;&gt;&lt;a href=&quot;#函数&quot; class=&quot;headerlink&quot; titl
       
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="高等数学" scheme="http://yoursite.com/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>未命名呢</title>
+    <link href="http://yoursite.com/post/%E6%9C%AA%E5%91%BD%E5%90%8D%E5%91%A2/"/>
+    <id>http://yoursite.com/post/未命名呢/</id>
+    <published>2019-04-28T15:00:00.000Z</published>
+    <updated>2019-04-28T16:19:22.568Z</updated>
+    
+    <content type="html"><![CDATA[<p>一些歌曲</p><a id="more"></a><p>我以为　品冠</p><p>像鱼　王贰浪</p><p>慢慢　张学友</p><p>I believe　申晟勋</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一些歌曲&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>给启汉</title>
+    <link href="http://yoursite.com/post/%E7%BB%99%E5%90%AF%E6%B1%89/"/>
+    <id>http://yoursite.com/post/给启汉/</id>
+    <published>2019-04-28T12:00:00.000Z</published>
+    <updated>2019-04-28T12:43:36.938Z</updated>
+    
+    <content type="html"><![CDATA[<p>一些帮助</p><a id="more"></a><h2 id="前提须知"><a href="#前提须知" class="headerlink" title="前提须知"></a>前提须知</h2><p>方括号的意思是可选，如<code>[person]</code></p><p>尖括号的意思是必须，如<code>&lt;ip&gt;</code></p><h2 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h2><p>作用：用来连接远程服务器</p><p>如何使用：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh [&lt;person&gt;@]&lt;ip&gt;</span><br></pre></td></tr></table></figure><h2 id="tigervncserver"><a href="#tigervncserver" class="headerlink" title="tigervncserver"></a>tigervncserver</h2><p>作用：启动一个桌面环境，等待用户连接</p><p>如何使用：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tigervncserver [-localhost no] :&lt;num&gt;</span><br></pre></td></tr></table></figure><p>其中，<code>-localhost no</code>意思是接受远程连接，在你这里必须</p><h2 id="xtigervncviewer"><a href="#xtigervncviewer" class="headerlink" title="xtigervncviewer"></a>xtigervncviewer</h2><p>作用：连接一个vnc桌面服务</p><p>其中要注意ip、桌面id即上面的<code>&lt;num&gt;</code></p><p>如：</p><p>VNC server<code>127.0.0.1:2</code></p><p>额外：连接桌面之后，按<code>F8</code>可以跳出vncviewer的选项</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一些帮助&lt;/p&gt;
     
     </summary>
     
@@ -114,60 +178,22 @@
   </entry>
   
   <entry>
-    <title>对反射机制的思考</title>
-    <link href="http://yoursite.com/post/%E5%AF%B9%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://yoursite.com/post/对反射机制的思考/</id>
+    <title>自动控制原理学习笔记</title>
+    <link href="http://yoursite.com/post/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/自动控制原理学习笔记/</id>
     <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-21T11:13:08.002Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="反射的作用"><a href="#反射的作用" class="headerlink" title="反射的作用"></a>反射的作用</h2><ul><li>类型的属性</li><li>某种函数（过程）调用的合法性</li></ul><h2 id="C-中遇到的问题"><a href="#C-中遇到的问题" class="headerlink" title="C++中遇到的问题"></a>C++中遇到的问题</h2><ul><li>如何判断一个调用是否合法，并确定具体调用了<strong>哪个重载</strong>函数<br><br>虽然可以以某种方式实现，但实现的方法非常有技巧性，不常规</li></ul>]]></content>
+    <updated>2019-04-20T05:34:47.089Z</updated>
     
     <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;反射的作用&quot;&gt;&lt;a href=&quot;#反射的作用&quot; class=&quot;headerlink&quot; title=&quot;反射的作用&quot;&gt;&lt;/a&gt;反射的作用&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;类型的属性&lt;/li&gt;
-&lt;li&gt;某种函数（过程）调用的合法性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;C-中
-      
     
     </summary>
     
       <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
     
     
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
-      <category term="反射" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%B0%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++模板编程</title>
-    <link href="http://yoursite.com/post/c-%E6%A8%A1%E6%9D%BF%E7%BC%96%E7%A8%8B/"/>
-    <id>http://yoursite.com/post/c-模板编程/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-22T16:17:22.768Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="模板的作用"><a href="#模板的作用" class="headerlink" title="模板的作用"></a>模板的作用</h2><h3 id="代码复用"><a href="#代码复用" class="headerlink" title="代码复用"></a>代码复用</h3><h3 id="静态反射机制"><a href="#静态反射机制" class="headerlink" title="静态反射机制"></a>静态反射机制</h3><p>对C++的静态反射机制，只能用NM来形容我的内心的感受</p><h2 id="主要名词"><a href="#主要名词" class="headerlink" title="主要名词"></a>主要名词</h2><p>重载决议　SFINAE　面向对象　面向过程　enable_if　auto　decltype　显示实例化　类型别名，别名模版　重载函数的地址</p><ul><li>enable_if使用SFINAE可以处理ambiguous</li><li>重载决议可以处理TODO</li></ul><h2 id="编译过程"><a href="#编译过程" class="headerlink" title="编译过程"></a>编译过程</h2><p>函数模板名称查找（可能涉及参数依赖查找）　-&gt;　模板实参推导　-&gt;　模板实参替换（可能涉及 SFINAE ）　-&gt;　重载决议</p><h2 id="遇到的特殊要求：精确匹配函数，拒绝隐式转换"><a href="#遇到的特殊要求：精确匹配函数，拒绝隐式转换" class="headerlink" title="遇到的特殊要求：精确匹配函数，拒绝隐式转换"></a>遇到的特殊要求：精确匹配函数，拒绝隐式转换</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*******************************************************************************</span></span><br><span class="line"><span class="comment"> * lib.h</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;type_traits&gt;</span></span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _T, <span class="keyword">typename</span> _T2&gt;</span><br><span class="line"><span class="function"><span class="keyword">extern</span> <span class="keyword">void</span> <span class="title">foo</span><span class="params">(_T, _T2)</span></span>;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Manager, <span class="keyword">typename</span> _P&gt;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">IsPreciseFuncRequiredDefined</span> &#123;</span></span><br><span class="line">  <span class="function"><span class="keyword">typedef</span> <span class="title">void</span><span class="params">(*Func)</span><span class="params">(_Manager &amp;, _P &amp;)</span></span>;</span><br><span class="line">  <span class="keyword">static</span> <span class="built_in">std</span>::true_type _(Func) &#123;&#125;</span><br><span class="line">  <span class="keyword">static</span> <span class="built_in">std</span>::false_type _(...) &#123;&#125;</span><br><span class="line">  <span class="function"><span class="keyword">typedef</span> <span class="title">decltype</span><span class="params">(_(&amp;foo))</span> type</span>;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keyword">bool</span> value = type::value;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Manager</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="keyword">template</span>&lt;<span class="keyword">typename</span> _P,</span><br><span class="line">    <span class="keyword">typename</span> <span class="built_in">std</span>::enable_if&lt;</span><br><span class="line">      IsPreciseFuncRequiredDefined&lt;Manager, _P&gt;::value</span><br><span class="line">    &gt;::type * = <span class="literal">nullptr</span>&gt;</span><br><span class="line">  <span class="keyword">void</span> DoSomeThingTo(_P &amp;p) &#123;</span><br><span class="line">    foo(*<span class="keyword">this</span>, p);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">/*******************************************************************************</span></span><br><span class="line"><span class="comment"> * main.cpp</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="comment">//#include&lt;lib.h&gt;</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span> &#123;</span>&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span> :</span> <span class="keyword">public</span> Person &#123;&#125;;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Manager&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(_Manager &amp;, Person &amp;)</span> </span>&#123;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &#123;注释这部分则编译不通过，取消注释这部分则编译通过，满足要求!!!!!!!!!!!!!!!!!!!!!!!!!!</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Manager&gt;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(_Manager &amp;, Student &amp;)</span> </span>&#123;</span><br><span class="line">  <span class="built_in">std</span>::<span class="built_in">cout</span> &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; <span class="built_in">std</span>::<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// &#125;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  Manager m;</span><br><span class="line">  Student s;</span><br><span class="line">  m.DoSomeThingTo(s);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;模板的作用&quot;&gt;&lt;a href=&quot;#模板的作用&quot; class=&quot;headerlink&quot; title=&quot;模板的作用&quot;&gt;&lt;/a&gt;模板的作用&lt;/h2&gt;&lt;h3 id=&quot;代码复用&quot;&gt;&lt;a href=&quot;#代码复用&quot; class=&quot;headerlink&quot; title=&quot;代码复用&quot;
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
+      <category term="自动控制原理" scheme="http://yoursite.com/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/"/>
     
   </entry>
   
@@ -196,6 +222,57 @@
       <category term="信号与系统" scheme="http://yoursite.com/tags/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
     
       <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数字信号处理学习笔记</title>
+    <link href="http://yoursite.com/post/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/数字信号处理学习笔记/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-20T05:34:25.269Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数字信号处理" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对反射机制的思考</title>
+    <link href="http://yoursite.com/post/%E5%AF%B9%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://yoursite.com/post/对反射机制的思考/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-28T12:42:28.389Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="反射的作用"><a href="#反射的作用" class="headerlink" title="反射的作用"></a>反射的作用</h2><ul><li>类型的属性</li><li>某种函数（过程）调用的合法性</li></ul><h2 id="C-中遇到的问题"><a href="#C-中遇到的问题" class="headerlink" title="C++中遇到的问题"></a>C++中遇到的问题</h2><ul><li>如何判断一个调用是否合法，并确定具体调用了<strong>哪个重载</strong>函数</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;反射的作用&quot;&gt;&lt;a href=&quot;#反射的作用&quot; class=&quot;headerlink&quot; title=&quot;反射的作用&quot;&gt;&lt;/a&gt;反射的作用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;类型的属性&lt;/li&gt;
+&lt;li&gt;某种函数（过程）调用的合法性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;C-中
+      
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="反射" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%B0%84/"/>
     
   </entry>
   
@@ -276,42 +353,54 @@
   </entry>
   
   <entry>
-    <title>数字信号处理学习笔记</title>
-    <link href="http://yoursite.com/post/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/post/数字信号处理学习笔记/</id>
+    <title>C++模板编程</title>
+    <link href="http://yoursite.com/post/c-%E6%A8%A1%E6%9D%BF%E7%BC%96%E7%A8%8B/"/>
+    <id>http://yoursite.com/post/c-模板编程/</id>
     <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-20T05:34:25.269Z</updated>
+    <updated>2019-04-30T10:06:17.895Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="模板的作用"><a href="#模板的作用" class="headerlink" title="模板的作用"></a>模板的作用</h2><h3 id="代码复用"><a href="#代码复用" class="headerlink" title="代码复用"></a>代码复用</h3><h3 id="静态反射机制"><a href="#静态反射机制" class="headerlink" title="静态反射机制"></a>静态反射机制</h3><p>对C++的静态反射机制，只能用NM来形容我的内心的感受</p><h2 id="主要名词"><a href="#主要名词" class="headerlink" title="主要名词"></a>主要名词</h2><p>重载决议　SFINAE　面向对象　面向过程　enable_if　auto　decltype　显示实例化　类型别名，别名模版　重载函数的地址</p><ul><li>enable_if使用SFINAE可以处理ambiguous</li><li>重载决议可以处理TODO</li></ul><h2 id="编译过程"><a href="#编译过程" class="headerlink" title="编译过程"></a>编译过程</h2><p>函数模板名称查找（可能涉及参数依赖查找）　-&gt;　模板实参推导　-&gt;　模板实参替换（可能涉及 SFINAE ）　-&gt;　重载决议</p><h2 id="遇到的特殊要求：精确匹配函数，拒绝隐式转换"><a href="#遇到的特殊要求：精确匹配函数，拒绝隐式转换" class="headerlink" title="遇到的特殊要求：精确匹配函数，拒绝隐式转换"></a>遇到的特殊要求：精确匹配函数，拒绝隐式转换</h2><p>目前只会用类偏特化</p>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;模板的作用&quot;&gt;&lt;a href=&quot;#模板的作用&quot; class=&quot;headerlink&quot; title=&quot;模板的作用&quot;&gt;&lt;/a&gt;模板的作用&lt;/h2&gt;&lt;h3 id=&quot;代码复用&quot;&gt;&lt;a href=&quot;#代码复用&quot; class=&quot;headerlink&quot; title=&quot;代码复用&quot;
+      
     
     </summary>
     
       <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
     
     
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
-      <category term="数字信号处理" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
-    <title>自动控制原理学习笔记</title>
-    <link href="http://yoursite.com/post/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/post/自动控制原理学习笔记/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-20T05:34:47.089Z</updated>
+    <title>C++填坑之路</title>
+    <link href="http://yoursite.com/post/c-%E5%A1%AB%E5%9D%91%E4%B9%8B%E8%B7%AF/"/>
+    <id>http://yoursite.com/post/c-填坑之路/</id>
+    <published>2019-03-28T14:43:25.000Z</published>
+    <updated>2019-04-21T05:06:40.079Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="数组变量加减操作"><a href="#数组变量加减操作" class="headerlink" title="数组变量加减操作"></a>数组变量加减操作</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *(a+<span class="number">1</span>) &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//NOTE a可视为元素指针</span></span><br><span class="line">  <span class="comment">//cout &lt;&lt; *++a &lt;&lt; endl;//编译错误</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="标准库迭代器"><a href="#标准库迭代器" class="headerlink" title="标准库迭代器"></a>标准库迭代器</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;list&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> i = v.begin();</span><br><span class="line">  v.erase(i);</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *i &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  <span class="built_in">list</span>&lt;<span class="keyword">int</span>&gt; l = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> j = l.begin();</span><br><span class="line">  l.erase(j);</span><br><span class="line">  <span class="comment">//NOTE 这里的j已经失效,虽然输出了1</span></span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *j &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">1 #这个输出看似正确,但没有意义</span><br></pre></td></tr></table></figure><p>迭代器是否失效请看<a href="https://zh.cppreference.com/w/cpp/container#迭代器非法化" target="_blank" rel="noopener">这里</a><br>使用时可以考虑erase函数的返回值 其为指向被删除元素的下一个元素的迭代器</p><h2 id="虚函数与成员函数调用行为与成员指针"><a href="#虚函数与成员函数调用行为与成员指针" class="headerlink" title="虚函数与成员函数调用行为与成员指针"></a>虚函数与成员函数调用行为与成员指针</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="keyword">int</span> i;</span><br><span class="line">  A() &#123; foo(); &#125;</span><br><span class="line">  ~A() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::func()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> :</span> <span class="keyword">public</span> A &#123;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  B() &#123; foo(); &#125;</span><br><span class="line">  ~B() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  B b;</span><br><span class="line">  B *bp = &amp;b;</span><br><span class="line">  A *ap = &amp;b;</span><br><span class="line">  ap-&gt;foo();</span><br><span class="line">  ap-&gt;A::foo();</span><br><span class="line">  <span class="keyword">void</span> (A::*Afoop)() = &amp;A::foo;</span><br><span class="line">  (ap-&gt;*Afoop)();</span><br><span class="line">  <span class="comment">//void (A::*Afuncp)() = &amp;A::func;</span></span><br><span class="line">  <span class="comment">//(bp-&gt;*Afuncp)();</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::f);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::func);</span><br><span class="line">  <span class="comment">//cout &lt;&lt; &amp;B::func &lt;&lt; endl;</span></span><br><span class="line">  ap-&gt;foooo();</span><br><span class="line">  ap-&gt;A::foooo();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">00000001</span><br><span class="line">00402010</span><br><span class="line">B::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">A::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br></pre></td></tr></table></figure><p>总结</p><ul><li>构造函数与析构函数一个重要的职能或特点是类型确定，即进入函数时，先修改虚表指针，所以在其中对虚函数的调用不是运行时确定的（编译器的实现是直接调用，即不通过虚表）</li><li>成员函数指针形式的调用是动态的（TODO 成员函数指针的实现）</li><li>带域的调用形式是编译期确定的</li></ul><h2 id="非法delete问题"><a href="#非法delete问题" class="headerlink" title="非法delete问题"></a>非法delete问题</h2><h3 id="delete-2问题"><a href="#delete-2问题" class="headerlink" title="delete*2问题"></a>delete*2问题</h3><blockquote><p>“自由存储区可能会被破坏”<br>———《C+P》</p></blockquote><h3 id="delete-new-1-问题"><a href="#delete-new-1-问题" class="headerlink" title="delete[](new[]+1)问题"></a>delete[](new[]+1)问题</h3><p>cplusplus.com上说：</p><ul><li>delete[]的参数ptr，应该是new[]返回的ptr</li><li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="A-a-new-B-2-delete-a"><a href="#A-a-new-B-2-delete-a" class="headerlink" title="A *a = new B[2];delete []a;"></a>A *a = new B[2];delete []a;</h3>经过测试，也是未定义的。<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。<h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2>先构后析<h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2>将会产生未定义的结果<h2 id="操作符的操作数的求值顺序"><a href="#操作符的操作数的求值顺序" class="headerlink" title="操作符的操作数的求值顺序"></a>操作符的操作数的求值顺序</h2><blockquote><p>“除逻辑操作符，“?:”操作符，“,”操作符外，其他操作符并未指定其操作数的求职顺序”<br>———《C+P》</p></blockquote></li></ul><p>比如<code>expr1*expr2</code>，<code>expr1</code>与<code>expr2</code>的求值顺序无法得知<br>比如表达式<code>if (ia[id++] &lt; ia[id] )</code>的行为没有明确定义<br>特别是在<code>expr1</code>与<code>expr2</code>操作涉及并修改同一对象时，求解顺序相当重要</p><p>个人：以上（《C+P》）的内容是我不经意间看见的，以前一直按照结合性方向使用上述类似表达式，比如自左向右结合就先计算左边，也没出现过严重问题，在这里记录以防不测。</p><h2 id="数组变量的使用"><a href="#数组变量的使用" class="headerlink" title="数组变量的使用"></a>数组变量的使用</h2><p>除<code>&amp;</code>与<code>sizeof</code>，对数组变量的使用将使数组变量提升为成员指针<br>例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//10被忽略，即arr的类型被视为int *</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span> arr[<span class="number">10</span>])</span></span>;</span><br><span class="line"><span class="comment">//arr_p被视为指向大小为10的数组的指针</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span>(*arr_p)[<span class="number">10</span>])</span></span>;</span><br></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
+    
+      &lt;h2 id=&quot;数组变量加减操作&quot;&gt;&lt;a href=&quot;#数组变量加减操作&quot; class=&quot;headerlink&quot; title=&quot;数组变量加减操作&quot;&gt;&lt;/a&gt;数组变量加减操作&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;meta-string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[] = &amp;#123;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; *(a+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &amp;lt;&amp;lt; &lt;span class=&quot;built_in&quot;&gt;endl&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//NOTE a可视为元素指针&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错误&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     
       <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
     
     
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
-      <category term="自动控制原理" scheme="http://yoursite.com/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/"/>
+      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -350,31 +439,6 @@
     
     
       <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++填坑之路</title>
-    <link href="http://yoursite.com/post/c-%E5%A1%AB%E5%9D%91%E4%B9%8B%E8%B7%AF/"/>
-    <id>http://yoursite.com/post/c-填坑之路/</id>
-    <published>2019-03-28T14:43:25.000Z</published>
-    <updated>2019-04-21T05:06:40.079Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="数组变量加减操作"><a href="#数组变量加减操作" class="headerlink" title="数组变量加减操作"></a>数组变量加减操作</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *(a+<span class="number">1</span>) &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//NOTE a可视为元素指针</span></span><br><span class="line">  <span class="comment">//cout &lt;&lt; *++a &lt;&lt; endl;//编译错误</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="标准库迭代器"><a href="#标准库迭代器" class="headerlink" title="标准库迭代器"></a>标准库迭代器</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;list&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> i = v.begin();</span><br><span class="line">  v.erase(i);</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *i &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  <span class="built_in">list</span>&lt;<span class="keyword">int</span>&gt; l = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> j = l.begin();</span><br><span class="line">  l.erase(j);</span><br><span class="line">  <span class="comment">//NOTE 这里的j已经失效,虽然输出了1</span></span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *j &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">1 #这个输出看似正确,但没有意义</span><br></pre></td></tr></table></figure><p>迭代器是否失效请看<a href="https://zh.cppreference.com/w/cpp/container#迭代器非法化" target="_blank" rel="noopener">这里</a><br>使用时可以考虑erase函数的返回值 其为指向被删除元素的下一个元素的迭代器</p><h2 id="虚函数与成员函数调用行为与成员指针"><a href="#虚函数与成员函数调用行为与成员指针" class="headerlink" title="虚函数与成员函数调用行为与成员指针"></a>虚函数与成员函数调用行为与成员指针</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="keyword">int</span> i;</span><br><span class="line">  A() &#123; foo(); &#125;</span><br><span class="line">  ~A() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::func()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> :</span> <span class="keyword">public</span> A &#123;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  B() &#123; foo(); &#125;</span><br><span class="line">  ~B() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  B b;</span><br><span class="line">  B *bp = &amp;b;</span><br><span class="line">  A *ap = &amp;b;</span><br><span class="line">  ap-&gt;foo();</span><br><span class="line">  ap-&gt;A::foo();</span><br><span class="line">  <span class="keyword">void</span> (A::*Afoop)() = &amp;A::foo;</span><br><span class="line">  (ap-&gt;*Afoop)();</span><br><span class="line">  <span class="comment">//void (A::*Afuncp)() = &amp;A::func;</span></span><br><span class="line">  <span class="comment">//(bp-&gt;*Afuncp)();</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::f);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::func);</span><br><span class="line">  <span class="comment">//cout &lt;&lt; &amp;B::func &lt;&lt; endl;</span></span><br><span class="line">  ap-&gt;foooo();</span><br><span class="line">  ap-&gt;A::foooo();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">00000001</span><br><span class="line">00402010</span><br><span class="line">B::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">A::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br></pre></td></tr></table></figure><p>总结</p><ul><li>构造函数与析构函数一个重要的职能或特点是类型确定，即进入函数时，先修改虚表指针，所以在其中对虚函数的调用不是运行时确定的（编译器的实现是直接调用，即不通过虚表）</li><li>成员函数指针形式的调用是动态的（TODO 成员函数指针的实现）</li><li>带域的调用形式是编译期确定的</li></ul><h2 id="非法delete问题"><a href="#非法delete问题" class="headerlink" title="非法delete问题"></a>非法delete问题</h2><h3 id="delete-2问题"><a href="#delete-2问题" class="headerlink" title="delete*2问题"></a>delete*2问题</h3><blockquote><p>“自由存储区可能会被破坏”<br>———《C+P》</p></blockquote><h3 id="delete-new-1-问题"><a href="#delete-new-1-问题" class="headerlink" title="delete[](new[]+1)问题"></a>delete[](new[]+1)问题</h3><p>cplusplus.com上说：</p><ul><li>delete[]的参数ptr，应该是new[]返回的ptr</li><li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="A-a-new-B-2-delete-a"><a href="#A-a-new-B-2-delete-a" class="headerlink" title="A *a = new B[2];delete []a;"></a>A *a = new B[2];delete []a;</h3>经过测试，也是未定义的。<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。<h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2>先构后析<h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2>将会产生未定义的结果<h2 id="操作符的操作数的求值顺序"><a href="#操作符的操作数的求值顺序" class="headerlink" title="操作符的操作数的求值顺序"></a>操作符的操作数的求值顺序</h2><blockquote><p>“除逻辑操作符，“?:”操作符，“,”操作符外，其他操作符并未指定其操作数的求职顺序”<br>———《C+P》</p></blockquote></li></ul><p>比如<code>expr1*expr2</code>，<code>expr1</code>与<code>expr2</code>的求值顺序无法得知<br>比如表达式<code>if (ia[id++] &lt; ia[id] )</code>的行为没有明确定义<br>特别是在<code>expr1</code>与<code>expr2</code>操作涉及并修改同一对象时，求解顺序相当重要</p><p>个人：以上（《C+P》）的内容是我不经意间看见的，以前一直按照结合性方向使用上述类似表达式，比如自左向右结合就先计算左边，也没出现过严重问题，在这里记录以防不测。</p><h2 id="数组变量的使用"><a href="#数组变量的使用" class="headerlink" title="数组变量的使用"></a>数组变量的使用</h2><p>除<code>&amp;</code>与<code>sizeof</code>，对数组变量的使用将使数组变量提升为成员指针<br>例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//10被忽略，即arr的类型被视为int *</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span> arr[<span class="number">10</span>])</span></span>;</span><br><span class="line"><span class="comment">//arr_p被视为指向大小为10的数组的指针</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span>(*arr_p)[<span class="number">10</span>])</span></span>;</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;数组变量加减操作&quot;&gt;&lt;a href=&quot;#数组变量加减操作&quot; class=&quot;headerlink&quot; title=&quot;数组变量加减操作&quot;&gt;&lt;/a&gt;数组变量加减操作&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;meta-string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[] = &amp;#123;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; *(a+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &amp;lt;&amp;lt; &lt;span class=&quot;built_in&quot;&gt;endl&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//NOTE a可视为元素指针&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错误&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -431,9 +495,9 @@
     <link href="http://yoursite.com/post/git/"/>
     <id>http://yoursite.com/post/git/</id>
     <published>2019-03-28T00:13:29.000Z</published>
-    <updated>2019-03-28T00:15:10.203Z</updated>
+    <updated>2019-05-04T08:07:43.801Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><p>credential.helper=store 保存登录远端仓库时使用的账号密码<br>http.proxy=”” 设置代理</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="config"><a href="#config" class="headerlink" title="config"></a>config</h2><p>credential.helper=store 保存登录远端仓库时使用的账号密码<br>http.proxy=”” 设置代理</p><h2 id="常用操作或命令"><a href="#常用操作或命令" class="headerlink" title="常用操作或命令"></a>常用操作或命令</h2><p>配置git</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git cofig [--global] &lt;1&gt;.&lt;2&gt; &lt;3&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;remote&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch [&lt;origin_name&gt; &lt;origin_branch_name&gt;[:&lt;branch_name&gt;]]</span><br></pre></td></tr></table></figure><p>获取空分支，即创建</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch [&lt;origin_name&gt; :&lt;branch_name&gt;]</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull [--rebase]</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push [&lt;origin_name&gt; &lt;branch_name&gt;[:&lt;origin_branch_name&gt;]]</span><br></pre></td></tr></table></figure><p>推送控分支，即删除</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push [&lt;origin_name&gt; :&lt;origin_branch_name&gt;]</span><br></pre></td></tr></table></figure><p>创建一个分支并追踪一个远程分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;branch_name&gt; &lt;origin_name&gt;/&lt;branch_name&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch &lt;&gt;</span><br></pre></td></tr></table></figure><p>使一个本地分支追踪一个远程分支</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -u &lt;origin_name&gt;/&lt;branch_name&gt; &lt;branch_name&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git revert &lt;&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase [-i] &lt;&gt;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge &lt;&gt;</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
@@ -499,80 +563,6 @@
     
     
       <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>docker</title>
-    <link href="http://yoursite.com/post/docker/"/>
-    <id>http://yoursite.com/post/docker/</id>
-    <published>2019-03-27T23:15:54.000Z</published>
-    <updated>2019-03-27T23:18:54.032Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://segmentfault.com/a/1190000007056245" target="_blank" rel="noopener">docker,nginx,php-fpm</a><br><a href="https://docs.docker.com/compose/" target="_blank" rel="noopener">Docker Compose</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000007056245&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;docker,nginx,php-fpm&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://docs.do
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="decker" scheme="http://yoursite.com/tags/decker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>常用软件</title>
-    <link href="http://yoursite.com/post/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://yoursite.com/post/常用软件/</id>
-    <published>2019-03-27T23:09:13.000Z</published>
-    <updated>2019-03-27T23:55:42.390Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="编辑Markdown"><a href="#编辑Markdown" class="headerlink" title="编辑Markdown"></a>编辑Markdown</h2><p><a href="http://remarkableapp.github.io" target="_blank" rel="noopener">Remarkable</a></p><h2 id="C-IDE"><a href="#C-IDE" class="headerlink" title="C++IDE"></a>C++IDE</h2><p><a href="https://www.jetbrains.com/clion/" target="_blank" rel="noopener">Clion</a></p><h2 id="壁纸自动切换"><a href="#壁纸自动切换" class="headerlink" title="壁纸自动切换"></a>壁纸自动切换</h2><p><a href="https://peterlevi.com/variety/" target="_blank" rel="noopener">Variety</a></p><h2 id="视频壁纸"><a href="#视频壁纸" class="headerlink" title="视频壁纸"></a>视频壁纸</h2><p>xwinwrap<br>komorebi<br>livewallpaper<br>video wallpaper (kde)</p><h2 id="数据库管理"><a href="#数据库管理" class="headerlink" title="数据库管理"></a>数据库管理</h2><p><a href="https://dev.mysql.com/downloads/workbench/" target="_blank" rel="noopener">MySQL Workbench</a><br><a href="https://www.jetbrains.com/datagrip/" target="_blank" rel="noopener">DataGrip</a></p><h2 id="U盘刻录-制作U盘启动器"><a href="#U盘刻录-制作U盘启动器" class="headerlink" title="U盘刻录/制作U盘启动器"></a>U盘刻录/制作U盘启动器</h2><p><a href="https://www.ultraiso.com/" target="_blank" rel="noopener">UltraISO</a><br>dd命令</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;编辑Markdown&quot;&gt;&lt;a href=&quot;#编辑Markdown&quot; class=&quot;headerlink&quot; title=&quot;编辑Markdown&quot;&gt;&lt;/a&gt;编辑Markdown&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;http://remarkableapp.github.i
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="常用软件" scheme="http://yoursite.com/tags/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++语法</title>
-    <link href="http://yoursite.com/post/c-%E8%AF%AD%E6%B3%95/"/>
-    <id>http://yoursite.com/post/c-语法/</id>
-    <published>2019-03-27T22:15:18.000Z</published>
-    <updated>2019-04-21T18:40:21.283Z</updated>
-    
-    <content type="html"><![CDATA[<p>C++一些基本语法问题<br><a id="more"></a></p><h2 id="模板友元"><a href="#模板友元" class="headerlink" title="模板友元"></a>模板友元</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>;</span></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span></span>;</span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt; <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">foo_t</span>&#123;</span></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">void</span> foo&lt;T&gt;();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">friend</span></span><br><span class="line">    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U&gt;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">foo1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="enable-if"><a href="#enable-if" class="headerlink" title="enable_if"></a>enable_if</h2><p><a href="https://zh.cppreference.com/w/cpp/types/enable_if" target="_blank" rel="noopener">std::enable_if - cppreference.com</a><br><a href="https://blog.csdn.net/kiritow/article/details/50932012" target="_blank" rel="noopener">enable_if - Kiritow的学园 - CSDN博客</a></p><h2 id="typename-的第二作用"><a href="#typename-的第二作用" class="headerlink" title="typename 的第二作用"></a>typename 的第二作用</h2><p>为了消除歧义，显式地告诉编译器，T::bar是一个类型名。</p><h2 id="类的缺省函数"><a href="#类的缺省函数" class="headerlink" title="类的缺省函数"></a>类的缺省函数</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Class</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="comment">//缺省构造函数 </span></span><br><span class="line">    Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//拷贝构造函数</span></span><br><span class="line">    Class(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动构造函数(C++11)</span></span><br><span class="line">    Class(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//移动赋值函数(C++11)</span></span><br><span class="line">    Class&amp; <span class="keyword">operator</span>=(Class&amp;&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//析构函数</span></span><br><span class="line">    ~Class()&#123;&#125;</span><br><span class="line">    <span class="comment">//赋值运算符</span></span><br><span class="line">    Class&amp;<span class="keyword">operator</span>=(<span class="keyword">const</span> Class&amp;)&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 </span></span><br><span class="line">    Class*<span class="keyword">operator</span>&amp;()&#123;&#125;</span><br><span class="line">    <span class="comment">//取址运算符 const</span></span><br><span class="line">    <span class="keyword">const</span> Class*<span class="keyword">operator</span>&amp;()<span class="keyword">const</span>&#123;&#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><h2 id="new与delete的重载"><a href="#new与delete的重载" class="headerlink" title="new与delete的重载"></a>new与delete的重载</h2><h2 id="C-默认类型与类型转换"><a href="#C-默认类型与类型转换" class="headerlink" title="C++默认类型与类型转换"></a>C++默认类型与类型转换</h2><h3 id="默认类型"><a href="#默认类型" class="headerlink" title="默认类型"></a>默认类型</h3><ul><li>整数默认有符号<ul><li><code>3</code> int</li><li><code>3000000000</code> long</li><li><code>&#39;3&#39;</code> char</li></ul></li><li>浮点数默认double<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><blockquote><p>C++定义了算数类型之间的内置转换以尽可能防止精度损失<br>———《C+P》</p></blockquote><h3 id="隐式类型转换"><a href="#隐式类型转换" class="headerlink" title="隐式类型转换"></a>隐式类型转换</h3><h4 id="何时发生隐式类型转换"><a href="#何时发生隐式类型转换" class="headerlink" title="何时发生隐式类型转换"></a>何时发生隐式类型转换</h4></li><li>混合类型表达式，操作数转换为相同类型</li><li>条件表达式，转换为bool</li><li>赋值语句</li></ul><h4 id="算数转换"><a href="#算数转换" class="headerlink" title="算数转换"></a>算数转换</h4><p>转换原则是尽可能少的减少精度损失<br>TODO 溢出问题<br>TODO double与int等之间的转换</p><h4 id="指针转换"><a href="#指针转换" class="headerlink" title="指针转换"></a>指针转换</h4><p>注意数组变量</p><h4 id="数值或指针-gt-bool"><a href="#数值或指针-gt-bool" class="headerlink" title="数值或指针 -&gt; bool"></a>数值或指针 -&gt; bool</h4><h4 id="bool-gt-数值"><a href="#bool-gt-数值" class="headerlink" title="bool -&gt; 数值"></a>bool -&gt; 数值</h4><h4 id="枚举类型"><a href="#枚举类型" class="headerlink" title="枚举类型"></a>枚举类型</h4><p>枚举类型默认继承于int</p><h4 id="隐式类类型转换"><a href="#隐式类类型转换" class="headerlink" title="隐式类类型转换"></a>隐式类类型转换</h4><p>“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换</p><blockquote><p>除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit<br>——《C+P》</p></blockquote><h3 id="显示类型转换"><a href="#显示类型转换" class="headerlink" title="显示类型转换"></a>显示类型转换</h3><p>包含以下操作符（或C风格）的强制类型转换称作显示类型转换：<br><code>static_cast</code>，<code>dynamic_cast</code>，<code>const_cast</code>，<code>reinterpret_cast</code></p><h4 id="何时需要强制类型转换"><a href="#何时需要强制类型转换" class="headerlink" title="何时需要强制类型转换"></a>何时需要强制类型转换</h4><p>隐式类型转换被禁止时等</p><h2 id="RVO返回值优化"><a href="#RVO返回值优化" class="headerlink" title="RVO返回值优化"></a>RVO返回值优化</h2><p>想想构造函数→_→</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;C++一些基本语法问题&lt;br&gt;
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
