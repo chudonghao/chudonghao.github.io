@@ -365,6 +365,337 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/opencv处理图像笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="楚栋浩">
+      <meta itemprop="description" content="慢慢品味人生">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="慢">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/opencv处理图像笔记/" class="post-title-link" itemprop="url">Opencv处理图像笔记</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-15 20:28:40 / 修改时间：20:48:18" itemprop="dateCreated datePublished" datetime="2019-05-15T20:28:40+08:00">2019-05-15</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/未分类/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+<h2 id="图像处理中的一类"><a href="#图像处理中的一类" class="headerlink" title="图像处理中的一类"></a>图像处理中的一类</h2><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol>
+<li>灰度化</li>
+<li>高斯模糊</li>
+<li>Canny边缘检测</li>
+<li>不规则ROI区域截取</li>
+<li>霍夫直线检测</li>
+</ol>
+<h3 id="具体函数"><a href="#具体函数" class="headerlink" title="具体函数"></a>具体函数</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 颜色变换，如灰度化</span></span><br><span class="line">cvtColor()</span><br><span class="line"></span><br><span class="line">threshold()</span><br><span class="line"><span class="comment">// 高斯模糊</span></span><br><span class="line">GaussianBlur()</span><br><span class="line"><span class="comment">// Canny边缘检测</span></span><br><span class="line">Canny()</span><br><span class="line"><span class="comment">// ROI区域保留</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 霍夫直线提取</span></span><br><span class="line">HoughLinesP()</span><br></pre></td></tr></table></figure>
+<h2 id="绘制"><a href="#绘制" class="headerlink" title="绘制"></a>绘制</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 画线</span></span><br><span class="line">line()</span><br><span class="line"><span class="comment">// 矩形</span></span><br><span class="line">rectangle()</span><br><span class="line"><span class="comment">// 圆</span></span><br><span class="line">circle()</span><br><span class="line"><span class="comment">// 椭圆</span></span><br><span class="line">ellipse()</span><br><span class="line"><span class="comment">// 文字</span></span><br><span class="line">putText()</span><br><span class="line"><span class="comment">// 填充</span></span><br><span class="line">fillPoly()</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/qt浏览器类型布局/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="楚栋浩">
+      <meta itemprop="description" content="慢慢品味人生">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="慢">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/qt浏览器类型布局/" class="post-title-link" itemprop="url">Qt浏览器类型布局</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-15 20:11:52 / 修改时间：20:26:54" itemprop="dateCreated datePublished" datetime="2019-05-15T20:11:52+08:00">2019-05-15</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/未分类/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="一段代码"><a href="#一段代码" class="headerlink" title="一段代码"></a>一段代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// QScrollArea</span></span><br><span class="line"><span class="comment">//   └─QWidget</span></span><br><span class="line"><span class="comment">//       ├─QLayout</span></span><br><span class="line"><span class="comment">//       ├─QLabel</span></span><br><span class="line"><span class="comment">//       ├─...</span></span><br><span class="line"><span class="comment">//       ...</span></span><br><span class="line"><span class="keyword">delete</span> ui_photo_list_;</span><br><span class="line">ui_photo_list_ = <span class="keyword">new</span> QWidget(<span class="keyword">this</span>);</span><br><span class="line">ui-&gt;photo_area-&gt;setWidget(ui_photo_list_);</span><br><span class="line">ui_photo_list_layout_ = <span class="keyword">new</span> QVBoxLayout(ui_photo_list_);</span><br><span class="line">ui_photo_list_layout_-&gt;setSizeConstraint(QLayout::SetMaximumSize);</span><br><span class="line"><span class="keyword">auto</span> *label = <span class="keyword">new</span> QLabel(<span class="string">"111111"</span>,ui_photo_list_);</span><br><span class="line">ui_photo_list_layout_-&gt;addWidget(label);</span><br><span class="line"><span class="keyword">auto</span> *label = <span class="keyword">new</span> QLabel(<span class="string">"222222"</span>,ui_photo_list_);</span><br><span class="line">ui_photo_list_layout_-&gt;addWidget(label);</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/post/qt浏览器类型布局/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/经济学知识/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1353,7 +1684,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/c-的爱与恨/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/c-模板实参推导/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="楚栋浩">
@@ -1373,7 +1704,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/post/c-的爱与恨/" class="post-title-link" itemprop="url">C++的爱与恨</a>
+                <a href="/post/c-模板实参推导/" class="post-title-link" itemprop="url">C++模板实参推导</a>
               
             
           </h1>
@@ -1398,24 +1729,12 @@
                 
               
 
-              <time title="创建时间：2019-04-03 06:09:05" itemprop="dateCreated datePublished" datetime="2019-04-03T06:09:05+08:00">2019-04-03</time>
+              <time title="创建时间：2019-04-03 06:09:05 / 修改时间：12:53:52" itemprop="dateCreated datePublished" datetime="2019-04-03T06:09:05+08:00">2019-04-03</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-21 19:29:31" itemprop="dateModified" datetime="2019-04-21T19:29:31+08:00">2019-04-21</time>
               
             
           </span>
@@ -1465,384 +1784,68 @@
 
       
         
-          
-            <h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul>
-<li>静态，确定类型</li>
-<li>面向对象又底层</li>
-<li>自由度高</li>
-<li>模板编程</li>
-<li>RAII等</li>
+          <p><a href="https://zh.cppreference.com/w/cpp/language/template_argument_deduction" target="_blank" rel="noopener">模板实参推导 - cppreference.com</a> </p>
+<h2 id="引用折叠"><a href="#引用折叠" class="headerlink" title="引用折叠"></a>引用折叠</h2><ul>
+<li><code>T &amp; &amp;</code> <code>T &amp; &amp;&amp;</code> <code>T &amp;&amp; &amp;</code>都被折叠为<code>T &amp;</code></li>
+<li><code>T &amp;&amp; &amp;&amp;</code>折叠为<code>T &amp;&amp;</code></li>
 </ul>
-<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul>
-<li>自由度高，就跟西方所谓的自由一样<br><p>没有标准命名规范，没有标准包管理系统，没有标准构建系统<br></p><p>编程人员需要做很多编程工作之外的内容<br></p><p>自由应该是创造自由，思想自由，而不是很多不必要的自由<br></p><p>创造与思想是编程最重要的部分</p></li>
-<li>模板编程<br><p>模板的重要作用有二：一是代码复用，二是反射<br></p><p>其中的反射机制跟坨屎一样</p></li>
-<li>其他<br><p>语法其实包含着思想，语法应该体现思想。这可以参考Rust</p></li>
-</ul>
-
+<h2 id="模板实参推导表"><a href="#模板实参推导表" class="headerlink" title="模板实参推导表"></a>模板实参推导表</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>int &amp;</th>
+<th>const int &amp;</th>
+<th>int &amp;&amp;</th>
+<th>const int &amp;&amp;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T / const T</td>
+<td>(int) [T = int]</td>
+<td>(int) [T = int]</td>
+<td>(int) [T = int]</td>
+<td>(int) [T = int]</td>
+</tr>
+<tr>
+<td>T &amp;</td>
+<td>(int&amp;) [T = int]</td>
+<td>(int const&amp;) [T = int const]</td>
+<td>ERROR</td>
+<td>(int const&amp;) [T = int const]</td>
+</tr>
+<tr>
+<td>const T &amp;</td>
+<td>(int const&amp;) [T = int]</td>
+<td>(int const&amp;) [T = int]</td>
+<td>(int const&amp;) [T = int]</td>
+<td>(int const&amp;) [T = int]</td>
+</tr>
+<tr>
+<td>T &amp;&amp;</td>
+<td>(int&amp;) [T = int&amp;]</td>
+<td>(int const&amp;) [T = int const&amp;]</td>
+<td>(int&amp;&amp;) [T = int]</td>
+<td>(int const&amp;&amp;) [T = int const]</td>
+</tr>
+<tr>
+<td>const T &amp;&amp;</td>
+<td>ERROR</td>
+<td>ERROR</td>
+<td>(int const&amp;&amp;) [T = int]</td>
+<td>(int const&amp;&amp;) [T = int]</td>
+</tr>
+</tbody>
+</table>
+          <!--noindex-->
           
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/自动控制原理学习笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="楚栋浩">
-      <meta itemprop="description" content="慢慢品味人生">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/自动控制原理学习笔记/" class="post-title-link" itemprop="url">自动控制原理学习笔记</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-03 06:09:05" itemprop="dateCreated datePublished" datetime="2019-04-03T06:09:05+08:00">2019-04-03</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-20 13:34:47" itemprop="dateModified" datetime="2019-04-20T13:34:47+08:00">2019-04-20</time>
-              
-            
-          </span>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/post/c-模板实参推导/" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/未分类/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/post/信号与系统学习笔记/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="楚栋浩">
-      <meta itemprop="description" content="慢慢品味人生">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="慢">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/post/信号与系统学习笔记/" class="post-title-link" itemprop="url">信号与系统学习笔记</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-03 06:09:05" itemprop="dateCreated datePublished" datetime="2019-04-03T06:09:05+08:00">2019-04-03</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-04-20 14:12:29" itemprop="dateModified" datetime="2019-04-20T14:12:29+08:00">2019-04-20</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/未分类/" itemprop="url" rel="index"><span itemprop="name">未分类</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h2><p><img src alt="图１"><br>图１、几种信号</p>
-<h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>第一种定义：随时间变化的物理量</p>
-<ul>
-<li>不一定只随时间变化</li>
-<li>不一定是物理量</li>
-<li>不一定是变量</li>
-</ul>
-<p>第二种定义：一个确定的函数，如图１</p>
-<h3 id="信号的分类"><a href="#信号的分类" class="headerlink" title="信号的分类"></a>信号的分类</h3><p>分类方法１：</p>
-<ul>
-<li>确定性信号，可以用确定的时间函数加以确定</li>
-<li>随机信号，可以统计特征描述</li>
-</ul>
-<p>分类方法２，如图１：</p>
-<ul>
-<li>连续信号</li>
-<li>离散信号</li>
-</ul>
-<p>分类方法３：</p>
-<ul>
-<li>周期信号</li>
-<li>非周期信号</li>
-</ul>
-<p>讨论：周期信号与周期信号的叠加或相乘之后的信号</p>
-<h3 id="信号的表述"><a href="#信号的表述" class="headerlink" title="信号的表述"></a>信号的表述</h3><p>时域法$f(t)$<br>变换域法</p>
-
-          
+          <!--/noindex-->
         
       
     </div>
@@ -2055,7 +2058,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -2097,7 +2100,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">29</span>
+                    <span class="site-state-item-count">31</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>

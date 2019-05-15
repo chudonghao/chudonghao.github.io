@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-05-04T09:54:55.256Z</updated>
+  <updated>2019-05-15T12:48:18.628Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Opencv处理图像笔记</title>
+    <link href="http://yoursite.com/post/opencv%E5%A4%84%E7%90%86%E5%9B%BE%E5%83%8F%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/opencv处理图像笔记/</id>
+    <published>2019-05-15T12:28:40.000Z</published>
+    <updated>2019-05-15T12:48:18.628Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><h2 id="图像处理中的一类"><a href="#图像处理中的一类" class="headerlink" title="图像处理中的一类"></a>图像处理中的一类</h2><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ol><li>灰度化</li><li>高斯模糊</li><li>Canny边缘检测</li><li>不规则ROI区域截取</li><li>霍夫直线检测</li></ol><h3 id="具体函数"><a href="#具体函数" class="headerlink" title="具体函数"></a>具体函数</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 颜色变换，如灰度化</span></span><br><span class="line">cvtColor()</span><br><span class="line"></span><br><span class="line">threshold()</span><br><span class="line"><span class="comment">// 高斯模糊</span></span><br><span class="line">GaussianBlur()</span><br><span class="line"><span class="comment">// Canny边缘检测</span></span><br><span class="line">Canny()</span><br><span class="line"><span class="comment">// ROI区域保留</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 霍夫直线提取</span></span><br><span class="line">HoughLinesP()</span><br></pre></td></tr></table></figure><h2 id="绘制"><a href="#绘制" class="headerlink" title="绘制"></a>绘制</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 画线</span></span><br><span class="line">line()</span><br><span class="line"><span class="comment">// 矩形</span></span><br><span class="line">rectangle()</span><br><span class="line"><span class="comment">// 圆</span></span><br><span class="line">circle()</span><br><span class="line"><span class="comment">// 椭圆</span></span><br><span class="line">ellipse()</span><br><span class="line"><span class="comment">// 文字</span></span><br><span class="line">putText()</span><br><span class="line"><span class="comment">// 填充</span></span><br><span class="line">fillPoly()</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;图像处理中的一类&quot;&gt;&lt;a href=&quot;#图像处理中的一类&quot; class=&quot;headerlink&quot; title=&quot;图像处理中的一类&quot;&gt;&lt;/a&gt;图像处理中的一类&lt;/h2&gt;&lt;h3 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class
+      
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Qt浏览器类型布局</title>
+    <link href="http://yoursite.com/post/qt%E6%B5%8F%E8%A7%88%E5%99%A8%E7%B1%BB%E5%9E%8B%E5%B8%83%E5%B1%80/"/>
+    <id>http://yoursite.com/post/qt浏览器类型布局/</id>
+    <published>2019-05-15T12:11:52.000Z</published>
+    <updated>2019-05-15T12:26:54.918Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一段代码"><a href="#一段代码" class="headerlink" title="一段代码"></a>一段代码</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// QScrollArea</span></span><br><span class="line"><span class="comment">//   └─QWidget</span></span><br><span class="line"><span class="comment">//       ├─QLayout</span></span><br><span class="line"><span class="comment">//       ├─QLabel</span></span><br><span class="line"><span class="comment">//       ├─...</span></span><br><span class="line"><span class="comment">//       ...</span></span><br><span class="line"><span class="keyword">delete</span> ui_photo_list_;</span><br><span class="line">ui_photo_list_ = <span class="keyword">new</span> QWidget(<span class="keyword">this</span>);</span><br><span class="line">ui-&gt;photo_area-&gt;setWidget(ui_photo_list_);</span><br><span class="line">ui_photo_list_layout_ = <span class="keyword">new</span> QVBoxLayout(ui_photo_list_);</span><br><span class="line">ui_photo_list_layout_-&gt;setSizeConstraint(QLayout::SetMaximumSize);</span><br><span class="line"><span class="keyword">auto</span> *label = <span class="keyword">new</span> QLabel(<span class="string">"111111"</span>,ui_photo_list_);</span><br><span class="line">ui_photo_list_layout_-&gt;addWidget(label);</span><br><span class="line"><span class="keyword">auto</span> *label = <span class="keyword">new</span> QLabel(<span class="string">"222222"</span>,ui_photo_list_);</span><br><span class="line">ui_photo_list_layout_-&gt;addWidget(label);</span><br></pre></td></tr></table></figure><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;一段代码&quot;&gt;&lt;a href=&quot;#一段代码&quot; class=&quot;headerlink&quot; title=&quot;一段代码&quot;&gt;&lt;/a&gt;一段代码&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// QScrollArea&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//   └─QWidget&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//       ├─QLayout&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//       ├─QLabel&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//       ├─...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//       ...&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;delete&lt;/span&gt; ui_photo_list_;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ui_photo_list_ = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; QWidget(&lt;span class=&quot;keyword&quot;&gt;this&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ui-&amp;gt;photo_area-&amp;gt;setWidget(ui_photo_list_);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ui_photo_list_layout_ = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; QVBoxLayout(ui_photo_list_);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ui_photo_list_layout_-&amp;gt;setSizeConstraint(QLayout::SetMaximumSize);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;auto&lt;/span&gt; *label = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; QLabel(&lt;span class=&quot;string&quot;&gt;&quot;111111&quot;&lt;/span&gt;,ui_photo_list_);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ui_photo_list_layout_-&amp;gt;addWidget(label);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;auto&lt;/span&gt; *label = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; QLabel(&lt;span class=&quot;string&quot;&gt;&quot;222222&quot;&lt;/span&gt;,ui_photo_list_);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ui_photo_list_layout_-&amp;gt;addWidget(label);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>经济学知识</title>
@@ -148,135 +192,6 @@
   </entry>
   
   <entry>
-    <title>C++的爱与恨</title>
-    <link href="http://yoursite.com/post/c-%E7%9A%84%E7%88%B1%E4%B8%8E%E6%81%A8/"/>
-    <id>http://yoursite.com/post/c-的爱与恨/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-21T11:29:31.906Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul><li>静态，确定类型</li><li>面向对象又底层</li><li>自由度高</li><li>模板编程</li><li>RAII等</li></ul><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul><li>自由度高，就跟西方所谓的自由一样<br><p>没有标准命名规范，没有标准包管理系统，没有标准构建系统<br></p><p>编程人员需要做很多编程工作之外的内容<br></p><p>自由应该是创造自由，思想自由，而不是很多不必要的自由<br></p><p>创造与思想是编程最重要的部分</p></li><li>模板编程<br><p>模板的重要作用有二：一是代码复用，二是反射<br></p><p>其中的反射机制跟坨屎一样</p></li><li>其他<br><p>语法其实包含着思想，语法应该体现思想。这可以参考Rust</p></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;静态，确定类型&lt;/li&gt;
-&lt;li&gt;面向对象又底层&lt;/li&gt;
-&lt;li&gt;自由度高&lt;/li&gt;
-&lt;li&gt;模板编程&lt;/li&gt;
-&lt;li&gt;RA
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自动控制原理学习笔记</title>
-    <link href="http://yoursite.com/post/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/post/自动控制原理学习笔记/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-20T05:34:47.089Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="自动控制原理" scheme="http://yoursite.com/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>信号与系统学习笔记</title>
-    <link href="http://yoursite.com/post/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/post/信号与系统学习笔记/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-20T06:12:29.401Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h2><p><img src alt="图１"><br>图１、几种信号</p><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>第一种定义：随时间变化的物理量</p><ul><li>不一定只随时间变化</li><li>不一定是物理量</li><li>不一定是变量</li></ul><p>第二种定义：一个确定的函数，如图１</p><h3 id="信号的分类"><a href="#信号的分类" class="headerlink" title="信号的分类"></a>信号的分类</h3><p>分类方法１：</p><ul><li>确定性信号，可以用确定的时间函数加以确定</li><li>随机信号，可以统计特征描述</li></ul><p>分类方法２，如图１：</p><ul><li>连续信号</li><li>离散信号</li></ul><p>分类方法３：</p><ul><li>周期信号</li><li>非周期信号</li></ul><p>讨论：周期信号与周期信号的叠加或相乘之后的信号</p><h3 id="信号的表述"><a href="#信号的表述" class="headerlink" title="信号的表述"></a>信号的表述</h3><p>时域法$f(t)$<br>变换域法</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;信号&quot;&gt;&lt;a href=&quot;#信号&quot; class=&quot;headerlink&quot; title=&quot;信号&quot;&gt;&lt;/a&gt;信号&lt;/h2&gt;&lt;p&gt;&lt;img src alt=&quot;图１&quot;&gt;&lt;br&gt;图１、几种信号&lt;/p&gt;
-&lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;hea
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="信号与系统" scheme="http://yoursite.com/tags/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
-    
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数字信号处理学习笔记</title>
-    <link href="http://yoursite.com/post/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/post/数字信号处理学习笔记/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-20T05:34:25.269Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-      <category term="数字信号处理" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>对反射机制的思考</title>
-    <link href="http://yoursite.com/post/%E5%AF%B9%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E7%9A%84%E6%80%9D%E8%80%83/"/>
-    <id>http://yoursite.com/post/对反射机制的思考/</id>
-    <published>2019-04-02T22:09:05.000Z</published>
-    <updated>2019-04-28T12:42:28.389Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="反射的作用"><a href="#反射的作用" class="headerlink" title="反射的作用"></a>反射的作用</h2><ul><li>类型的属性</li><li>某种函数（过程）调用的合法性</li></ul><h2 id="C-中遇到的问题"><a href="#C-中遇到的问题" class="headerlink" title="C++中遇到的问题"></a>C++中遇到的问题</h2><ul><li>如何判断一个调用是否合法，并确定具体调用了<strong>哪个重载</strong>函数</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;反射的作用&quot;&gt;&lt;a href=&quot;#反射的作用&quot; class=&quot;headerlink&quot; title=&quot;反射的作用&quot;&gt;&lt;/a&gt;反射的作用&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;类型的属性&lt;/li&gt;
-&lt;li&gt;某种函数（过程）调用的合法性&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&quot;C-中
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
-    
-      <category term="反射" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%B0%84/"/>
-    
-  </entry>
-  
-  <entry>
     <title>C++模板实参推导</title>
     <link href="http://yoursite.com/post/c-%E6%A8%A1%E6%9D%BF%E5%AE%9E%E5%8F%82%E6%8E%A8%E5%AF%BC/"/>
     <id>http://yoursite.com/post/c-模板实参推导/</id>
@@ -353,6 +268,104 @@
   </entry>
   
   <entry>
+    <title>数字信号处理学习笔记</title>
+    <link href="http://yoursite.com/post/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/数字信号处理学习笔记/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-20T05:34:25.269Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="数字信号处理" scheme="http://yoursite.com/tags/%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>自动控制原理学习笔记</title>
+    <link href="http://yoursite.com/post/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/自动控制原理学习笔记/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-20T05:34:47.089Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="自动控制原理" scheme="http://yoursite.com/tags/%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++的爱与恨</title>
+    <link href="http://yoursite.com/post/c-%E7%9A%84%E7%88%B1%E4%B8%8E%E6%81%A8/"/>
+    <id>http://yoursite.com/post/c-的爱与恨/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-21T11:29:31.906Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h2><ul><li>静态，确定类型</li><li>面向对象又底层</li><li>自由度高</li><li>模板编程</li><li>RAII等</li></ul><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul><li>自由度高，就跟西方所谓的自由一样<br><p>没有标准命名规范，没有标准包管理系统，没有标准构建系统<br></p><p>编程人员需要做很多编程工作之外的内容<br></p><p>自由应该是创造自由，思想自由，而不是很多不必要的自由<br></p><p>创造与思想是编程最重要的部分</p></li><li>模板编程<br><p>模板的重要作用有二：一是代码复用，二是反射<br></p><p>其中的反射机制跟坨屎一样</p></li><li>其他<br><p>语法其实包含着思想，语法应该体现思想。这可以参考Rust</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;优点&quot;&gt;&lt;a href=&quot;#优点&quot; class=&quot;headerlink&quot; title=&quot;优点&quot;&gt;&lt;/a&gt;优点&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;静态，确定类型&lt;/li&gt;
+&lt;li&gt;面向对象又底层&lt;/li&gt;
+&lt;li&gt;自由度高&lt;/li&gt;
+&lt;li&gt;模板编程&lt;/li&gt;
+&lt;li&gt;RA
+      
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>信号与系统学习笔记</title>
+    <link href="http://yoursite.com/post/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/post/信号与系统学习笔记/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-20T06:12:29.401Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="信号"><a href="#信号" class="headerlink" title="信号"></a>信号</h2><p><img src alt="图１"><br>图１、几种信号</p><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>第一种定义：随时间变化的物理量</p><ul><li>不一定只随时间变化</li><li>不一定是物理量</li><li>不一定是变量</li></ul><p>第二种定义：一个确定的函数，如图１</p><h3 id="信号的分类"><a href="#信号的分类" class="headerlink" title="信号的分类"></a>信号的分类</h3><p>分类方法１：</p><ul><li>确定性信号，可以用确定的时间函数加以确定</li><li>随机信号，可以统计特征描述</li></ul><p>分类方法２，如图１：</p><ul><li>连续信号</li><li>离散信号</li></ul><p>分类方法３：</p><ul><li>周期信号</li><li>非周期信号</li></ul><p>讨论：周期信号与周期信号的叠加或相乘之后的信号</p><h3 id="信号的表述"><a href="#信号的表述" class="headerlink" title="信号的表述"></a>信号的表述</h3><p>时域法$f(t)$<br>变换域法</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;信号&quot;&gt;&lt;a href=&quot;#信号&quot; class=&quot;headerlink&quot; title=&quot;信号&quot;&gt;&lt;/a&gt;信号&lt;/h2&gt;&lt;p&gt;&lt;img src alt=&quot;图１&quot;&gt;&lt;br&gt;图１、几种信号&lt;/p&gt;
+&lt;h3 id=&quot;定义&quot;&gt;&lt;a href=&quot;#定义&quot; class=&quot;hea
+      
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="信号与系统" scheme="http://yoursite.com/tags/%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="学习笔记" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>C++模板编程</title>
     <link href="http://yoursite.com/post/c-%E6%A8%A1%E6%9D%BF%E7%BC%96%E7%A8%8B/"/>
     <id>http://yoursite.com/post/c-模板编程/</id>
@@ -380,18 +393,24 @@
   </entry>
   
   <entry>
-    <title>C++填坑之路</title>
-    <link href="http://yoursite.com/post/c-%E5%A1%AB%E5%9D%91%E4%B9%8B%E8%B7%AF/"/>
-    <id>http://yoursite.com/post/c-填坑之路/</id>
-    <published>2019-03-28T14:43:25.000Z</published>
-    <updated>2019-04-21T05:06:40.079Z</updated>
+    <title>对反射机制的思考</title>
+    <link href="http://yoursite.com/post/%E5%AF%B9%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6%E7%9A%84%E6%80%9D%E8%80%83/"/>
+    <id>http://yoursite.com/post/对反射机制的思考/</id>
+    <published>2019-04-02T22:09:05.000Z</published>
+    <updated>2019-04-28T12:42:28.389Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="数组变量加减操作"><a href="#数组变量加减操作" class="headerlink" title="数组变量加减操作"></a>数组变量加减操作</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *(a+<span class="number">1</span>) &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//NOTE a可视为元素指针</span></span><br><span class="line">  <span class="comment">//cout &lt;&lt; *++a &lt;&lt; endl;//编译错误</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="标准库迭代器"><a href="#标准库迭代器" class="headerlink" title="标准库迭代器"></a>标准库迭代器</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;list&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> i = v.begin();</span><br><span class="line">  v.erase(i);</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *i &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  <span class="built_in">list</span>&lt;<span class="keyword">int</span>&gt; l = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> j = l.begin();</span><br><span class="line">  l.erase(j);</span><br><span class="line">  <span class="comment">//NOTE 这里的j已经失效,虽然输出了1</span></span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *j &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">1 #这个输出看似正确,但没有意义</span><br></pre></td></tr></table></figure><p>迭代器是否失效请看<a href="https://zh.cppreference.com/w/cpp/container#迭代器非法化" target="_blank" rel="noopener">这里</a><br>使用时可以考虑erase函数的返回值 其为指向被删除元素的下一个元素的迭代器</p><h2 id="虚函数与成员函数调用行为与成员指针"><a href="#虚函数与成员函数调用行为与成员指针" class="headerlink" title="虚函数与成员函数调用行为与成员指针"></a>虚函数与成员函数调用行为与成员指针</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="keyword">int</span> i;</span><br><span class="line">  A() &#123; foo(); &#125;</span><br><span class="line">  ~A() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::func()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> :</span> <span class="keyword">public</span> A &#123;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  B() &#123; foo(); &#125;</span><br><span class="line">  ~B() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  B b;</span><br><span class="line">  B *bp = &amp;b;</span><br><span class="line">  A *ap = &amp;b;</span><br><span class="line">  ap-&gt;foo();</span><br><span class="line">  ap-&gt;A::foo();</span><br><span class="line">  <span class="keyword">void</span> (A::*Afoop)() = &amp;A::foo;</span><br><span class="line">  (ap-&gt;*Afoop)();</span><br><span class="line">  <span class="comment">//void (A::*Afuncp)() = &amp;A::func;</span></span><br><span class="line">  <span class="comment">//(bp-&gt;*Afuncp)();</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::f);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::func);</span><br><span class="line">  <span class="comment">//cout &lt;&lt; &amp;B::func &lt;&lt; endl;</span></span><br><span class="line">  ap-&gt;foooo();</span><br><span class="line">  ap-&gt;A::foooo();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">00000001</span><br><span class="line">00402010</span><br><span class="line">B::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">A::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br></pre></td></tr></table></figure><p>总结</p><ul><li>构造函数与析构函数一个重要的职能或特点是类型确定，即进入函数时，先修改虚表指针，所以在其中对虚函数的调用不是运行时确定的（编译器的实现是直接调用，即不通过虚表）</li><li>成员函数指针形式的调用是动态的（TODO 成员函数指针的实现）</li><li>带域的调用形式是编译期确定的</li></ul><h2 id="非法delete问题"><a href="#非法delete问题" class="headerlink" title="非法delete问题"></a>非法delete问题</h2><h3 id="delete-2问题"><a href="#delete-2问题" class="headerlink" title="delete*2问题"></a>delete*2问题</h3><blockquote><p>“自由存储区可能会被破坏”<br>———《C+P》</p></blockquote><h3 id="delete-new-1-问题"><a href="#delete-new-1-问题" class="headerlink" title="delete[](new[]+1)问题"></a>delete[](new[]+1)问题</h3><p>cplusplus.com上说：</p><ul><li>delete[]的参数ptr，应该是new[]返回的ptr</li><li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="A-a-new-B-2-delete-a"><a href="#A-a-new-B-2-delete-a" class="headerlink" title="A *a = new B[2];delete []a;"></a>A *a = new B[2];delete []a;</h3>经过测试，也是未定义的。<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。<h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2>先构后析<h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2>将会产生未定义的结果<h2 id="操作符的操作数的求值顺序"><a href="#操作符的操作数的求值顺序" class="headerlink" title="操作符的操作数的求值顺序"></a>操作符的操作数的求值顺序</h2><blockquote><p>“除逻辑操作符，“?:”操作符，“,”操作符外，其他操作符并未指定其操作数的求职顺序”<br>———《C+P》</p></blockquote></li></ul><p>比如<code>expr1*expr2</code>，<code>expr1</code>与<code>expr2</code>的求值顺序无法得知<br>比如表达式<code>if (ia[id++] &lt; ia[id] )</code>的行为没有明确定义<br>特别是在<code>expr1</code>与<code>expr2</code>操作涉及并修改同一对象时，求解顺序相当重要</p><p>个人：以上（《C+P》）的内容是我不经意间看见的，以前一直按照结合性方向使用上述类似表达式，比如自左向右结合就先计算左边，也没出现过严重问题，在这里记录以防不测。</p><h2 id="数组变量的使用"><a href="#数组变量的使用" class="headerlink" title="数组变量的使用"></a>数组变量的使用</h2><p>除<code>&amp;</code>与<code>sizeof</code>，对数组变量的使用将使数组变量提升为成员指针<br>例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//10被忽略，即arr的类型被视为int *</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span> arr[<span class="number">10</span>])</span></span>;</span><br><span class="line"><span class="comment">//arr_p被视为指向大小为10的数组的指针</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span>(*arr_p)[<span class="number">10</span>])</span></span>;</span><br></pre></td></tr></table></figure></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="反射的作用"><a href="#反射的作用" class="headerlink" title="反射的作用"></a>反射的作用</h2><ul><li>类型的属性</li><li>某种函数（过程）调用的合法性</li></ul><h2 id="C-中遇到的问题"><a href="#C-中遇到的问题" class="headerlink" title="C++中遇到的问题"></a>C++中遇到的问题</h2><ul><li>如何判断一个调用是否合法，并确定具体调用了<strong>哪个重载</strong>函数</li></ul>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;数组变量加减操作&quot;&gt;&lt;a href=&quot;#数组变量加减操作&quot; class=&quot;headerlink&quot; title=&quot;数组变量加减操作&quot;&gt;&lt;/a&gt;数组变量加减操作&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;meta-string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[] = &amp;#123;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; *(a+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &amp;lt;&amp;lt; &lt;span class=&quot;built_in&quot;&gt;endl&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//NOTE a可视为元素指针&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错误&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+      
+      
+        &lt;h2 id=&quot;反射的作用&quot;&gt;&lt;a href=&quot;#反射的作用&quot; class=&quot;headerlink&quot; title=&quot;反射的作用&quot;&gt;&lt;/a&gt;反射的作用&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;类型的属性&lt;/li&gt;
+&lt;li&gt;某种函数（过程）调用的合法性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;C-中
+      
     
     </summary>
     
@@ -400,7 +419,7 @@
     
       <category term="C++" scheme="http://yoursite.com/tags/C/"/>
     
-      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
+      <category term="反射" scheme="http://yoursite.com/tags/%E5%8F%8D%E5%B0%84/"/>
     
   </entry>
   
@@ -439,6 +458,31 @@
     
     
       <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C++填坑之路</title>
+    <link href="http://yoursite.com/post/c-%E5%A1%AB%E5%9D%91%E4%B9%8B%E8%B7%AF/"/>
+    <id>http://yoursite.com/post/c-填坑之路/</id>
+    <published>2019-03-28T14:43:25.000Z</published>
+    <updated>2019-04-21T05:06:40.079Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="数组变量加减操作"><a href="#数组变量加减操作" class="headerlink" title="数组变量加减操作"></a>数组变量加减操作</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="keyword">int</span> a[] = &#123;<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>&#125;;</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *(a+<span class="number">1</span>) &lt;&lt; <span class="built_in">endl</span>;<span class="comment">//NOTE a可视为元素指针</span></span><br><span class="line">  <span class="comment">//cout &lt;&lt; *++a &lt;&lt; endl;//编译错误</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1</span><br></pre></td></tr></table></figure><a id="more"></a><h2 id="标准库迭代器"><a href="#标准库迭代器" class="headerlink" title="标准库迭代器"></a>标准库迭代器</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;list&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">  <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; v = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> i = v.begin();</span><br><span class="line">  v.erase(i);</span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *i &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">  <span class="built_in">list</span>&lt;<span class="keyword">int</span>&gt; l = &#123;<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>&#125;;</span><br><span class="line">  <span class="keyword">auto</span> j = l.begin();</span><br><span class="line">  l.erase(j);</span><br><span class="line">  <span class="comment">//NOTE 这里的j已经失效,虽然输出了1</span></span><br><span class="line">  <span class="built_in">cout</span> &lt;&lt; *j &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2</span><br><span class="line">1 #这个输出看似正确,但没有意义</span><br></pre></td></tr></table></figure><p>迭代器是否失效请看<a href="https://zh.cppreference.com/w/cpp/container#迭代器非法化" target="_blank" rel="noopener">这里</a><br>使用时可以考虑erase函数的返回值 其为指向被删除元素的下一个元素的迭代器</p><h2 id="虚函数与成员函数调用行为与成员指针"><a href="#虚函数与成员函数调用行为与成员指针" class="headerlink" title="虚函数与成员函数调用行为与成员指针"></a>虚函数与成员函数调用行为与成员指针</h2><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> &#123;</span></span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  <span class="keyword">int</span> i;</span><br><span class="line">  A() &#123; foo(); &#125;</span><br><span class="line">  ~A() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">func</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::func()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">virtual</span> <span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"A::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> :</span> <span class="keyword">public</span> A &#123;</span><br><span class="line"> <span class="keyword">public</span>:</span><br><span class="line">  B() &#123; foo(); &#125;</span><br><span class="line">  ~B() &#123; foo(); &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">f</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::f()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">()</span> </span>&#123; <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foo()"</span> &lt;&lt; <span class="built_in">endl</span>; &#125;</span><br><span class="line">  <span class="function"><span class="keyword">void</span> <span class="title">foooo</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"B::foooo()"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    f();</span><br><span class="line">    A::f();</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">  B b;</span><br><span class="line">  B *bp = &amp;b;</span><br><span class="line">  A *ap = &amp;b;</span><br><span class="line">  ap-&gt;foo();</span><br><span class="line">  ap-&gt;A::foo();</span><br><span class="line">  <span class="keyword">void</span> (A::*Afoop)() = &amp;A::foo;</span><br><span class="line">  (ap-&gt;*Afoop)();</span><br><span class="line">  <span class="comment">//void (A::*Afuncp)() = &amp;A::func;</span></span><br><span class="line">  <span class="comment">//(bp-&gt;*Afuncp)();</span></span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::f);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">"%08x\n"</span>, &amp;B::func);</span><br><span class="line">  <span class="comment">//cout &lt;&lt; &amp;B::func &lt;&lt; endl;</span></span><br><span class="line">  ap-&gt;foooo();</span><br><span class="line">  ap-&gt;A::foooo();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br><span class="line">B::foo()</span><br><span class="line">00000001</span><br><span class="line">00402010</span><br><span class="line">B::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">A::foooo()</span><br><span class="line">B::f()</span><br><span class="line">A::f()</span><br><span class="line">B::foo()</span><br><span class="line">A::foo()</span><br></pre></td></tr></table></figure><p>总结</p><ul><li>构造函数与析构函数一个重要的职能或特点是类型确定，即进入函数时，先修改虚表指针，所以在其中对虚函数的调用不是运行时确定的（编译器的实现是直接调用，即不通过虚表）</li><li>成员函数指针形式的调用是动态的（TODO 成员函数指针的实现）</li><li>带域的调用形式是编译期确定的</li></ul><h2 id="非法delete问题"><a href="#非法delete问题" class="headerlink" title="非法delete问题"></a>非法delete问题</h2><h3 id="delete-2问题"><a href="#delete-2问题" class="headerlink" title="delete*2问题"></a>delete*2问题</h3><blockquote><p>“自由存储区可能会被破坏”<br>———《C+P》</p></blockquote><h3 id="delete-new-1-问题"><a href="#delete-new-1-问题" class="headerlink" title="delete[](new[]+1)问题"></a>delete[](new[]+1)问题</h3><p>cplusplus.com上说：</p><ul><li>delete[]的参数ptr，应该是new[]返回的ptr</li><li>如果delete的参数ptr无效，将产生未定义的结果<h3 id="A-a-new-B-2-delete-a"><a href="#A-a-new-B-2-delete-a" class="headerlink" title="A *a = new B[2];delete []a;"></a>A *a = new B[2];delete []a;</h3>经过测试，也是未定义的。<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3>这应该牵扯到C++堆内存管理问题，以上行为都将产生未定义结果，特别的，第二种情况下程序直接崩溃的可能性巨大。<h2 id="new-delete-顺序问题"><a href="#new-delete-顺序问题" class="headerlink" title="new[] delete[] 顺序问题"></a>new[] delete[] 顺序问题</h2>先构后析<h2 id="对合法但无效的栈内存进行访问"><a href="#对合法但无效的栈内存进行访问" class="headerlink" title="对合法但无效的栈内存进行访问"></a>对合法但无效的栈内存进行访问</h2>将会产生未定义的结果<h2 id="操作符的操作数的求值顺序"><a href="#操作符的操作数的求值顺序" class="headerlink" title="操作符的操作数的求值顺序"></a>操作符的操作数的求值顺序</h2><blockquote><p>“除逻辑操作符，“?:”操作符，“,”操作符外，其他操作符并未指定其操作数的求职顺序”<br>———《C+P》</p></blockquote></li></ul><p>比如<code>expr1*expr2</code>，<code>expr1</code>与<code>expr2</code>的求值顺序无法得知<br>比如表达式<code>if (ia[id++] &lt; ia[id] )</code>的行为没有明确定义<br>特别是在<code>expr1</code>与<code>expr2</code>操作涉及并修改同一对象时，求解顺序相当重要</p><p>个人：以上（《C+P》）的内容是我不经意间看见的，以前一直按照结合性方向使用上述类似表达式，比如自左向右结合就先计算左边，也没出现过严重问题，在这里记录以防不测。</p><h2 id="数组变量的使用"><a href="#数组变量的使用" class="headerlink" title="数组变量的使用"></a>数组变量的使用</h2><p>除<code>&amp;</code>与<code>sizeof</code>，对数组变量的使用将使数组变量提升为成员指针<br>例如：<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//10被忽略，即arr的类型被视为int *</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span> arr[<span class="number">10</span>])</span></span>;</span><br><span class="line"><span class="comment">//arr_p被视为指向大小为10的数组的指针</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">foo</span><span class="params">(<span class="keyword">int</span>(*arr_p)[<span class="number">10</span>])</span></span>;</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;数组变量加减操作&quot;&gt;&lt;a href=&quot;#数组变量加减操作&quot; class=&quot;headerlink&quot; title=&quot;数组变量加减操作&quot;&gt;&lt;/a&gt;数组变量加减操作&lt;/h2&gt;&lt;figure class=&quot;highlight cpp&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;meta&quot;&gt;#&lt;span class=&quot;meta-keyword&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;meta-string&quot;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;std&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;()&lt;/span&gt;&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; a[] = &amp;#123;&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;built_in&quot;&gt;cout&lt;/span&gt; &amp;lt;&amp;lt; *(a+&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &amp;lt;&amp;lt; &lt;span class=&quot;built_in&quot;&gt;endl&lt;/span&gt;;&lt;span class=&quot;comment&quot;&gt;//NOTE a可视为元素指针&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;comment&quot;&gt;//cout &amp;lt;&amp;lt; *++a &amp;lt;&amp;lt; endl;//编译错误&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
+    
+    
+      <category term="C++" scheme="http://yoursite.com/tags/C/"/>
+    
+      <category term="C++语法" scheme="http://yoursite.com/tags/C-%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
@@ -512,57 +556,6 @@
     
     
       <category term="git" scheme="http://yoursite.com/tags/git/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>读书</title>
-    <link href="http://yoursite.com/post/%E8%AF%BB%E4%B9%A6/"/>
-    <id>http://yoursite.com/post/读书/</id>
-    <published>2019-03-28T00:06:31.000Z</published>
-    <updated>2019-03-28T00:22:18.471Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="文学书籍"><a href="#文学书籍" class="headerlink" title="文学书籍"></a>文学书籍</h2><ul><li style="list-style: none"><input type="checkbox" checked> 诗经</li><li style="list-style: none"><input type="checkbox"> 唐诗宋词</li><li style="list-style: none"><input type="checkbox" checked> 平凡的世界</li><li style="list-style: none"><input type="checkbox" checked> 三国演义</li><li style="list-style: none"><input type="checkbox"> 红楼梦<h2 id="其他书籍"><a href="#其他书籍" class="headerlink" title="其他书籍"></a>其他书籍</h2></li><li style="list-style: none"><input type="checkbox" checked> 人月神话</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;文学书籍&quot;&gt;&lt;a href=&quot;#文学书籍&quot; class=&quot;headerlink&quot; title=&quot;文学书籍&quot;&gt;&lt;/a&gt;文学书籍&lt;/h2&gt;&lt;ul&gt;
-&lt;li style=&quot;list-style: none&quot;&gt;&lt;input type=&quot;checkbox&quot; checked&gt;
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="读书" scheme="http://yoursite.com/tags/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux目录与文件的常用约定</title>
-    <link href="http://yoursite.com/post/linux%E7%9B%AE%E5%BD%95%E4%B8%8E%E6%96%87%E4%BB%B6%E7%9A%84%E5%B8%B8%E7%94%A8%E7%BA%A6%E5%AE%9A/"/>
-    <id>http://yoursite.com/post/linux目录与文件的常用约定/</id>
-    <published>2019-03-27T23:27:52.000Z</published>
-    <updated>2019-03-28T00:46:23.080Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="文件系统层次结构"><a href="#文件系统层次结构" class="headerlink" title="文件系统层次结构"></a>文件系统层次结构</h2><p><a href="https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E6%A0%87%E5%87%86" target="_blank" rel="noopener">文件系统层次结构标准 - 维基百科，自由的百科全书</a><br><a href="https://refspecs.linuxfoundation.org/FHS_3.0/fhs-3.0.pdf" target="_blank" rel="noopener">[PDF]Filesystem Hierarchy Standard - Linux Foundation</a></p><h2 id="登录时用到的文件"><a href="#登录时用到的文件" class="headerlink" title="登录时用到的文件"></a>登录时用到的文件</h2><p><a href="https://wiki.archlinux.org/index.php/Zsh" target="_blank" rel="noopener">Zsh</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;文件系统层次结构&quot;&gt;&lt;a href=&quot;#文件系统层次结构&quot; class=&quot;headerlink&quot; title=&quot;文件系统层次结构&quot;&gt;&lt;/a&gt;文件系统层次结构&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E6%96%
-      
-    
-    </summary>
-    
-      <category term="未分类" scheme="http://yoursite.com/categories/%E6%9C%AA%E5%88%86%E7%B1%BB/"/>
-    
-    
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
     
   </entry>
   
