@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[丰满的理想]]></title>
+    <url>%2Fpost%2F%E4%B8%B0%E6%BB%A1%E7%9A%84%E7%90%86%E6%83%B3%2F</url>
+    <content type="text"><![CDATA[就想想一种编程语言 编译型原生 继承C++中优良的设计 自由的内存管理 继承、重载、多态（可以考虑以某种更优雅的方式实现） 改进C++的为人不爽的地方 标准库“不作为” 标准委员会“不作为”。应考虑的是语言特性，而不是库库库 模板？模板！模板？！ “头文件”，“预处理”等老旧的代码组织结构 多语言配合，只有extern”C”？ 标注库中的一些东西需要改进（最起码有些用起来不爽） 反射特性 等等 拥有全面的构建和管理系统（平台，系统，环境），降低程序员的维护工作 拥有编译加速功能 更好的特性 修饰特性，让编译器做更多的事情，如修饰一个类的的对象属性为不可复制，又如函数传入参数不能为nullptr 更好的模板特性 更好的反射特性 更好的拓展性（思考Python的胶水特性） 其他 合理的用符号代替文本 总的来说： 减轻程序员编程之外的工作，提高工作效率 去除繁杂的头文件引用 构建库依赖自动解决系统 构建与之相匹配的健壮的有效的库管理系统 内建的项目构建系统 编译缓存技术来加快编译 去除令人难以理解和丑陋的宏命令（PS：构建一个代码处理的插件系统（自动插入）） 对模板编程的改进，例如 模板参数可以是字符串 更智能的反射机制 基于这种编程语言，可以： 作为某种操作系统应用开发的基本语言（如JAVA对初生的Android） 舒适的进行GUI编程 3D图形AI基础知识高等数学线性代数概率论数据结构与算法其他多线程编程网络分布式]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[mysql]]></title>
+    <url>%2Fpost%2Fmysql%2F</url>
+    <content type="text"><![CDATA[认证机制问题表mysql.user保存认证信息修改认证插件1234use mysql;alter user 'root'@'%' identified by 'password' password expire never;alter user 'root'@'%' identified with mysql_native_password by '密码';flush privileges;]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[《理性乐观派》读书笔记]]></title>
+    <url>%2Fpost%2F%E3%80%8A%E7%90%86%E6%80%A7%E4%B9%90%E8%A7%82%E6%B4%BE%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"><![CDATA[关键词专业化 交流 时间 创新/思想 感悟思想交流类似基因交流，能产生新的东西！ 时间可以用来衡量财富。 专业化与交换可以使人更富有（可以得到更多的时间）。 引用 创造就是重组。 衡量繁荣的真正尺度是时间。 只要某个地方的某个人有动机从事发明创造，以更好地满足他人需求，那么，持理性乐观态度的人就必然要的得出结论：人类生活最终还是会走向进步。 自给自足不是通往繁荣的路线。 交换、专业化分工以及它们带来的创新，最终“创造出了”时间。 真正的物物交换要求你放弃对自己有价值的一种东西，换回你认为更有价值的另一种东西。 我对大型企业倒没什么好感，它们效率低下，安于现状，还反对竞争。 商业兴旺发达的地方，亦是创造力和激情进发的所在。 错误的有机呼吁 贸易趋使人聚集到城镇里。 实体世界经常出现收益递减，但思想的世界就不一样了。 企业一辈子最危险的时候，就是它实现成功的那一刻，因为那时候它就停止创新了。 解决办法之一，是公司允许员工像创业家一样自由行事。 另一种办法是把问题外包出去，承诺给予奖金，让有效的发明家市场来解决它。 金钱在推动创新方面肯定很重要，但它绝对不是最重要的一点。 知识产权 把想法变成财富有几种方式：配方保密，先发优势，专利、版权或商标。 然而，要说专利推动了发明家搞发明创造，证据很少。 思想观念日益频繁的交换带来了现代世界速度日益加快的创新。 现代世界的历史，就是一部思想相遇、融合、交配和变异的历史。]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[Opencv处理图像笔记]]></title>
     <url>%2Fpost%2Fopencv%E5%A4%84%E7%90%86%E5%9B%BE%E5%83%8F%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[图像处理中的一类步骤 灰度化 高斯模糊 Canny边缘检测 不规则ROI区域截取 霍夫直线检测 具体函数123456789101112// 颜色变换，如灰度化cvtColor()threshold()// 高斯模糊GaussianBlur()// Canny边缘检测Canny()// ROI区域保留// 霍夫直线提取HoughLinesP() 绘制123456789101112// 画线line()// 矩形rectangle()// 圆circle()// 椭圆ellipse()// 文字putText()// 填充fillPoly()]]></content>
@@ -75,30 +102,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[C++模板实参推导]]></title>
-    <url>%2Fpost%2Fc-%E6%A8%A1%E6%9D%BF%E5%AE%9E%E5%8F%82%E6%8E%A8%E5%AF%BC%2F</url>
-    <content type="text"><![CDATA[模板实参推导 - cppreference.com 引用折叠 T &amp; &amp; T &amp; &amp;&amp; T &amp;&amp; &amp;都被折叠为T &amp; T &amp;&amp; &amp;&amp;折叠为T &amp;&amp; 模板实参推导表 int &amp; const int &amp; int &amp;&amp; const int &amp;&amp; T / const T (int) [T = int] (int) [T = int] (int) [T = int] (int) [T = int] T &amp; (int&amp;) [T = int] (int const&amp;) [T = int const] ERROR (int const&amp;) [T = int const] const T &amp; (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] T &amp;&amp; (int&amp;) [T = int&amp;] (int const&amp;) [T = int const&amp;] (int&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int const] const T &amp;&amp; ERROR ERROR (int const&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int] 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102#include &lt;iostream&gt;using namespace std;class A2&#123;&#125;;template&lt;typename T&gt;void fooT(T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocT(const T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTR(T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTR(const T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTr(T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTr(const T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;void func() &#123; int i = 0; const int ci = 0; A2 a; const A2 ca = A2(); cout &lt;&lt; "int:" &lt;&lt;endl; fooT(i); foocT(i); fooTR(i); foocTR(i); fooTr(i); // ERROR //foocTr(i); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "const int:" &lt;&lt;endl; fooT(ci); foocT(ci); fooTR(ci); foocTR(ci); fooTr(ci); // ERROR //foocTr(ci); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "int &amp;&amp;:" &lt;&lt;endl; fooT(move(i)); foocT(move(i)); // ERROR //fooTR(move(i)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt;endl; foocTR(move(i)); fooTr(move(i)); foocTr(move(i)); cout &lt;&lt; "const int &amp;&amp;:" &lt;&lt;endl; fooT(move(ci)); foocT(move(ci)); fooTR(move(ci)); foocTR(move(ci)); fooTr(move(ci)); foocTr(move(ci)); cout &lt;&lt; "A:" &lt;&lt; endl; fooT(a); foocT(a); fooTR(a); foocTR(a); fooTr(a); // ERROR //foocTr(a); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "const A:" &lt;&lt; endl; fooT(ca); foocT(ca); fooTR(ca); foocTR(ca); fooTr(ca); // ERROR //foocTr(ca); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "A &amp;&amp;:" &lt;&lt; endl; fooT(move(a)); foocT(move(a)); // ERROR //fooTR(move(a)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt; endl; foocTR(move(a)); fooTr(move(a)); foocTr(move(a)); cout &lt;&lt; "const A &amp;&amp;:" &lt;&lt; endl; fooT(move(ca)); foocT(move(ca)); fooTR(move(ca)); foocTR(move(ca)); fooTr(move(ca)); foocTr(move(ca));&#125; 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int &amp;]void foocTr(const T &amp;&amp;) ERRORconst int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int &amp;]void foocTr(const T &amp;&amp;) ERRORint &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int]void foocTr(const T &amp;&amp;) [T = int]const int &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int]void foocTr(const T &amp;&amp;) [T = int]A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2 &amp;]void fooTr(const T &amp;&amp;) ERRORconst A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2 &amp;]void fooTr(const T &amp;&amp;) ERRORA &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2]void foocTr(const T &amp;&amp;) [T = A2]const A &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2]void foocTr(const T &amp;&amp;) [T = A2]]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>C++语法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[数字信号处理学习笔记]]></title>
-    <url>%2Fpost%2F%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>学习笔记</tag>
-        <tag>数字信号处理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[自动控制原理学习笔记]]></title>
     <url>%2Fpost%2F%E8%87%AA%E5%8A%A8%E6%8E%A7%E5%88%B6%E5%8E%9F%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"></content>
@@ -122,6 +125,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[数字信号处理学习笔记]]></title>
+    <url>%2Fpost%2F%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>数字信号处理</tag>
+        <tag>学习笔记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[信号与系统学习笔记]]></title>
     <url>%2Fpost%2F%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[信号图１、几种信号 定义第一种定义：随时间变化的物理量 不一定只随时间变化 不一定是物理量 不一定是变量 第二种定义：一个确定的函数，如图１ 信号的分类分类方法１： 确定性信号，可以用确定的时间函数加以确定 随机信号，可以统计特征描述 分类方法２，如图１： 连续信号 离散信号 分类方法３： 周期信号 非周期信号 讨论：周期信号与周期信号的叠加或相乘之后的信号 信号的表述时域法$f(t)$变换域法]]></content>
@@ -129,8 +144,8 @@
         <category>未分类</category>
       </categories>
       <tags>
-        <tag>信号与系统</tag>
         <tag>学习笔记</tag>
+        <tag>信号与系统</tag>
       </tags>
   </entry>
   <entry>
@@ -155,6 +170,18 @@
       <tags>
         <tag>C++</tag>
         <tag>反射</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[C++模板实参推导]]></title>
+    <url>%2Fpost%2Fc-%E6%A8%A1%E6%9D%BF%E5%AE%9E%E5%8F%82%E6%8E%A8%E5%AF%BC%2F</url>
+    <content type="text"><![CDATA[模板实参推导 - cppreference.com 引用折叠 T &amp; &amp; T &amp; &amp;&amp; T &amp;&amp; &amp;都被折叠为T &amp; T &amp;&amp; &amp;&amp;折叠为T &amp;&amp; 模板实参推导表 int &amp; const int &amp; int &amp;&amp; const int &amp;&amp; T / const T (int) [T = int] (int) [T = int] (int) [T = int] (int) [T = int] T &amp; (int&amp;) [T = int] (int const&amp;) [T = int const] ERROR (int const&amp;) [T = int const] const T &amp; (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] (int const&amp;) [T = int] T &amp;&amp; (int&amp;) [T = int&amp;] (int const&amp;) [T = int const&amp;] (int&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int const] const T &amp;&amp; ERROR ERROR (int const&amp;&amp;) [T = int] (int const&amp;&amp;) [T = int] 123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899100101102#include &lt;iostream&gt;using namespace std;class A2&#123;&#125;;template&lt;typename T&gt;void fooT(T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocT(const T t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTR(T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTR(const T &amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void fooTr(T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;template&lt;typename T&gt;void foocTr(const T &amp;&amp;t) &#123; cout &lt;&lt; __PRETTY_FUNCTION__ &lt;&lt; endl;&#125;void func() &#123; int i = 0; const int ci = 0; A2 a; const A2 ca = A2(); cout &lt;&lt; "int:" &lt;&lt;endl; fooT(i); foocT(i); fooTR(i); foocTR(i); fooTr(i); // ERROR //foocTr(i); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "const int:" &lt;&lt;endl; fooT(ci); foocT(ci); fooTR(ci); foocTR(ci); fooTr(ci); // ERROR //foocTr(ci); cout &lt;&lt; "void foocTr(const T &amp;&amp;) ERROR" &lt;&lt;endl; cout &lt;&lt; "int &amp;&amp;:" &lt;&lt;endl; fooT(move(i)); foocT(move(i)); // ERROR //fooTR(move(i)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt;endl; foocTR(move(i)); fooTr(move(i)); foocTr(move(i)); cout &lt;&lt; "const int &amp;&amp;:" &lt;&lt;endl; fooT(move(ci)); foocT(move(ci)); fooTR(move(ci)); foocTR(move(ci)); fooTr(move(ci)); foocTr(move(ci)); cout &lt;&lt; "A:" &lt;&lt; endl; fooT(a); foocT(a); fooTR(a); foocTR(a); fooTr(a); // ERROR //foocTr(a); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "const A:" &lt;&lt; endl; fooT(ca); foocT(ca); fooTR(ca); foocTR(ca); fooTr(ca); // ERROR //foocTr(ca); cout &lt;&lt; "void fooTr(const T &amp;&amp;) ERROR" &lt;&lt; endl; cout &lt;&lt; "A &amp;&amp;:" &lt;&lt; endl; fooT(move(a)); foocT(move(a)); // ERROR //fooTR(move(a)); cout &lt;&lt; "void fooTR(T &amp;) ERROR" &lt;&lt; endl; foocTR(move(a)); fooTr(move(a)); foocTr(move(a)); cout &lt;&lt; "const A &amp;&amp;:" &lt;&lt; endl; fooT(move(ca)); foocT(move(ca)); fooTR(move(ca)); foocTR(move(ca)); fooTr(move(ca)); foocTr(move(ca));&#125; 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int &amp;]void foocTr(const T &amp;&amp;) ERRORconst int:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int &amp;]void foocTr(const T &amp;&amp;) ERRORint &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = int]void foocTr(const T &amp;&amp;) [T = int]const int &amp;&amp;:void fooT(T) [T = int]void foocT(const T) [T = int]void fooTR(T &amp;) [T = const int]void foocTR(const T &amp;) [T = int]void fooTr(T &amp;&amp;) [T = const int]void foocTr(const T &amp;&amp;) [T = int]A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2 &amp;]void fooTr(const T &amp;&amp;) ERRORconst A:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2 &amp;]void fooTr(const T &amp;&amp;) ERRORA &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) ERRORvoid foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = A2]void foocTr(const T &amp;&amp;) [T = A2]const A &amp;&amp;:void fooT(T) [T = A2]void foocT(const T) [T = A2]void fooTR(T &amp;) [T = const A2]void foocTR(const T &amp;) [T = A2]void fooTr(T &amp;&amp;) [T = const A2]void foocTr(const T &amp;&amp;) [T = A2]]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++语法</tag>
       </tags>
   </entry>
   <entry>
@@ -258,6 +285,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[C++ inline vs static vs static inline]]></title>
+    <url>%2Fpost%2Fc-inline-vs-static-vs-static-inline%2F</url>
+    <content type="text"><![CDATA[##inline链接标记为WEAK，并建议内联 ##static链接标记为LOCAL ##static inline同static，同时建议内联static inline vs inline vs static in C++]]></content>
+      <categories>
+        <category>未分类</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>C++语法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[C++语法]]></title>
     <url>%2Fpost%2Fc-%E8%AF%AD%E6%B3%95%2F</url>
     <content type="text"><![CDATA[C++一些基本语法问题 模板友元12345678910111213141516//声明template&lt;typename T&gt; class foo_t;template&lt;typename T&gt; void foo();template&lt;typename T&gt; void foo1();template&lt;typename T&gt;class foo_t&#123; friend void foo&lt;T&gt;(); friend template&lt;typename U&gt; void foo1();&#125; enable_ifstd::enable_if - cppreference.comenable_if - Kiritow的学园 - CSDN博客 typename 的第二作用为了消除歧义，显式地告诉编译器，T::bar是一个类型名。 类的缺省函数1234567891011121314151617181920class Class&#123;public: //缺省构造函数 Class()&#123;&#125; //拷贝构造函数 Class(const Class&amp;)&#123;&#125; //移动构造函数(C++11) Class(Class&amp;&amp;)&#123;&#125; //移动赋值函数(C++11) Class&amp; operator=(Class&amp;&amp;)&#123;&#125; //析构函数 ~Class()&#123;&#125; //赋值运算符 Class&amp;operator=(const Class&amp;)&#123;&#125; //取址运算符 Class*operator&amp;()&#123;&#125; //取址运算符 const const Class*operator&amp;()const&#123;&#125;&#125;; new与delete的重载C++默认类型与类型转换默认类型 整数默认有符号 3 int 3000000000 long &#39;3&#39; char 浮点数默认double类型转换 C++定义了算数类型之间的内置转换以尽可能防止精度损失———《C+P》 隐式类型转换何时发生隐式类型转换 混合类型表达式，操作数转换为相同类型 条件表达式，转换为bool 赋值语句 算数转换转换原则是尽可能少的减少精度损失TODO 溢出问题TODO double与int等之间的转换 指针转换注意数组变量 数值或指针 -&gt; boolbool -&gt; 数值枚举类型枚举类型默认继承于int 隐式类类型转换“非explicit单参构造函数”和“非explicit转换操作符”可以实现隐式类型转换 除非有明显的理由想要定义隐式转换（比如cin的bool或类的数学扩展等），否则，类型转换函数应该为explicit——《C+P》 显示类型转换包含以下操作符（或C风格）的强制类型转换称作显示类型转换：static_cast，dynamic_cast，const_cast，reinterpret_cast 何时需要强制类型转换隐式类型转换被禁止时等 RVO返回值优化想想构造函数→_→]]></content>
@@ -279,18 +318,6 @@
       <tags>
         <tag>C++</tag>
         <tag>C++资源</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[C++ inline vs static vs static inline]]></title>
-    <url>%2Fpost%2Fc-inline-vs-static-vs-static-inline%2F</url>
-    <content type="text"><![CDATA[##inline链接标记为WEAK，并建议内联 ##static链接标记为LOCAL ##static inline同static，同时建议内联static inline vs inline vs static in C++]]></content>
-      <categories>
-        <category>未分类</category>
-      </categories>
-      <tags>
-        <tag>C++</tag>
-        <tag>C++语法</tag>
       </tags>
   </entry>
   <entry>
