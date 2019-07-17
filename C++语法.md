@@ -93,3 +93,6 @@ TODO double与int等之间的转换
 `static_cast`，`dynamic_cast`，`const_cast`，`reinterpret_cast`
 #### 何时需要强制类型转换
 隐式类型转换被禁止时等
+
+## RVO返回值优化
+想想构造函数→_→
