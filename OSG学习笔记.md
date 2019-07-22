@@ -1,3 +1,13 @@
+---
+title: OSG学习笔记
+categories: 未分类
+comments: false
+date: 2019-07-17 09:16:26
+tags:
+- OSG
+updated:
+---
+
 ## 名词理解
 
 Windowing System 窗口系统，如Linux下的X11
@@ -65,13 +75,18 @@ sort mode ，和RenderingHint有关联
 
 相机渲染缓冲附加纹理Camera::attach
 
+## 着色器
+
+## 粒子
+
+## 动画
+
 
 
 ## 问题
 
 1. 为什么Ortho near far 不起作用？
-
-
+   - 存在自动计算机制
 
 2. 为什么子相机接受了Viewport resize事件
 
