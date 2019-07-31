@@ -18,7 +18,7 @@ Window 窗口，窗口系统中的一个窗口
 
 Scene 场景
 
-### 类型
+## 类型
 
 ![继承关系]()
 
@@ -81,7 +81,7 @@ sort mode ，和RenderingHint有关联
 
 ## 动画
 
-
+## 多个Pass
 
 ## 问题
 

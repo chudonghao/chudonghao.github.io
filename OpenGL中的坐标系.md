@@ -14,6 +14,6 @@ updated:
 Model
 World
 View(Eye)
-Proj.
+Proj.      注意w归一化问题
 Nor.       x[-1,1]y[-1,1]z[-1,1]
 Viewport   x[xMin,xMax],y[yMin,yMax],z\[0,1](远离程度)

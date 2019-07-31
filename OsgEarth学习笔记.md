@@ -13,3 +13,9 @@ updated:
 
 ![EarthFile](https://public-media-chudonghao.oss-cn-shanghai.aliyuncs.com/EarthFile.svg)
 
+## Sky
+
+![OsgEarthSky](https://public-media-chudonghao.oss-cn-shanghai.aliyuncs.com/OsgEarthSky.svg)
+
+## 图层操作
+
