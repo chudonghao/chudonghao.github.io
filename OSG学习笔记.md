@@ -83,10 +83,25 @@ sort mode ，和RenderingHint有关联
 
 ## 多个Pass
 
+## StateSet
+
+### RenderBinDetail
+
+- RenderBin
+- DepthSortedBin
+
+### RenderingHint
+
+- DEFAULT_BIN  INHERIT_RENDERBIN_DETAILS 0 ""
+- OPAQUE_BIN USE_RENDERBIN_DETAILS 0 "RenderBIn"
+- TRANSPARENT_BIN USE_RENDERBIN_DETAILS 10 "DepthSortedBin"
+
+### 
+
 ## 问题
 
 1. 为什么Ortho near far 不起作用？
    - 存在自动计算机制
-
 2. 为什么子相机接受了Viewport resize事件
+   - 附属相机会接受resize事件
 
